@@ -1,7 +1,0 @@
-{
-  "name": "nitrox-stream",
-  "root": "/Users/sourik/projects/Nitrox-Stream",
-  "framework": "nextjs",
-  "language": "typescript",
-  "packageManager": "npm"
-}
