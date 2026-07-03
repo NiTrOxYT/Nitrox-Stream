@@ -35,6 +35,7 @@ export class LiveProvider {
         poster: rec.img,
         year: rec.extra?.date ? Number(rec.extra.date) : undefined,
         rating: rec.extra?.imdb ? Number(rec.extra.imdb) : undefined,
+        type: rec.url?.includes('/tvshows/') ? 'tv' as const : 'movie' as const,
       }));
     } catch (err: any) {
       console.error('[LiveProvider.search] error:', err.message);

@@ -16,30 +16,6 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: 'TV show not found' }, { status: 404 });
     }
 
-    // Fetch post IDs for all episodes in parallel
-    const episodeSlugs: string[] = [];
-    for (const season of show.seasons) {
-      for (const ep of season.episodes) {
-        episodeSlugs.push(ep.slug);
-      }
-    }
-
-    const postIds = await Promise.all(
-      episodeSlugs.map((es) => provider.getEpisodePostId(es))
-    );
-
-    // Map postIds back into the response structure
-    let idx = 0;
-    const seasons = show.seasons.map((season) => ({
-      season: season.season,
-      episodes: season.episodes.map((ep) => ({
-        episode: ep.episode,
-        title: ep.title,
-        slug: ep.slug,
-        postId: postIds[idx++],
-      })),
-    }));
-
     return NextResponse.json({
       show: {
         title: show.title,
@@ -51,7 +27,14 @@ export async function GET(request: NextRequest) {
         genres: show.genres,
         rating: show.rating,
       },
-      seasons,
+      seasons: show.seasons.map((season) => ({
+        season: season.season,
+        episodes: season.episodes.map((ep) => ({
+          episode: ep.episode,
+          title: ep.title,
+          slug: ep.slug,
+        })),
+      })),
     });
   } catch (err: any) {
     console.error('[tv-source] error:', err);

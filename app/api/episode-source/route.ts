@@ -1,34 +1,40 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { LiveProvider } from '@/lib/provider';
 import { resolvePostIdToPlayerUrl } from '@/lib/embedHelper';
 
 export async function GET(request: NextRequest) {
-  const id = request.nextUrl.searchParams.get('id');
-  const nume = request.nextUrl.searchParams.get('nume') || '1';
+  const slug = request.nextUrl.searchParams.get('slug');
 
-  if (!id) {
-    return NextResponse.json({ error: 'id is required' }, { status: 400 });
-  }
-
-  const postId = parseInt(id, 10);
-  if (isNaN(postId)) {
-    return NextResponse.json({ error: 'id must be a number' }, { status: 400 });
+  if (!slug) {
+    return NextResponse.json({ error: 'slug is required' }, { status: 400 });
   }
 
   try {
+    const provider = new LiveProvider();
+
+    // Step 1: Fetch episode page and extract post ID
+    const postId = await provider.getEpisodePostId(slug);
+    if (!postId) {
+      return NextResponse.json(
+        { error: 'Could not find episode post ID' },
+        { status: 404 }
+      );
+    }
+
+    // Step 2: Resolve post ID to player URL via admin-ajax
     const playerUrl = await resolvePostIdToPlayerUrl(postId, {
       type: 'tv',
-      nume,
     });
 
     console.log({
+      slug,
       postId,
-      nume,
       playerUrl,
     });
 
     return NextResponse.json({
+      slug,
       postId,
-      nume: parseInt(nume, 10),
       playerUrl,
     });
   } catch (err: any) {

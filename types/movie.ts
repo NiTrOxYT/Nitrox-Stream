@@ -9,5 +9,6 @@ export interface Movie {
   description?: string;
   genres?: string[];
   rating?: number;     // IMDb rating (float)
+  type?: 'movie' | 'tv';  // whether this is a movie or TV show
   playerUrl?: string;  // iframe src for the player (if we fetch the detail page)
 }
