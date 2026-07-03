@@ -291,8 +291,8 @@ export default function EpisodePlayer() {
           </button>
           
           <div className="min-w-0">
-            <span className="text-[10px] font-bold tracking-[0.2em] text-accent uppercase block mb-0.5">
-              Playing Episode
+            <span className="text-[9px] font-bold tracking-[0.2em] text-neutral-400 uppercase block mb-1">
+              NITROX CINEVERSE &middot; PLAYING EPISODE
             </span>
             <h1 className="text-xl md:text-2xl font-bold tracking-tight text-white truncate leading-none">
               {show?.show.title || slug.replace(/-/g, ' ')}

@@ -25,11 +25,11 @@ export async function generateMetadata({
   } catch {}
 
   return {
-    title: `${title} - Season ${season} Episode ${episode} | Nitrox Stream`,
-    description: description || `Watch ${title} Season ${season} Episode ${episode}`,
+    title: `${title} - Season ${season} Episode ${episode} | NITROX CINEVERSE`,
+    description: description || `Watch ${title} Season ${season} Episode ${episode} on NITROX CINEVERSE`,
     openGraph: {
-      title: `${title} - S${season}:E${episode}`,
-      description: description || `Watch ${title} Season ${season} Episode ${episode}`,
+      title: `${title} - S${season}:E${episode} | NITROX CINEVERSE`,
+      description: description || `Watch ${title} Season ${season} Episode ${episode} on NITROX CINEVERSE`,
     },
   };
 }

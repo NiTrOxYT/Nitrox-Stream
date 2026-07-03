@@ -16,8 +16,20 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Nitrox Stream",
-  description: "Premium Streaming Platform",
+  title: "NITROX CINEVERSE",
+  description: "Experience premium movie and TV streaming with an elegant cinematic interface. Discover thousands of movies, TV shows, anime, and episodes in one beautifully designed streaming platform.",
+  keywords: ["movies", "tv shows", "anime", "streaming", "cineverse", "nitrox", "cinema", "watch online"],
+  openGraph: {
+    title: "NITROX CINEVERSE",
+    description: "Experience premium movie and TV streaming with an elegant cinematic interface. Discover thousands of movies, TV shows, anime, and episodes in one beautifully designed streaming platform.",
+    type: "website",
+    siteName: "NITROX CINEVERSE",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NITROX CINEVERSE",
+    description: "Experience premium movie and TV streaming with an elegant cinematic interface. Discover thousands of movies, TV shows, anime, and episodes in one beautifully designed streaming platform.",
+  }
 };
 
 export default function RootLayout({

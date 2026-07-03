@@ -6,6 +6,7 @@ import MovieCard from "@/components/MovieCard";
 import { Movie } from "@/types/movie";
 import PremiumImage from "@/components/PremiumImage";
 import Link from "next/link";
+import HeroBanner, { HeroTitle } from "@/components/HeroBanner";
 
 interface ContinueWatchingItem {
   id: string;
@@ -32,16 +33,8 @@ interface EditorialMovie {
 }
 
 export default function HomePage() {
-  // Hero Movie State
-  const [featured, setFeatured] = useState<EditorialMovie>({
-    title: "Avatar: The Way of Water",
-    year: 2022,
-    rating: 7.6,
-    genres: ["Action", "Adventure", "Sci-Fi"],
-    description: "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.",
-    backdrop: "https://image.tmdb.org/t/p/original/ytdebEE0ndYLSTEctPgh8e0vaBs.jpg",
-    slug: "avatar-the-way-of-water",
-  });
+  // Hero list carousel state
+  const [heroList, setHeroList] = useState<HeroTitle[]>([]);
 
   // Editorial Spotlight Movie (Middle Banner)
   const [spotlight, setSpotlight] = useState<EditorialMovie>({
@@ -97,27 +90,47 @@ export default function HomePage() {
         setAction(resAction.slice(0, 10));
         setTvShows(resTv.filter(m => m.type === "tv").slice(0, 10));
 
-        // Dynamically resolve Hero Movie Details
-        if (resTrending.length > 0) {
-          const firstMovie = resTrending[0];
-          const detailRes = await fetch(`/api/movie-source?slug=${encodeURIComponent(firstMovie.slug)}`);
-          if (detailRes.ok) {
-            const detailData = await detailRes.json();
-            if (detailData.movie) {
-              setFeatured({
-                title: detailData.movie.title,
-                year: detailData.movie.year,
-                rating: detailData.movie.rating || 7.8,
-                genres: detailData.movie.genres || ["Sci-Fi", "Adventure"],
-                description: detailData.movie.description,
-                backdrop: detailData.movie.backdrop || detailData.movie.poster || firstMovie.poster,
-                slug: firstMovie.slug,
-              });
-            }
-          }
-        }
+        // 3. Resolve dynamic hero banner titles in parallel (up to 8 unique titles)
+        const candidates = [...resTrending.slice(0, 4), ...resScifi.slice(0, 4)];
+        const uniqueCandidates = candidates.filter((item, index, self) => 
+          self.findIndex(c => c.slug === item.slug) === index
+        ).slice(0, 8);
 
-        // Dynamically resolve Editorial Spotlight Movie Details
+        const heroTitles = await Promise.all(
+          uniqueCandidates.map(async (item) => {
+            try {
+              const detailRes = await fetch(`/api/movie-source?slug=${encodeURIComponent(item.slug)}`);
+              if (detailRes.ok) {
+                const detailData = await detailRes.json();
+                if (detailData.movie) {
+                  return {
+                    title: detailData.movie.title,
+                    year: detailData.movie.year || item.year,
+                    rating: detailData.movie.rating || 7.5,
+                    genres: detailData.movie.genres || ["Action", "Adventure"],
+                    description: detailData.movie.description || item.description,
+                    backdrop: detailData.movie.backdrop || detailData.movie.poster || item.poster,
+                    slug: item.slug,
+                  };
+                }
+              }
+            } catch (err) {
+              // ignore and fallback
+            }
+            return {
+              title: item.title,
+              year: item.year,
+              rating: 7.5,
+              genres: ["Action", "Adventure"],
+              description: item.description,
+              backdrop: item.poster,
+              slug: item.slug,
+            };
+          })
+        );
+        setHeroList(heroTitles);
+
+        // 4. Dynamically resolve Editorial Spotlight Movie Details
         if (resScifi.length > 0) {
           const firstScifi = resScifi[0];
           const detailRes = await fetch(`/api/movie-source?slug=${encodeURIComponent(firstScifi.slug)}`);
@@ -149,73 +162,14 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#080808] text-white overflow-hidden pb-28">
       
-      {/* 1. Large Cinematic Spotlight Hero */}
-      <section className="relative min-h-[85vh] flex items-end justify-start pb-20 md:pb-28 w-full select-none">
-        <div className="absolute inset-0 z-0">
-          <PremiumImage
-            src={featured.backdrop}
-            type="backdrop"
-            title={featured.title}
-            fill
-            priority
-            className="opacity-75"
-          />
-          {/* Edge vignettes */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/20 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#080808] via-[#080808]/15 to-transparent" />
+      {/* 1. Cinematic Dynamic Hero Banner */}
+      {!loading && heroList.length > 0 ? (
+        <HeroBanner titles={heroList} />
+      ) : (
+        <div className="relative min-h-[75vh] md:min-h-[90vh] bg-[#080808] flex items-center justify-center border-b border-neutral-900/50">
+          <div className="w-12 h-12 rounded-full border-2 border-accent border-t-transparent animate-spin" />
         </div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
-          <div className="max-w-xl space-y-4">
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 text-[9px] font-bold tracking-[0.25em] uppercase rounded bg-accent/20 text-accent border border-accent/25">
-              SPOTLIGHT PREMIERE
-            </span>
-
-            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.1]">
-              {featured.title}
-            </h1>
-
-            <div className="flex flex-wrap items-center gap-3 text-xs text-neutral-300 font-medium">
-              {featured.rating && (
-                <span className="text-amber-400 font-bold flex items-center gap-1">
-                  ★ {featured.rating.toFixed(1)}
-                </span>
-              )}
-              {featured.rating && <span className="w-1.5 h-1.5 rounded-full bg-neutral-700" />}
-              {featured.year && <span>{featured.year}</span>}
-              {featured.year && <span className="w-1.5 h-1.5 rounded-full bg-neutral-700" />}
-              <span className="px-2 py-0.5 text-[9px] font-bold border border-neutral-700/80 rounded text-neutral-400 uppercase tracking-widest">
-                UHD 4K
-              </span>
-            </div>
-
-            {featured.description && (
-              <p className="text-neutral-300 text-sm md:text-base leading-relaxed line-clamp-3 max-w-lg font-normal">
-                {featured.description}
-              </p>
-            )}
-
-            <div className="flex flex-wrap items-center gap-3 pt-2">
-              <Link
-                href={`/player/${featured.slug}`}
-                className="bg-white hover:bg-neutral-200 text-black px-6 py-2.5 rounded font-semibold text-xs uppercase tracking-wider flex items-center gap-2 transform-gpu active:scale-95 transition-all duration-150 shadow-lg cursor-pointer"
-              >
-                <svg className="w-4.5 h-4.5 fill-current" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                Watch Now
-              </Link>
-              
-              <Link
-                href={`/player/${featured.slug}`}
-                className="bg-neutral-900/80 hover:bg-neutral-800 backdrop-blur text-white px-6 py-2.5 rounded font-semibold text-xs uppercase tracking-wider flex items-center gap-2 transform-gpu active:scale-95 transition-all duration-150 border border-neutral-800"
-              >
-                More Info
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      )}
 
       {/* Catalog Layout Core */}
       <section className="max-w-7xl mx-auto px-6 space-y-16 -mt-12 relative z-20">
@@ -343,9 +297,9 @@ export default function HomePage() {
 
                   <div className="flex items-center gap-3 text-xs text-neutral-400 font-semibold">
                     {spotlight.rating && <span className="text-amber-400">★ {spotlight.rating.toFixed(1)}</span>}
-                    {spotlight.rating && <span className="w-1 h-1 bg-neutral-700 rounded-full" />}
+                    {spotlight.rating && <span className="w-1.5 h-1.5 bg-neutral-700 rounded-full" />}
                     {spotlight.year && <span>{spotlight.year}</span>}
-                    {spotlight.year && <span className="w-1 h-1 bg-neutral-700 rounded-full" />}
+                    {spotlight.year && <span className="w-1.5 h-1.5 bg-neutral-700 rounded-full" />}
                     <span className="px-1.5 py-0.2 border border-neutral-800 rounded text-[9px]">DOLBY VISION</span>
                   </div>
 

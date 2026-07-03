@@ -208,7 +208,7 @@ async function runSimulations() {
 async function run() {
   const provider = new LiveProvider();
   const start = Date.now();
-  console.log('Starting Nitrox Stream Resolver Regression Tests...');
+  console.log('Starting NITROX CINEVERSE Resolver Regression Tests...');
 
   const moviesOk = await testMovies(provider);
   const episodesOk = await testEpisodes(provider);

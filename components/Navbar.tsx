@@ -172,9 +172,12 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto h-full px-6 flex items-center justify-between">
           
           {/* Logo Brand Treatment */}
-          <Link href="/" className="flex items-center gap-2 outline-none group select-none">
-            <span className="font-display text-sm font-black tracking-[0.3em] text-white group-hover:text-accent transition-colors duration-200">
+          <Link href="/" className="flex items-center gap-1.5 outline-none group select-none">
+            <span className="font-display text-sm font-extrabold tracking-[0.2em] text-white group-hover:text-accent transition-colors duration-200">
               NITROX
+            </span>
+            <span className="font-display text-sm font-light tracking-[0.35em] text-neutral-400 group-hover:text-white transition-colors duration-200">
+              CINEVERSE
             </span>
           </Link>
 
@@ -231,7 +234,7 @@ export default function Navbar() {
               <input
                 ref={searchInputRef}
                 type="text"
-                placeholder="Search movies, TV shows, and series..."
+                placeholder="Search movies, TV shows and anime..."
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 className="w-full bg-transparent border-none outline-none text-sm font-medium text-white placeholder-neutral-500"
