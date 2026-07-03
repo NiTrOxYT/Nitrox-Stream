@@ -6,6 +6,7 @@ import MovieCard from '@/components/MovieCard';
 import { Movie } from '@/types/movie';
 import { searchMovies } from '@/services/search-service';
 import PremiumImage from '@/components/PremiumImage';
+import ProviderSelector, { Provider } from '@/components/ProviderSelector';
 
 interface MovieInfo {
   title: string;
@@ -21,6 +22,8 @@ interface PlayerResponse {
   movie: MovieInfo;
   providerUrl: string;
   playerUrl: string;
+  currentProvider?: string;
+  providers?: Provider[];
 }
 
 export default function PlayerPage() {
@@ -31,8 +34,13 @@ export default function PlayerPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [data, setData] = useState<PlayerResponse | null>(null);
+  const [currentUrl, setCurrentUrl] = useState<string | null>(null);
+  const [providers, setProviders] = useState<Provider[]>([]);
   const [iframeLoading, setIframeLoading] = useState(true);
-  
+  const [switching, setSwitching] = useState(false);
+  const [toast, setToast] = useState<{ message: string; visible: boolean; type?: 'fallback' } | null>(null);
+  const [prevProvider, setPrevProvider] = useState<Provider | null>(null);
+
   // Recommendations state
   const [related, setRelated] = useState<Movie[]>([]);
 
@@ -50,6 +58,23 @@ export default function PlayerPage() {
 
         const result: PlayerResponse = await res.json();
         setData(result);
+
+        const activeProviders = result.providers || [];
+        setProviders(activeProviders);
+
+        // Check for cached preferred provider choice
+        let initialUrl = result.playerUrl;
+        if (activeProviders.length > 0) {
+          const preferredId = localStorage.getItem('nitrox_preferred_provider');
+          if (preferredId) {
+            const preferred = activeProviders.find(p => p.id === preferredId);
+            if (preferred) {
+              initialUrl = preferred.playerUrl;
+            }
+          }
+        }
+
+        setCurrentUrl(initialUrl);
         setIframeLoading(true);
 
         // Fetch related movies
@@ -106,6 +131,59 @@ export default function PlayerPage() {
     }
   }, [data, slug]);
 
+  // Auto fallback monitor
+  useEffect(() => {
+    if (!iframeLoading || !currentUrl) return;
+    const timer = setTimeout(() => {
+      handleAutoFallback();
+    }, 10000); // 10s load timeout
+    return () => clearTimeout(timer);
+  }, [iframeLoading, currentUrl, providers]);
+
+  function handleAutoFallback() {
+    if (providers.length <= 1 || !currentUrl) return;
+    const currentIdx = providers.findIndex(p => p.playerUrl === currentUrl);
+    if (currentIdx === -1) return;
+
+    const nextIdx = (currentIdx + 1) % providers.length;
+    const nextProv = providers[nextIdx];
+    const activeProv = providers[currentIdx];
+
+    setPrevProvider(activeProv);
+    setSwitching(true);
+    setIframeLoading(true);
+    setCurrentUrl(nextProv.playerUrl);
+
+    setToast({
+      message: `Current server unavailable. Switched to ${nextProv.name}.`,
+      visible: true,
+      type: 'fallback'
+    });
+
+    // Auto-hide toast after 4s
+    setTimeout(() => {
+      setToast(t => t?.message.includes(nextProv.name) ? null : t);
+    }, 4000);
+  }
+
+  function handleSelectProvider(prov: Provider) {
+    const currentProv = providers.find(p => p.playerUrl === currentUrl) || null;
+    setPrevProvider(currentProv);
+    setSwitching(true);
+    setIframeLoading(true);
+    setCurrentUrl(prov.playerUrl);
+    localStorage.setItem('nitrox_preferred_provider', prov.id);
+  }
+
+  function handleUndo() {
+    if (prevProvider) {
+      setSwitching(true);
+      setIframeLoading(true);
+      setCurrentUrl(prevProvider.playerUrl);
+      setToast(null);
+    }
+  }
+
   if (loading) {
     return (
       <div className="min-h-screen bg-[#080808] flex flex-col items-center justify-center">
@@ -148,6 +226,18 @@ export default function PlayerPage() {
   return (
     <main className="min-h-screen bg-[#080808] text-white pb-24 relative overflow-hidden">
       
+      {/* Inject custom animation keyframes safely */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes fadeIn {
+          from { opacity: 0; transform: scale(0.98); }
+          to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes slideUp {
+          from { transform: translateY(20px); opacity: 0; }
+          to { transform: translateY(0); opacity: 1; }
+        }
+      ` }} />
+
       {/* Dynamic ambient backdrop blur lighting */}
       <div className="absolute top-0 left-0 right-0 h-[60vh] z-0 pointer-events-none opacity-25 filter blur-[120px] transform-gpu">
         <PremiumImage
@@ -197,18 +287,34 @@ export default function PlayerPage() {
 
         {/* Video Player Frame Container */}
         <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden bg-black shadow-[0_24px_50px_rgba(0,0,0,0.85)] border border-neutral-900 z-10 transform-gpu">
-          {iframeLoading && (
+          {switching && (
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/95 z-20">
+              <div className="w-10 h-10 rounded-full border-2 border-accent border-t-transparent animate-spin mb-3" />
+              <p className="text-[10px] font-bold tracking-widest text-neutral-500 uppercase animate-pulse">Switching Server...</p>
+            </div>
+          )}
+          {iframeLoading && !switching && (
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/95 z-10">
               <div className="w-10 h-10 rounded-full border-2 border-accent border-t-transparent animate-spin mb-3" />
               <p className="text-[10px] font-bold tracking-widest text-neutral-500 uppercase animate-pulse">Loading Video Stream...</p>
             </div>
           )}
+
+          <ProviderSelector
+            providers={providers}
+            currentUrl={currentUrl || ''}
+            onSelect={handleSelectProvider}
+          />
+
           <iframe
-            src={data.playerUrl || ''}
-            className="w-full h-full absolute inset-0"
+            src={currentUrl || ''}
+            className={`w-full h-full absolute inset-0 transition-opacity duration-300 ${switching || iframeLoading ? 'opacity-0' : 'opacity-100'}`}
             allowFullScreen
             allow="autoplay; encrypted-media"
-            onLoad={() => setIframeLoading(false)}
+            onLoad={() => {
+              setIframeLoading(false);
+              setSwitching(false);
+            }}
             style={{ border: 'none' }}
           />
         </div>
@@ -257,7 +363,7 @@ export default function PlayerPage() {
                 </div>
                 <div className="flex justify-between py-2">
                   <span className="text-neutral-500">Video CDN Server</span>
-                  <span className="font-semibold text-neutral-400 truncate max-w-[150px]">{data.providerUrl.split('//').pop()?.split('/')[0] || "HLS Server"}</span>
+                  <span className="font-semibold text-neutral-400 truncate max-w-[150px]">{currentUrl?.split('//').pop()?.split('/')[0] || "HLS Server"}</span>
                 </div>
               </div>
             </div>
@@ -279,6 +385,30 @@ export default function PlayerPage() {
         )}
 
       </div>
+
+      {/* Glassmorphic Toast Notification */}
+      {toast?.visible && (
+        <div className="fixed bottom-6 right-6 z-50 flex items-center justify-between gap-4 px-4.5 py-3.5 rounded-xl bg-[#0d0d0d]/95 border border-white/10 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,0,0,0.8)] text-xs text-white max-w-sm transform-gpu animate-[slideUp_0.25s_ease-out]">
+          <div className="flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-accent animate-ping" />
+            <span className="font-semibold tracking-tight">{toast.message}</span>
+          </div>
+          {toast.type === 'fallback' && prevProvider && (
+            <button
+              onClick={handleUndo}
+              className="px-2.5 py-1.5 text-[9px] font-bold uppercase tracking-wider text-accent border border-accent/20 rounded-lg hover:bg-accent/10 transition cursor-pointer outline-none"
+            >
+              Undo
+            </button>
+          )}
+          <button
+            onClick={() => setToast(null)}
+            className="text-neutral-500 hover:text-white transition cursor-pointer outline-none pl-1"
+          >
+            ✕
+          </button>
+        </div>
+      )}
     </main>
   );
 }

@@ -30,6 +30,15 @@ export interface ProviderHealth {
 
 export interface ResolutionResult {
   playerUrl: string;
+  currentProvider?: string;
+  providers?: Array<{
+    id: string;
+    name: string;
+    playerUrl: string;
+    validated: boolean;
+    responseTime: number;
+    priority: number;
+  }>;
   meta: {
     provider: string;
     strategy: string;
@@ -759,12 +768,12 @@ export async function resolveEmbedUrl(
     throw new ResolutionError('provider-resolution', []);
   }
 
-  // Sequenced validation with automatic retry failover loop
+  // Parallel validation loop
   const diagnostics: Array<{ name: string; status: string }> = [];
   ctx.startTiming('Provider Validation Loop');
   const valStart = Date.now();
 
-  for (const prov of providers) {
+  const validationPromises = providers.map(async (prov, idx) => {
     let attempts = 0;
     const maxAttempts = 2; // Up to 2 attempts (retry once)
 
@@ -779,23 +788,15 @@ export async function resolveEmbedUrl(
 
         if (validatePlayerUrl(finalUrl)) {
           ctx.logProvider(prov.name, prov.id, 'success', resTime);
-          ctx.endTiming('Provider Validation Loop', 'success');
-          
-          const successStrategy = ctx.stages.find(s => s.status === 'success' && s.name.includes('Strategy'))?.name || 'UnknownStrategy';
-          ctx.printSummary(true, prov.name, successStrategy);
-
           recordProvider(prov.name, true, resTime);
-          recordRequest(true, Date.now() - ctx.startTime, Date.now() - valStart);
 
           return {
+            id: prov.id,
+            name: prov.name,
             playerUrl: finalUrl,
-            meta: {
-              provider: prov.name,
-              strategy: successStrategy,
-              validated: true,
-              responseTime: resTime,
-              retries: attempts - 1
-            }
+            validated: true,
+            responseTime: resTime,
+            priority: idx + 1
           };
         } else {
           throw new Error('Validated URL failed final URL check');
@@ -814,13 +815,52 @@ export async function resolveEmbedUrl(
         }
       }
     }
+    return null;
+  });
+
+  const validatedResults = (await Promise.all(validationPromises)).filter(Boolean) as Array<{
+    id: string;
+    name: string;
+    playerUrl: string;
+    validated: boolean;
+    responseTime: number;
+    priority: number;
+  }>;
+
+  ctx.endTiming('Provider Validation Loop', validatedResults.length > 0 ? 'success' : 'failed');
+
+  if (validatedResults.length === 0) {
+    ctx.printSummary(false);
+    recordRequest(false, Date.now() - ctx.startTime, Date.now() - valStart);
+    throw new ResolutionError('provider-resolution', diagnostics);
   }
 
-  ctx.endTiming('Provider Validation Loop', 'failed', 'All providers failed');
-  ctx.printSummary(false);
+  // Sort validated results by responseTime, then by priority
+  validatedResults.sort((a, b) => {
+    if (a.responseTime !== b.responseTime) {
+      return a.responseTime - b.responseTime;
+    }
+    return a.priority - b.priority;
+  });
 
-  recordRequest(false, Date.now() - ctx.startTime, Date.now() - valStart);
-  throw new ResolutionError('provider-resolution', diagnostics);
+  const bestProvider = validatedResults[0];
+  const successStrategy = ctx.stages.find(s => s.status === 'success' && s.name.includes('Strategy'))?.name || 'UnknownStrategy';
+  ctx.printSummary(true, bestProvider.name, successStrategy);
+
+  recordRequest(true, Date.now() - ctx.startTime, Date.now() - valStart);
+
+  return {
+    playerUrl: bestProvider.playerUrl,
+    currentProvider: bestProvider.name,
+    providers: validatedResults,
+    meta: {
+      provider: bestProvider.name,
+      strategy: successStrategy,
+      validated: true,
+      responseTime: bestProvider.responseTime,
+      retries: 0
+    }
+  };
 }
 
 /**

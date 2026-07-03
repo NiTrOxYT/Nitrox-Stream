@@ -39,6 +39,8 @@ export async function GET(request: NextRequest) {
       slug,
       postId,
       playerUrl,
+      currentProvider: result.currentProvider,
+      providers: result.providers,
       meta: result.meta,
     });
   } catch (err: unknown) {

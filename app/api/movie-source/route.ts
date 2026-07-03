@@ -56,6 +56,8 @@ export async function GET(request: NextRequest) {
       },
       providerUrl,
       playerUrl,
+      currentProvider: result.currentProvider,
+      providers: result.providers,
       meta: result.meta,
     });
   } catch (err: unknown) {

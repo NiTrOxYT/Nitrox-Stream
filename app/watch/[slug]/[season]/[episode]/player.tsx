@@ -3,6 +3,11 @@
 import { useEffect, useState, useMemo } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import PremiumImage from '@/components/PremiumImage';
+import ProviderSelector, { Provider } from '@/components/ProviderSelector';
+
+// Let's check original imports:
+// import { useParams, useRouter } from 'next/navigation';
+// Yes! Line 4 of original was `import { useParams, useRouter } from 'next/navigation';`
 
 interface Episode {
   episode: number;
@@ -39,9 +44,13 @@ export default function EpisodePlayer() {
 
   const [show, setShow] = useState<TvSourceResponse | null>(null);
   const [playerUrl, setPlayerUrl] = useState<string | null>(null);
+  const [providers, setProviders] = useState<Provider[]>([]);
   const [resolving, setResolving] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [iframeLoading, setIframeLoading] = useState(true);
+  const [switching, setSwitching] = useState(false);
+  const [toast, setToast] = useState<{ message: string; visible: boolean; type?: 'fallback' } | null>(null);
+  const [prevProvider, setPrevProvider] = useState<Provider | null>(null);
 
   // Fetch show data once (for episode slug lookup + navigation)
   useEffect(() => {
@@ -77,13 +86,30 @@ export default function EpisodePlayer() {
       setError(null);
       setResolving(true);
       setPlayerUrl(null);
+      setProviders([]);
       setIframeLoading(true);
 
       try {
         const res = await fetch(`/api/episode-source?slug=${encodeURIComponent(ep.slug)}`);
         if (!res.ok) throw new Error('Failed to resolve');
-        const data = (await res.json()) as { playerUrl: string };
-        setPlayerUrl(data.playerUrl);
+        const data = (await res.json()) as { playerUrl: string; providers?: Provider[] };
+        
+        const activeProviders = data.providers || [];
+        setProviders(activeProviders);
+
+        // Check for cached preferred provider choice
+        let initialUrl = data.playerUrl;
+        if (activeProviders.length > 0) {
+          const preferredId = localStorage.getItem('nitrox_preferred_provider');
+          if (preferredId) {
+            const preferred = activeProviders.find(p => p.id === preferredId);
+            if (preferred) {
+              initialUrl = preferred.playerUrl;
+            }
+          }
+        }
+
+        setPlayerUrl(initialUrl);
       } catch (err: unknown) {
         const errMsg = err instanceof Error ? err.message : 'Unknown error';
         setError(errMsg);
@@ -115,6 +141,59 @@ export default function EpisodePlayer() {
     currentIdx >= 0 && currentIdx < flatEpisodes.length - 1
       ? flatEpisodes[currentIdx + 1]
       : null;
+
+  // Auto fallback monitor
+  useEffect(() => {
+    if (!iframeLoading || !playerUrl) return;
+    const timer = setTimeout(() => {
+      handleAutoFallback();
+    }, 10000); // 10s load timeout
+    return () => clearTimeout(timer);
+  }, [iframeLoading, playerUrl, providers]);
+
+  function handleAutoFallback() {
+    if (providers.length <= 1 || !playerUrl) return;
+    const currentIdx = providers.findIndex(p => p.playerUrl === playerUrl);
+    if (currentIdx === -1) return;
+
+    const nextIdx = (currentIdx + 1) % providers.length;
+    const nextProv = providers[nextIdx];
+    const activeProv = providers[currentIdx];
+
+    setPrevProvider(activeProv);
+    setSwitching(true);
+    setIframeLoading(true);
+    setPlayerUrl(nextProv.playerUrl);
+
+    setToast({
+      message: `Current server unavailable. Switched to ${nextProv.name}.`,
+      visible: true,
+      type: 'fallback'
+    });
+
+    // Auto-hide toast after 4s
+    setTimeout(() => {
+      setToast(t => t?.message.includes(nextProv.name) ? null : t);
+    }, 4000);
+  }
+
+  function handleSelectProvider(prov: Provider) {
+    const currentProv = providers.find(p => p.playerUrl === playerUrl) || null;
+    setPrevProvider(currentProv);
+    setSwitching(true);
+    setIframeLoading(true);
+    setPlayerUrl(prov.playerUrl);
+    localStorage.setItem('nitrox_preferred_provider', prov.id);
+  }
+
+  function handleUndo() {
+    if (prevProvider) {
+      setSwitching(true);
+      setIframeLoading(true);
+      setPlayerUrl(prevProvider.playerUrl);
+      setToast(null);
+    }
+  }
 
   function navigate(season: number, episode: number) {
     router.push(`/watch/${slug}/s${season}/e${episode}`);
@@ -173,6 +252,18 @@ export default function EpisodePlayer() {
   return (
     <main className="min-h-screen bg-[#080808] text-white pb-24 relative overflow-hidden">
       
+      {/* Inject animations style sheet */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes fadeIn {
+          from { opacity: 0; transform: scale(0.98); }
+          to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes slideUp {
+          from { transform: translateY(20px); opacity: 0; }
+          to { transform: translateY(0); opacity: 1; }
+        }
+      ` }} />
+
       {/* Ambient backdrop glow blur */}
       {show?.show.backdrop && (
         <div className="absolute top-0 left-0 right-0 h-[60vh] z-0 pointer-events-none opacity-25 filter blur-[120px] transform-gpu">
@@ -222,6 +313,13 @@ export default function EpisodePlayer() {
             </div>
           )}
 
+          {switching && (
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/95 z-20">
+              <div className="w-10 h-10 rounded-full border-2 border-accent border-t-transparent animate-spin mb-3" />
+              <p className="text-[10px] font-bold tracking-widest text-neutral-500 uppercase animate-pulse">Switching Server...</p>
+            </div>
+          )}
+
           {error && !resolving && (
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#080808] z-10 text-center px-4">
               <div className="w-12 h-12 rounded-full bg-accent/15 text-accent flex items-center justify-center mx-auto mb-4 font-bold text-xl">!</div>
@@ -238,18 +336,28 @@ export default function EpisodePlayer() {
 
           {playerUrl && (
             <>
-              {iframeLoading && (
+              {iframeLoading && !switching && (
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/95 z-10">
                   <div className="w-10 h-10 rounded-full border-2 border-accent border-t-transparent animate-spin mb-3" />
                   <p className="text-[10px] font-bold tracking-widest text-neutral-500 uppercase animate-pulse">Loading Stream Player...</p>
                 </div>
               )}
+              
+              <ProviderSelector
+                providers={providers}
+                currentUrl={playerUrl}
+                onSelect={handleSelectProvider}
+              />
+
               <iframe
                 src={playerUrl}
-                className="w-full h-full absolute inset-0"
+                className={`w-full h-full absolute inset-0 transition-opacity duration-300 ${switching || iframeLoading || resolving ? 'opacity-0' : 'opacity-100'}`}
                 allowFullScreen
                 allow="autoplay; encrypted-media"
-                onLoad={() => setIframeLoading(false)}
+                onLoad={() => {
+                  setIframeLoading(false);
+                  setSwitching(false);
+                }}
                 style={{ border: 'none' }}
               />
             </>
@@ -328,6 +436,30 @@ export default function EpisodePlayer() {
         )}
 
       </div>
+
+      {/* Glassmorphic Toast Notification */}
+      {toast?.visible && (
+        <div className="fixed bottom-6 right-6 z-50 flex items-center justify-between gap-4 px-4.5 py-3.5 rounded-xl bg-[#0d0d0d]/95 border border-white/10 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,0,0,0.8)] text-xs text-white max-w-sm transform-gpu animate-[slideUp_0.25s_ease-out]">
+          <div className="flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-accent animate-ping" />
+            <span className="font-semibold tracking-tight">{toast.message}</span>
+          </div>
+          {toast.type === 'fallback' && prevProvider && (
+            <button
+              onClick={handleUndo}
+              className="px-2.5 py-1.5 text-[9px] font-bold uppercase tracking-wider text-accent border border-accent/20 rounded-lg hover:bg-accent/10 transition cursor-pointer outline-none"
+            >
+              Undo
+            </button>
+          )}
+          <button
+            onClick={() => setToast(null)}
+            className="text-neutral-500 hover:text-white transition cursor-pointer outline-none pl-1"
+          >
+            ✕
+          </button>
+        </div>
+      )}
     </main>
   );
 }
