@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useMemo } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import Link from 'next/link';
+import PremiumImage from '@/components/PremiumImage';
 
 interface Episode {
   episode: number;
@@ -17,6 +17,7 @@ interface Season {
 
 interface ShowInfo {
   title: string;
+  poster?: string;
   backdrop?: string;
 }
 
@@ -132,29 +133,66 @@ export default function EpisodePlayer() {
     return show.seasons.find((se) => se.season === currentSeason)?.episodes || [];
   }, [show, currentSeason]);
 
+  // Continue Watching Trigger
+  useEffect(() => {
+    if (!show?.show) return;
+
+    try {
+      const stored = localStorage.getItem("nitrox_continue_watching");
+      let list: any[] = [];
+      if (stored) {
+        try {
+          list = JSON.parse(stored);
+        } catch {
+          list = [];
+        }
+      }
+
+      const showItem = {
+        id: `${slug}_s${currentSeason}_e${currentEpisode}`,
+        type: 'tv',
+        slug: slug,
+        title: show.show.title,
+        poster: show.show.poster,
+        backdrop: show.show.backdrop,
+        season: currentSeason,
+        episode: currentEpisode,
+        progress: Math.floor(20 + (currentEpisode * 8) % 65), // dynamic mock progress
+        updatedAt: Date.now(),
+      };
+
+      // Filter other representations of this TV show to avoid cluttering, or just filter this exact ep
+      list = list.filter((item: any) => item.slug !== slug);
+      list.unshift(showItem);
+      localStorage.setItem("nitrox_continue_watching", JSON.stringify(list.slice(0, 10)));
+    } catch (e) {
+      console.error("Failed to save Continue Watching:", e);
+    }
+  }, [show, currentSeason, currentEpisode, slug]);
+
   return (
     <main className="min-h-screen bg-[#080808] text-white pb-24 relative overflow-hidden">
       
-      {/* Ambient Backdrop Blur Layer */}
+      {/* Ambient backdrop glow blur */}
       {show?.show.backdrop && (
-        <div className="absolute top-0 left-0 right-0 h-[60vh] z-0 pointer-events-none opacity-20 filter blur-[100px] transform-gpu">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+        <div className="absolute top-0 left-0 right-0 h-[60vh] z-0 pointer-events-none opacity-25 filter blur-[120px] transform-gpu">
+          <PremiumImage
             src={show.show.backdrop}
-            alt=""
-            className="w-full h-full object-cover"
+            type="backdrop"
+            title=""
+            fill
           />
-          <div className="absolute inset-0 bg-[#080808]/80" />
+          <div className="absolute inset-0 bg-[#080808]/85" />
         </div>
       )}
 
       <div className="max-w-6xl mx-auto px-6 pt-8 relative z-10 space-y-8">
         
-        {/* Header / Nav Back Bar */}
+        {/* Header Back Bar */}
         <div className="flex items-center gap-4 border-b border-neutral-900 pb-4">
           <button
             onClick={() => router.back()}
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-900/80 hover:bg-neutral-800 border border-neutral-800/40 text-neutral-400 hover:text-white transition-all duration-200 outline-none"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-900/80 hover:bg-neutral-800 border border-neutral-800/40 text-neutral-400 hover:text-white transition-all duration-200 outline-none cursor-pointer"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -170,17 +208,15 @@ export default function EpisodePlayer() {
             </h1>
           </div>
 
-          <div className="ml-auto flex items-center gap-3">
-            <span className="px-2.5 py-1 text-xs font-semibold text-neutral-400 bg-neutral-900 rounded border border-neutral-800/50">
-              Season {currentSeason} &middot; Episode {currentEpisode}
-            </span>
+          <div className="ml-auto flex items-center gap-3 font-semibold text-xs text-neutral-400 bg-neutral-900 px-3 py-1 rounded border border-neutral-800/50">
+            <span>S{currentSeason} &middot; E{currentEpisode}</span>
           </div>
         </div>
 
-        {/* Video Player Frame */}
-        <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden bg-black shadow-[0_24px_50px_rgba(0,0,0,0.8)] border border-neutral-900 z-10 transform-gpu transition-all">
+        {/* Player Container */}
+        <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden bg-black shadow-[0_24px_50px_rgba(0,0,0,0.85)] border border-neutral-900 z-10 transform-gpu">
           {resolving && (
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/90 z-10">
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/95 z-10">
               <div className="w-10 h-10 rounded-full border-2 border-accent border-t-transparent animate-spin mb-3" />
               <p className="text-[10px] font-bold tracking-widest text-neutral-500 uppercase animate-pulse">Resolving Video Source...</p>
             </div>
@@ -203,7 +239,7 @@ export default function EpisodePlayer() {
           {playerUrl && (
             <>
               {iframeLoading && (
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/90 z-10">
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/95 z-10">
                   <div className="w-10 h-10 rounded-full border-2 border-accent border-t-transparent animate-spin mb-3" />
                   <p className="text-[10px] font-bold tracking-widest text-neutral-500 uppercase animate-pulse">Loading Stream Player...</p>
                 </div>
@@ -220,12 +256,12 @@ export default function EpisodePlayer() {
           )}
         </div>
 
-        {/* Dynamic Prev / Next bar */}
+        {/* Prev / Next controls */}
         <div className="flex items-center justify-between gap-4 border-t border-b border-neutral-900 py-4">
           <button
             onClick={() => prev && navigate(prev.season, prev.episode)}
             disabled={!prev}
-            className="flex items-center gap-2 px-4 py-2 rounded bg-neutral-900 border border-neutral-800 text-white text-xs font-bold uppercase tracking-wider hover:bg-neutral-800 hover:border-neutral-700 transition disabled:opacity-30 disabled:cursor-not-allowed outline-none"
+            className="flex items-center gap-2 px-4 py-2 rounded bg-neutral-900 border border-neutral-800 text-white text-xs font-bold uppercase tracking-wider hover:bg-neutral-800 hover:border-neutral-700 transition disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer outline-none"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -240,7 +276,7 @@ export default function EpisodePlayer() {
           <button
             onClick={() => next && navigate(next.season, next.episode)}
             disabled={!next}
-            className="flex items-center gap-2 px-4 py-2 rounded bg-neutral-900 border border-neutral-800 text-white text-xs font-bold uppercase tracking-wider hover:bg-neutral-800 hover:border-neutral-700 transition disabled:opacity-30 disabled:cursor-not-allowed outline-none"
+            className="flex items-center gap-2 px-4 py-2 rounded bg-neutral-900 border border-neutral-800 text-white text-xs font-bold uppercase tracking-wider hover:bg-neutral-800 hover:border-neutral-700 transition disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer outline-none"
           >
             Next
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -249,10 +285,10 @@ export default function EpisodePlayer() {
           </button>
         </div>
 
-        {/* Quick Episode Selection Strip */}
+        {/* Season Episode Strip */}
         {seasonEpisodes.length > 1 && (
           <div className="space-y-4 pt-4">
-            <h3 className="text-xs font-bold tracking-[0.2em] uppercase text-neutral-400">
+            <h3 className="text-[10px] font-bold tracking-[0.25em] uppercase text-neutral-400">
               Episodes In This Season
             </h3>
             
@@ -263,14 +299,14 @@ export default function EpisodePlayer() {
                   <button
                     key={ep.slug}
                     onClick={() => navigate(currentSeason, ep.episode)}
-                    className={`flex items-center justify-between gap-4 p-3 rounded text-left shrink-0 w-64 border transition-all duration-200 outline-none snap-start ${
+                    className={`flex items-center justify-between gap-4 p-3 rounded text-left shrink-0 w-64 border transition-all duration-200 outline-none snap-start cursor-pointer ${
                       isActive
                         ? "bg-accent/10 border-accent/30 text-white"
                         : "bg-[#101010]/60 border-neutral-900 text-neutral-400 hover:border-neutral-800 hover:bg-[#161616]"
                     }`}
                   >
                     <div className="min-w-0">
-                      <span className={`text-[10px] font-bold block mb-0.5 ${isActive ? "text-accent" : "text-neutral-500"}`}>
+                      <span className={`text-[9px] font-bold block mb-0.5 ${isActive ? "text-accent" : "text-neutral-500"}`}>
                         EPISODE {ep.episode}
                       </span>
                       <span className={`text-xs font-semibold block truncate ${isActive ? "text-white" : "text-neutral-300"}`}>

@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import Link from 'next/link';
 import MovieCard from '@/components/MovieCard';
 import { Movie } from '@/types/movie';
 import { searchMovies } from '@/services/search-service';
+import PremiumImage from '@/components/PremiumImage';
 
 interface MovieInfo {
   title: string;
@@ -33,7 +33,7 @@ export default function PlayerPage() {
   const [data, setData] = useState<PlayerResponse | null>(null);
   const [iframeLoading, setIframeLoading] = useState(true);
   
-  // Related recommendations state
+  // Recommendations state
   const [related, setRelated] = useState<Movie[]>([]);
 
   useEffect(() => {
@@ -52,14 +52,12 @@ export default function PlayerPage() {
         setData(result);
         setIframeLoading(true);
 
-        // Fetch related movies based on the first genre
+        // Fetch related movies
         if (result.movie.genres && result.movie.genres.length > 0) {
           const genreQuery = result.movie.genres[0];
           const relatedResults = await searchMovies(genreQuery);
-          // Filter out the current movie
           setRelated(relatedResults.filter(m => m.slug !== slug).slice(0, 5));
         } else {
-          // Fallback recommendation search
           const fallbackResults = await searchMovies("avatar");
           setRelated(fallbackResults.filter(m => m.slug !== slug).slice(0, 5));
         }
@@ -72,6 +70,41 @@ export default function PlayerPage() {
     }
     load();
   }, [slug]);
+
+  // Continue Watching trigger
+  useEffect(() => {
+    if (!data?.movie) return;
+
+    try {
+      const stored = localStorage.getItem("nitrox_continue_watching");
+      let list: any[] = [];
+      if (stored) {
+        try {
+          list = JSON.parse(stored);
+        } catch {
+          list = [];
+        }
+      }
+
+      const movieItem = {
+        id: slug,
+        type: 'movie',
+        slug: slug,
+        title: data.movie.title,
+        poster: data.movie.poster,
+        backdrop: data.movie.backdrop,
+        progress: 85, // mock progress
+        updatedAt: Date.now(),
+      };
+
+      // De-duplicate
+      list = list.filter((item: any) => item.slug !== slug);
+      list.unshift(movieItem);
+      localStorage.setItem("nitrox_continue_watching", JSON.stringify(list.slice(0, 10)));
+    } catch (e) {
+      console.error("Failed to save continue watching:", e);
+    }
+  }, [data, slug]);
 
   if (loading) {
     return (
@@ -115,26 +148,24 @@ export default function PlayerPage() {
   return (
     <main className="min-h-screen bg-[#080808] text-white pb-24 relative overflow-hidden">
       
-      {/* Ambient Backdrop Blur Layer */}
-      {movie.backdrop && (
-        <div className="absolute top-0 left-0 right-0 h-[60vh] z-0 pointer-events-none opacity-20 filter blur-[100px] transform-gpu">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={movie.backdrop}
-            alt=""
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-[#080808]/80" />
-        </div>
-      )}
+      {/* Dynamic ambient backdrop blur lighting */}
+      <div className="absolute top-0 left-0 right-0 h-[60vh] z-0 pointer-events-none opacity-25 filter blur-[120px] transform-gpu">
+        <PremiumImage
+          src={movie.backdrop || movie.poster}
+          type="backdrop"
+          title=""
+          fill
+        />
+        <div className="absolute inset-0 bg-[#080808]/85" />
+      </div>
 
       <div className="max-w-6xl mx-auto px-6 pt-8 relative z-10 space-y-8">
         
-        {/* Header / Nav Back Bar */}
+        {/* Header Back Bar */}
         <div className="flex items-center gap-4 border-b border-neutral-900 pb-4">
           <button
             onClick={() => router.back()}
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-900/80 hover:bg-neutral-800 border border-neutral-800/40 text-neutral-400 hover:text-white transition-all duration-200 outline-none"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-900/80 hover:bg-neutral-800 border border-neutral-800/40 text-neutral-400 hover:text-white transition-all duration-200 outline-none cursor-pointer"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -164,10 +195,10 @@ export default function PlayerPage() {
           </div>
         </div>
 
-        {/* Video Player Frame */}
-        <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden bg-black shadow-[0_24px_50px_rgba(0,0,0,0.8)] border border-neutral-900 z-10 transform-gpu transition-all">
+        {/* Video Player Frame Container */}
+        <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden bg-black shadow-[0_24px_50px_rgba(0,0,0,0.85)] border border-neutral-900 z-10 transform-gpu">
           {iframeLoading && (
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/90 z-10">
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/95 z-10">
               <div className="w-10 h-10 rounded-full border-2 border-accent border-t-transparent animate-spin mb-3" />
               <p className="text-[10px] font-bold tracking-widest text-neutral-500 uppercase animate-pulse">Loading Video Stream...</p>
             </div>
@@ -182,12 +213,12 @@ export default function PlayerPage() {
           />
         </div>
 
-        {/* Movie Info & Split Details */}
+        {/* Movie Info Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-4 border-t border-neutral-900">
           
-          {/* Main Description */}
+          {/* Synopsis */}
           <div className="md:col-span-2 space-y-4">
-            <h2 className="text-xs font-bold tracking-[0.2em] uppercase text-neutral-400">
+            <h2 className="text-[10px] font-bold tracking-[0.25em] uppercase text-neutral-400">
               Synopsis
             </h2>
             <p className="text-neutral-300 text-sm md:text-base leading-relaxed font-normal">
@@ -208,25 +239,25 @@ export default function PlayerPage() {
             )}
           </div>
 
-          {/* Technical Specs / Side metadata */}
+          {/* Side Specifications block */}
           <div className="space-y-6">
-            <div className="p-4 bg-[#101010]/80 backdrop-blur-md rounded-lg border border-neutral-900 space-y-4">
-              <h3 className="text-xs font-bold tracking-[0.2em] uppercase text-neutral-400">
+            <div className="p-5 bg-[#101010]/80 backdrop-blur-md rounded-lg border border-neutral-900 space-y-4">
+              <h3 className="text-[10px] font-bold tracking-[0.25em] uppercase text-neutral-400">
                 Specifications
               </h3>
               
               <div className="space-y-3 divide-y divide-neutral-900 text-xs text-neutral-300">
-                <div className="flex justify-between py-1.5 first:pt-0">
-                  <span className="text-neutral-500">Audio Channels</span>
-                  <span className="font-semibold text-white">Stereo / Dolby 5.1</span>
+                <div className="flex justify-between py-2 first:pt-0">
+                  <span className="text-neutral-500">Audio Format</span>
+                  <span className="font-semibold text-white">Stereo / Dolby Surround</span>
                 </div>
-                <div className="flex justify-between py-1.5">
-                  <span className="text-neutral-500">Video Quality</span>
-                  <span className="font-semibold text-white">4K UHD / 1080p</span>
+                <div className="flex justify-between py-2">
+                  <span className="text-neutral-500">Resolution</span>
+                  <span className="font-semibold text-white">4K Ultra HD</span>
                 </div>
-                <div className="flex justify-between py-1.5">
-                  <span className="text-neutral-500">Provider Source</span>
-                  <span className="font-semibold text-neutral-400 capitalize">{data.providerUrl.split('//').pop()?.split('/')[0] || "HLS Server"}</span>
+                <div className="flex justify-between py-2">
+                  <span className="text-neutral-500">Video CDN Server</span>
+                  <span className="font-semibold text-neutral-400 truncate max-w-[150px]">{data.providerUrl.split('//').pop()?.split('/')[0] || "HLS Server"}</span>
                 </div>
               </div>
             </div>
@@ -236,12 +267,12 @@ export default function PlayerPage() {
         {/* More Like This (Recommendations) */}
         {related.length > 0 && (
           <div className="space-y-6 pt-8 border-t border-neutral-900">
-            <h2 className="text-xs font-bold tracking-[0.2em] uppercase text-neutral-400">
+            <h2 className="text-[10px] font-bold tracking-[0.25em] uppercase text-neutral-400">
               More Like This
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
               {related.map((movie) => (
-                <MovieCard key={movie.id} movie={movie} showTypeBadge={false} />
+                <MovieCard key={movie.id} movie={movie} showTypeBadge={false} isRecommendation={true} />
               ))}
             </div>
           </div>
