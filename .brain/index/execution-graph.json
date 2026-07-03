@@ -1,0 +1,2944 @@
+{
+  "generatedAt": "2026-07-03T14:09:22.406Z",
+  "nodes": [
+    {
+      "id": "app/api/debug-page/route.ts#GET",
+      "symbol": "GET",
+      "file": "app/api/debug-page/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#get",
+      "symbol": "get",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#fetch",
+      "symbol": "fetch",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#text",
+      "symbol": "text",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#match",
+      "symbol": "match",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#push",
+      "symbol": "push",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#indexOf",
+      "symbol": "indexOf",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#substring",
+      "symbol": "substring",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#max",
+      "symbol": "max",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#min",
+      "symbol": "min",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#json",
+      "symbol": "json",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/api/debug-svid/route.ts#UA",
+      "symbol": "UA",
+      "file": "app/api/debug-svid/route.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "app/api/debug-svid/route.ts#BASE",
+      "symbol": "BASE",
+      "file": "app/api/debug-svid/route.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "app/api/debug-svid/route.ts#GET",
+      "symbol": "GET",
+      "file": "app/api/debug-svid/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#URLSearchParams",
+      "symbol": "URLSearchParams",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#append",
+      "symbol": "append",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#pop",
+      "symbol": "pop",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#split",
+      "symbol": "split",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#join",
+      "symbol": "join",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#cwd",
+      "symbol": "cwd",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#writeFileSync",
+      "symbol": "writeFileSync",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/api/episode-source/route.ts#GET",
+      "symbol": "GET",
+      "file": "app/api/episode-source/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#LiveProvider",
+      "symbol": "LiveProvider",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "lib/provider.ts#LiveProvider.getEpisodePostId",
+      "symbol": "LiveProvider.getEpisodePostId",
+      "file": "lib/provider.ts",
+      "kind": "method"
+    },
+    {
+      "id": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "symbol": "resolvePostIdToPlayerUrl",
+      "file": "lib/embedHelper.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#log",
+      "symbol": "log",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#error",
+      "symbol": "error",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/api/movie-detail/route.ts#TMDB_API_KEY",
+      "symbol": "TMDB_API_KEY",
+      "file": "app/api/movie-detail/route.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "app/api/movie-detail/route.ts#GET",
+      "symbol": "GET",
+      "file": "app/api/movie-detail/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#map",
+      "symbol": "map",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#toUpperCase",
+      "symbol": "toUpperCase",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#charAt",
+      "symbol": "charAt",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#slice",
+      "symbol": "slice",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#encodeURIComponent",
+      "symbol": "encodeURIComponent",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#Error",
+      "symbol": "Error",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/api/movie-source/route.ts#GET",
+      "symbol": "GET",
+      "file": "app/api/movie-source/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#getMovie",
+      "symbol": "getMovie",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "lib/embedHelper.ts#getEmbedSources",
+      "symbol": "getEmbedSources",
+      "file": "lib/embedHelper.ts",
+      "kind": "function"
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts#rewriteCssUrls",
+      "symbol": "rewriteCssUrls",
+      "file": "app/api/proxy-asset/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#URL",
+      "symbol": "URL",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#lastIndexOf",
+      "symbol": "lastIndexOf",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#replace",
+      "symbol": "replace",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#startsWith",
+      "symbol": "startsWith",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#proxyAsset",
+      "symbol": "proxyAsset",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts#UA",
+      "symbol": "UA",
+      "file": "app/api/proxy-asset/route.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts#stripDomain",
+      "symbol": "stripDomain",
+      "file": "app/api/proxy-asset/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts#buildResponseHeaders",
+      "symbol": "buildResponseHeaders",
+      "file": "app/api/proxy-asset/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#Headers",
+      "symbol": "Headers",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#set",
+      "symbol": "set",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#getSetCookie",
+      "symbol": "getSetCookie",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts#proxyRequest",
+      "symbol": "proxyRequest",
+      "file": "app/api/proxy-asset/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#decodeURIComponent",
+      "symbol": "decodeURIComponent",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#NextResponse",
+      "symbol": "NextResponse",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#includes",
+      "symbol": "includes",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#arrayBuffer",
+      "symbol": "arrayBuffer",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts#GET",
+      "symbol": "GET",
+      "file": "app/api/proxy-asset/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts#POST",
+      "symbol": "POST",
+      "file": "app/api/proxy-asset/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts#PUT",
+      "symbol": "PUT",
+      "file": "app/api/proxy-asset/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts#PATCH",
+      "symbol": "PATCH",
+      "file": "app/api/proxy-asset/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts#DELETE",
+      "symbol": "DELETE",
+      "file": "app/api/proxy-asset/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts#OPTIONS",
+      "symbol": "OPTIONS",
+      "file": "app/api/proxy-asset/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "app/api/proxy-player/route.ts#rewriteAttributeUrls",
+      "symbol": "rewriteAttributeUrls",
+      "file": "app/api/proxy-player/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "app/api/proxy-player/route.ts#stripAds",
+      "symbol": "stripAds",
+      "file": "app/api/proxy-player/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "app/api/proxy-player/route.ts#buildPatchScript",
+      "symbol": "buildPatchScript",
+      "file": "app/api/proxy-player/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "app/api/proxy-player/route.ts#GET",
+      "symbol": "GET",
+      "file": "app/api/proxy-player/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "app/api/search/route.ts#provider",
+      "symbol": "provider",
+      "file": "app/api/search/route.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "app/api/search/route.ts#GET",
+      "symbol": "GET",
+      "file": "app/api/search/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#trim",
+      "symbol": "trim",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#search",
+      "symbol": "search",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/api/tv-source/route.ts#GET",
+      "symbol": "GET",
+      "file": "app/api/tv-source/route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "lib/provider.ts#LiveProvider.getTvShow",
+      "symbol": "LiveProvider.getTvShow",
+      "file": "lib/provider.ts",
+      "kind": "method"
+    },
+    {
+      "id": "app/layout.tsx#inter",
+      "symbol": "inter",
+      "file": "app/layout.tsx",
+      "kind": "variable"
+    },
+    {
+      "id": "external#Inter",
+      "symbol": "Inter",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/layout.tsx#metadata",
+      "symbol": "metadata",
+      "file": "app/layout.tsx",
+      "kind": "variable"
+    },
+    {
+      "id": "app/layout.tsx#RootLayout",
+      "symbol": "RootLayout",
+      "file": "app/layout.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "app/page.tsx#HomePage",
+      "symbol": "HomePage",
+      "file": "app/page.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "external#useState",
+      "symbol": "useState",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/page.tsx#HomePage.handleSearch",
+      "symbol": "HomePage.handleSearch",
+      "file": "app/page.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "external#setLoading",
+      "symbol": "setLoading",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#searchMovies",
+      "symbol": "searchMovies",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#setMovies",
+      "symbol": "setMovies",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#setQuery",
+      "symbol": "setQuery",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/player/[slug]/page.tsx#MovieInfo",
+      "symbol": "MovieInfo",
+      "file": "app/player/[slug]/page.tsx",
+      "kind": "interface"
+    },
+    {
+      "id": "app/player/[slug]/page.tsx#PlayerResponse",
+      "symbol": "PlayerResponse",
+      "file": "app/player/[slug]/page.tsx",
+      "kind": "interface"
+    },
+    {
+      "id": "app/player/[slug]/page.tsx#PlayerPage",
+      "symbol": "PlayerPage",
+      "file": "app/player/[slug]/page.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "external#useParams",
+      "symbol": "useParams",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#useEffect",
+      "symbol": "useEffect",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/player/[slug]/page.tsx#PlayerPage.load",
+      "symbol": "PlayerPage.load",
+      "file": "app/player/[slug]/page.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "external#setError",
+      "symbol": "setError",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#setData",
+      "symbol": "setData",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#reload",
+      "symbol": "reload",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#back",
+      "symbol": "back",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#toFixed",
+      "symbol": "toFixed",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#setIframeLoading",
+      "symbol": "setIframeLoading",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/test/page.tsx#TestPage",
+      "symbol": "TestPage",
+      "file": "app/test/page.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx#Episode",
+      "symbol": "Episode",
+      "file": "app/tv/[slug]/page.tsx",
+      "kind": "interface"
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx#Season",
+      "symbol": "Season",
+      "file": "app/tv/[slug]/page.tsx",
+      "kind": "interface"
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx#ShowInfo",
+      "symbol": "ShowInfo",
+      "file": "app/tv/[slug]/page.tsx",
+      "kind": "interface"
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx#TvSourceResponse",
+      "symbol": "TvSourceResponse",
+      "file": "app/tv/[slug]/page.tsx",
+      "kind": "interface"
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx#TvShowPage",
+      "symbol": "TvShowPage",
+      "file": "app/tv/[slug]/page.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "external#useRouter",
+      "symbol": "useRouter",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx#TvShowPage.load",
+      "symbol": "TvShowPage.load",
+      "file": "app/tv/[slug]/page.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "external#setSelectedSeason",
+      "symbol": "setSelectedSeason",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#find",
+      "symbol": "find",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/page.tsx#generateMetadata",
+      "symbol": "generateMetadata",
+      "file": "app/watch/[slug]/[season]/[episode]/page.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "external#params",
+      "symbol": "params",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/page.tsx#Page",
+      "symbol": "Page",
+      "file": "app/watch/[slug]/[season]/[episode]/page.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx#Episode",
+      "symbol": "Episode",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "kind": "interface"
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx#Season",
+      "symbol": "Season",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "kind": "interface"
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx#ShowInfo",
+      "symbol": "ShowInfo",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "kind": "interface"
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx#TvSourceResponse",
+      "symbol": "TvSourceResponse",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "kind": "interface"
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "symbol": "EpisodePlayer",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "external#parseInt",
+      "symbol": "parseInt",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer.load",
+      "symbol": "EpisodePlayer.load",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "external#setShow",
+      "symbol": "setShow",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#setResolving",
+      "symbol": "setResolving",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#setPlayerUrl",
+      "symbol": "setPlayerUrl",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#catch",
+      "symbol": "catch",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#then",
+      "symbol": "then",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#useMemo",
+      "symbol": "useMemo",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#findIndex",
+      "symbol": "findIndex",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer.navigate",
+      "symbol": "EpisodePlayer.navigate",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "components/MovieCard.tsx#Props",
+      "symbol": "Props",
+      "file": "components/MovieCard.tsx",
+      "kind": "interface"
+    },
+    {
+      "id": "components/MovieCard.tsx#MovieCard",
+      "symbol": "MovieCard",
+      "file": "components/MovieCard.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "lib/embedHelper.ts#AES_KEY",
+      "symbol": "AES_KEY",
+      "file": "lib/embedHelper.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "lib/embedHelper.ts#AES_IVS",
+      "symbol": "AES_IVS",
+      "file": "lib/embedHelper.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "lib/embedHelper.ts#decryptAES",
+      "symbol": "decryptAES",
+      "file": "lib/embedHelper.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#createDecipheriv",
+      "symbol": "createDecipheriv",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#concat",
+      "symbol": "concat",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#update",
+      "symbol": "update",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#from",
+      "symbol": "from",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#final",
+      "symbol": "final",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#toString",
+      "symbol": "toString",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "lib/embedHelper.ts#tryDecrypt",
+      "symbol": "tryDecrypt",
+      "file": "lib/embedHelper.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#post",
+      "symbol": "post",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#parse",
+      "symbol": "parse",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#keys",
+      "symbol": "keys",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "lib/embedHelper.ts#getHlsUrl",
+      "symbol": "getHlsUrl",
+      "file": "lib/embedHelper.ts",
+      "kind": "function"
+    },
+    {
+      "id": "lib/embedHelper.ts#BASE",
+      "symbol": "BASE",
+      "file": "lib/embedHelper.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "external#String",
+      "symbol": "String",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "lib/embedHelper.ts#resolveSvidToHls",
+      "symbol": "resolveSvidToHls",
+      "file": "lib/embedHelper.ts",
+      "kind": "function"
+    },
+    {
+      "id": "lib/provider.ts#BASE",
+      "symbol": "BASE",
+      "file": "lib/provider.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "lib/provider.ts#LiveProvider",
+      "symbol": "LiveProvider",
+      "file": "lib/provider.ts",
+      "kind": "class"
+    },
+    {
+      "id": "lib/provider.ts#LiveProvider.search",
+      "symbol": "LiveProvider.search",
+      "file": "lib/provider.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#exec",
+      "symbol": "exec",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#entries",
+      "symbol": "entries",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "lib/provider.ts#LiveProvider.slugFromUrl",
+      "symbol": "LiveProvider.slugFromUrl",
+      "file": "lib/provider.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#Number",
+      "symbol": "Number",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "lib/provider.ts#LiveProvider.getMovie",
+      "symbol": "LiveProvider.getMovie",
+      "file": "lib/provider.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#load",
+      "symbol": "load",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#first",
+      "symbol": "first",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#$",
+      "symbol": "$",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#attr",
+      "symbol": "attr",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#each",
+      "symbol": "each",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#html",
+      "symbol": "html",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#toLowerCase",
+      "symbol": "toLowerCase",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#isNaN",
+      "symbol": "isNaN",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#filter",
+      "symbol": "filter",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "next.config.ts#nextConfig",
+      "symbol": "nextConfig",
+      "file": "next.config.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "providers/content-provider.ts#ContentProvider",
+      "symbol": "ContentProvider",
+      "file": "providers/content-provider.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "providers/live-provider.ts#LiveProvider",
+      "symbol": "LiveProvider",
+      "file": "providers/live-provider.ts",
+      "kind": "class"
+    },
+    {
+      "id": "providers/live-provider.ts#LiveProvider.search",
+      "symbol": "LiveProvider.search",
+      "file": "providers/live-provider.ts",
+      "kind": "method"
+    },
+    {
+      "id": "providers/live-provider.ts#LiveProvider.getMovie",
+      "symbol": "LiveProvider.getMovie",
+      "file": "providers/live-provider.ts",
+      "kind": "method"
+    },
+    {
+      "id": "providers/movieProvider.ts#BASE_URL",
+      "symbol": "BASE_URL",
+      "file": "providers/movieProvider.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "providers/movieProvider.ts#SEARCH_API",
+      "symbol": "SEARCH_API",
+      "file": "providers/movieProvider.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "providers/movieProvider.ts#MovieSearchResult",
+      "symbol": "MovieSearchResult",
+      "file": "providers/movieProvider.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "providers/movieProvider.ts#searchMovies",
+      "symbol": "searchMovies",
+      "file": "providers/movieProvider.ts",
+      "kind": "function"
+    },
+    {
+      "id": "providers/movieProvider.ts#getSearchNonce",
+      "symbol": "getSearchNonce",
+      "file": "providers/movieProvider.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#val",
+      "symbol": "val",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "providers/movieProvider.ts#getSvidToken",
+      "symbol": "getSvidToken",
+      "file": "providers/movieProvider.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#toArray",
+      "symbol": "toArray",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "services/search-service.ts#searchMovies",
+      "symbol": "searchMovies",
+      "file": "services/search-service.ts",
+      "kind": "function"
+    },
+    {
+      "id": "tailwind.config.ts#config",
+      "symbol": "config",
+      "file": "tailwind.config.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "types/movie.ts#Movie",
+      "symbol": "Movie",
+      "file": "types/movie.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types/tv.ts#EpisodeInfo",
+      "symbol": "EpisodeInfo",
+      "file": "types/tv.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types/tv.ts#SeasonInfo",
+      "symbol": "SeasonInfo",
+      "file": "types/tv.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types/tv.ts#TvShow",
+      "symbol": "TvShow",
+      "file": "types/tv.ts",
+      "kind": "interface"
+    }
+  ],
+  "edges": [
+    {
+      "from": "app/api/debug-page/route.ts#GET",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-page/route.ts#GET",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/debug-page/route.ts#GET",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-page/route.ts#GET",
+      "to": "external#text",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/debug-page/route.ts#GET",
+      "to": "external#text",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-page/route.ts#GET",
+      "to": "external#match",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-page/route.ts#GET",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-page/route.ts#GET",
+      "to": "external#indexOf",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-page/route.ts#GET",
+      "to": "external#substring",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-page/route.ts#GET",
+      "to": "external#max",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-page/route.ts#GET",
+      "to": "external#min",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-page/route.ts#GET",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#text",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#text",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#match",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#URLSearchParams",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#append",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#json",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#pop",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#cwd",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/debug-svid/route.ts#GET",
+      "to": "external#writeFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/episode-source/route.ts#GET",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/episode-source/route.ts#GET",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/episode-source/route.ts#GET",
+      "to": "external#LiveProvider",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/episode-source/route.ts#GET",
+      "to": "lib/provider.ts#LiveProvider.getEpisodePostId",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/episode-source/route.ts#GET",
+      "to": "lib/provider.ts#LiveProvider.getEpisodePostId",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/episode-source/route.ts#GET",
+      "to": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/episode-source/route.ts#GET",
+      "to": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/episode-source/route.ts#GET",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/episode-source/route.ts#GET",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#toUpperCase",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#charAt",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#slice",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#json",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#substring",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-detail/route.ts#GET",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-source/route.ts#GET",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-source/route.ts#GET",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-source/route.ts#GET",
+      "to": "external#LiveProvider",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/movie-source/route.ts#GET",
+      "to": "external#getMovie",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/movie-source/route.ts#GET",
+      "to": "external#getMovie",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-source/route.ts#GET",
+      "to": "external#match",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-source/route.ts#GET",
+      "to": "lib/embedHelper.ts#getEmbedSources",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/movie-source/route.ts#GET",
+      "to": "lib/embedHelper.ts#getEmbedSources",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-source/route.ts#GET",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-source/route.ts#GET",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/movie-source/route.ts#GET",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#rewriteCssUrls",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#rewriteCssUrls",
+      "to": "external#URL",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#rewriteCssUrls",
+      "to": "external#substring",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#rewriteCssUrls",
+      "to": "external#lastIndexOf",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#rewriteCssUrls",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#rewriteCssUrls",
+      "to": "external#startsWith",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#rewriteCssUrls",
+      "to": "external#proxyAsset",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#stripDomain",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#buildResponseHeaders",
+      "to": "external#Headers",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#buildResponseHeaders",
+      "to": "external#set",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#buildResponseHeaders",
+      "to": "external#getSetCookie",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#buildResponseHeaders",
+      "to": "external#append",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#buildResponseHeaders",
+      "to": "app/api/proxy-asset/route.ts#stripDomain",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#decodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#text",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#text",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#Headers",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#set",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#getSetCookie",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#append",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "app/api/proxy-asset/route.ts#stripDomain",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#NextResponse",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#URL",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#includes",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "app/api/proxy-asset/route.ts#rewriteCssUrls",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "app/api/proxy-asset/route.ts#buildResponseHeaders",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#arrayBuffer",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#arrayBuffer",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#proxyRequest",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#GET",
+      "to": "app/api/proxy-asset/route.ts#proxyRequest",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#POST",
+      "to": "app/api/proxy-asset/route.ts#proxyRequest",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#PUT",
+      "to": "app/api/proxy-asset/route.ts#proxyRequest",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#PATCH",
+      "to": "app/api/proxy-asset/route.ts#proxyRequest",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#DELETE",
+      "to": "app/api/proxy-asset/route.ts#proxyRequest",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-asset/route.ts#OPTIONS",
+      "to": "external#NextResponse",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#rewriteAttributeUrls",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#rewriteAttributeUrls",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#rewriteAttributeUrls",
+      "to": "external#proxyAsset",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#stripAds",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#decodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#URL",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#text",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#text",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "app/api/proxy-player/route.ts#stripAds",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "app/api/proxy-player/route.ts#rewriteAttributeUrls",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "app/api/proxy-player/route.ts#buildPatchScript",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#Headers",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#set",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#getSetCookie",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#append",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#NextResponse",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/proxy-player/route.ts#GET",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/search/route.ts#provider",
+      "to": "external#LiveProvider",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/search/route.ts#GET",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/search/route.ts#GET",
+      "to": "external#URL",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/search/route.ts#GET",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/search/route.ts#GET",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/search/route.ts#GET",
+      "to": "external#search",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/search/route.ts#GET",
+      "to": "external#search",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/search/route.ts#GET",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/tv-source/route.ts#GET",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/tv-source/route.ts#GET",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/tv-source/route.ts#GET",
+      "to": "external#LiveProvider",
+      "type": "constructs"
+    },
+    {
+      "from": "app/api/tv-source/route.ts#GET",
+      "to": "lib/provider.ts#LiveProvider.getTvShow",
+      "type": "awaits"
+    },
+    {
+      "from": "app/api/tv-source/route.ts#GET",
+      "to": "lib/provider.ts#LiveProvider.getTvShow",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/tv-source/route.ts#GET",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "app/api/tv-source/route.ts#GET",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app/layout.tsx#inter",
+      "to": "external#Inter",
+      "type": "calls"
+    },
+    {
+      "from": "app/page.tsx#HomePage",
+      "to": "external#useState",
+      "type": "calls"
+    },
+    {
+      "from": "app/page.tsx#HomePage.handleSearch",
+      "to": "external#setLoading",
+      "type": "calls"
+    },
+    {
+      "from": "app/page.tsx#HomePage.handleSearch",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "app/page.tsx#HomePage.handleSearch",
+      "to": "external#searchMovies",
+      "type": "awaits"
+    },
+    {
+      "from": "app/page.tsx#HomePage.handleSearch",
+      "to": "external#searchMovies",
+      "type": "calls"
+    },
+    {
+      "from": "app/page.tsx#HomePage.handleSearch",
+      "to": "external#setMovies",
+      "type": "calls"
+    },
+    {
+      "from": "app/page.tsx#HomePage.handleSearch",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app/page.tsx#HomePage",
+      "to": "external#setQuery",
+      "type": "calls"
+    },
+    {
+      "from": "app/page.tsx#HomePage",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage",
+      "to": "external#useParams",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage",
+      "to": "external#useState",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage",
+      "to": "external#useEffect",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage.load",
+      "to": "external#setLoading",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage.load",
+      "to": "external#setError",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage.load",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage.load",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage.load",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage.load",
+      "to": "external#json",
+      "type": "awaits"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage.load",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage.load",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage.load",
+      "to": "external#setData",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage",
+      "to": "app/player/[slug]/page.tsx#PlayerPage.load",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage",
+      "to": "external#reload",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage",
+      "to": "external#back",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage",
+      "to": "external#toFixed",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage",
+      "to": "external#setIframeLoading",
+      "type": "calls"
+    },
+    {
+      "from": "app/player/[slug]/page.tsx#PlayerPage",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage",
+      "to": "external#useParams",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage",
+      "to": "external#useRouter",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage",
+      "to": "external#useState",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage",
+      "to": "external#useEffect",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage.load",
+      "to": "external#setLoading",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage.load",
+      "to": "external#setError",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage.load",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage.load",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage.load",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage.load",
+      "to": "external#json",
+      "type": "awaits"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage.load",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage.load",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage.load",
+      "to": "external#setData",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage.load",
+      "to": "external#setSelectedSeason",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage",
+      "to": "app/tv/[slug]/page.tsx#TvShowPage.load",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage",
+      "to": "external#find",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage",
+      "to": "external#back",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage",
+      "to": "external#setSelectedSeason",
+      "type": "calls"
+    },
+    {
+      "from": "app/tv/[slug]/page.tsx#TvShowPage",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/page.tsx#generateMetadata",
+      "to": "external#params",
+      "type": "awaits"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/page.tsx#generateMetadata",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/page.tsx#generateMetadata",
+      "to": "external#toUpperCase",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/page.tsx#generateMetadata",
+      "to": "external#LiveProvider",
+      "type": "constructs"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/page.tsx#generateMetadata",
+      "to": "lib/provider.ts#LiveProvider.getTvShow",
+      "type": "awaits"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/page.tsx#generateMetadata",
+      "to": "lib/provider.ts#LiveProvider.getTvShow",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#useParams",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#useRouter",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#parseInt",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#useState",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#useEffect",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer.load",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer.load",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer.load",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer.load",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer.load",
+      "to": "external#json",
+      "type": "awaits"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer.load",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer.load",
+      "to": "external#setShow",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer.load",
+      "to": "external#setError",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer.load",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#find",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#setError",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#setResolving",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#setPlayerUrl",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#catch",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#then",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#useMemo",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#findIndex",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer.navigate",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#back",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "external#reload",
+      "type": "calls"
+    },
+    {
+      "from": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer",
+      "to": "app/watch/[slug]/[season]/[episode]/player.tsx#EpisodePlayer.navigate",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#decryptAES",
+      "to": "external#createDecipheriv",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#decryptAES",
+      "to": "external#concat",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#decryptAES",
+      "to": "external#update",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#decryptAES",
+      "to": "external#from",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#decryptAES",
+      "to": "external#final",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#decryptAES",
+      "to": "external#toString",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#tryDecrypt",
+      "to": "lib/embedHelper.ts#decryptAES",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#tryDecrypt",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "lib/embedHelper.ts#getEmbedSources",
+      "to": "external#URLSearchParams",
+      "type": "constructs"
+    },
+    {
+      "from": "lib/embedHelper.ts#getEmbedSources",
+      "to": "external#append",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getEmbedSources",
+      "to": "external#post",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/embedHelper.ts#getEmbedSources",
+      "to": "external#post",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getEmbedSources",
+      "to": "external#toString",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getEmbedSources",
+      "to": "external#from",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getEmbedSources",
+      "to": "external#parse",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getEmbedSources",
+      "to": "external#keys",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getEmbedSources",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getEmbedSources",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getHlsUrl",
+      "to": "external#match",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getHlsUrl",
+      "to": "external#decodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getHlsUrl",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getHlsUrl",
+      "to": "external#pop",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getHlsUrl",
+      "to": "external#URL",
+      "type": "constructs"
+    },
+    {
+      "from": "lib/embedHelper.ts#getHlsUrl",
+      "to": "external#get",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/embedHelper.ts#getHlsUrl",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getHlsUrl",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getHlsUrl",
+      "to": "lib/embedHelper.ts#tryDecrypt",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getHlsUrl",
+      "to": "external#parse",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getHlsUrl",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#getHlsUrl",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "to": "external#URLSearchParams",
+      "type": "constructs"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "to": "external#append",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "to": "external#String",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "to": "external#json",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "to": "external#pop",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "to": "lib/embedHelper.ts#getEmbedSources",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "to": "lib/embedHelper.ts#getEmbedSources",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolvePostIdToPlayerUrl",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolveSvidToHls",
+      "to": "lib/embedHelper.ts#getEmbedSources",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolveSvidToHls",
+      "to": "lib/embedHelper.ts#getEmbedSources",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolveSvidToHls",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolveSvidToHls",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolveSvidToHls",
+      "to": "lib/embedHelper.ts#getHlsUrl",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/embedHelper.ts#resolveSvidToHls",
+      "to": "lib/embedHelper.ts#getHlsUrl",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "external#text",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "external#text",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "external#exec",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "external#json",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "external#entries",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "lib/provider.ts#LiveProvider.slugFromUrl",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "external#Number",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "external#includes",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.search",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#text",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#text",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#load",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#first",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#$",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#Number",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#attr",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#match",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#URLSearchParams",
+      "type": "constructs"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#append",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#json",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#pop",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#each",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#includes",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#html",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#toLowerCase",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#indexOf",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#max",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#lastIndexOf",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#substring",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getMovie",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#text",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#text",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#load",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#first",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#$",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#Number",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#attr",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#each",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#parseInt",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#find",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#isNaN",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#pop",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#filter",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getTvShow",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getEpisodePostId",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getEpisodePostId",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getEpisodePostId",
+      "to": "external#text",
+      "type": "awaits"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getEpisodePostId",
+      "to": "external#text",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getEpisodePostId",
+      "to": "external#match",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.getEpisodePostId",
+      "to": "external#parseInt",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.slugFromUrl",
+      "to": "external#filter",
+      "type": "calls"
+    },
+    {
+      "from": "lib/provider.ts#LiveProvider.slugFromUrl",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#searchMovies",
+      "to": "external#get",
+      "type": "awaits"
+    },
+    {
+      "from": "providers/movieProvider.ts#searchMovies",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSearchNonce",
+      "to": "external#get",
+      "type": "awaits"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSearchNonce",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSearchNonce",
+      "to": "external#load",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSearchNonce",
+      "to": "external#text",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSearchNonce",
+      "to": "external#$",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSearchNonce",
+      "to": "external#match",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSearchNonce",
+      "to": "external#val",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSearchNonce",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSvidToken",
+      "to": "external#get",
+      "type": "awaits"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSvidToken",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSvidToken",
+      "to": "external#load",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSvidToken",
+      "to": "external#attr",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSvidToken",
+      "to": "external#$",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSvidToken",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSvidToken",
+      "to": "external#toArray",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSvidToken",
+      "to": "external#html",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSvidToken",
+      "to": "external#match",
+      "type": "calls"
+    },
+    {
+      "from": "providers/movieProvider.ts#getSvidToken",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "services/search-service.ts#searchMovies",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "services/search-service.ts#searchMovies",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "services/search-service.ts#searchMovies",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "services/search-service.ts#searchMovies",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "services/search-service.ts#searchMovies",
+      "to": "external#json",
+      "type": "calls"
+    }
+  ]
+}

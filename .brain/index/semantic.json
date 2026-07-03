@@ -1,0 +1,3023 @@
+{
+  "generatedAt": "2026-07-03T14:09:22.408Z",
+  "entries": [
+    {
+      "id": "app/api/debug-page/route.ts::GET",
+      "file": "app/api/debug-page/route.ts",
+      "terms": [
+        "get"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-page/route.ts::slug",
+      "file": "app/api/debug-page/route.ts",
+      "terms": [
+        "slug"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-page/route.ts::url",
+      "file": "app/api/debug-page/route.ts",
+      "terms": [
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-page/route.ts::response",
+      "file": "app/api/debug-page/route.ts",
+      "terms": [
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-page/route.ts::html",
+      "file": "app/api/debug-page/route.ts",
+      "terms": [
+        "html"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-page/route.ts::pageSize",
+      "file": "app/api/debug-page/route.ts",
+      "terms": [
+        "page",
+        "size"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-page/route.ts::svidPatterns",
+      "file": "app/api/debug-page/route.ts",
+      "terms": [
+        "svid",
+        "patterns"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-page/route.ts::matches",
+      "file": "app/api/debug-page/route.ts",
+      "terms": [
+        "matches"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-page/route.ts::pattern",
+      "file": "app/api/debug-page/route.ts",
+      "terms": [
+        "pattern"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-page/route.ts::found",
+      "file": "app/api/debug-page/route.ts",
+      "terms": [
+        "found"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-page/route.ts::svidIndex",
+      "file": "app/api/debug-page/route.ts",
+      "terms": [
+        "svid",
+        "index"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-page/route.ts::context",
+      "file": "app/api/debug-page/route.ts",
+      "terms": [
+        "context"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-page/route.ts::playerSection",
+      "file": "app/api/debug-page/route.ts",
+      "terms": [
+        "player",
+        "section"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-page/route.ts::error",
+      "file": "app/api/debug-page/route.ts",
+      "terms": [
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::UA",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "ua"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::BASE",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "base"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::GET",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "get"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::slug",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "slug"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::url",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::response",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::html",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "html"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::postIdMatch",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "post",
+        "id",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::postId",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "post",
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::playerUrl",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "player",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::method",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "method"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::error",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::formData",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "form",
+        "data"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::epResp",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "ep",
+        "resp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::epData",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "ep",
+        "data"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::embedUrl",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "embed",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::fileId",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "file",
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::e",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "e"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::savedHtml",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "saved",
+        "html"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::htmlPath",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "html",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::debugDir",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "debug",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::filePath",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "file",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/debug-svid/route.ts::err",
+      "file": "app/api/debug-svid/route.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/episode-source/route.ts::GET",
+      "file": "app/api/episode-source/route.ts",
+      "terms": [
+        "get"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/episode-source/route.ts::slug",
+      "file": "app/api/episode-source/route.ts",
+      "terms": [
+        "slug"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/episode-source/route.ts::provider",
+      "file": "app/api/episode-source/route.ts",
+      "terms": [
+        "provider"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/episode-source/route.ts::postId",
+      "file": "app/api/episode-source/route.ts",
+      "terms": [
+        "post",
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/episode-source/route.ts::playerUrl",
+      "file": "app/api/episode-source/route.ts",
+      "terms": [
+        "player",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/episode-source/route.ts::err",
+      "file": "app/api/episode-source/route.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-detail/route.ts::TMDB_API_KEY",
+      "file": "app/api/movie-detail/route.ts",
+      "terms": [
+        "tmdb",
+        "api",
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-detail/route.ts::GET",
+      "file": "app/api/movie-detail/route.ts",
+      "terms": [
+        "get"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-detail/route.ts::slug",
+      "file": "app/api/movie-detail/route.ts",
+      "terms": [
+        "slug"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-detail/route.ts::searchTitle",
+      "file": "app/api/movie-detail/route.ts",
+      "terms": [
+        "search",
+        "title"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-detail/route.ts::searchRes",
+      "file": "app/api/movie-detail/route.ts",
+      "terms": [
+        "search",
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-detail/route.ts::searchData",
+      "file": "app/api/movie-detail/route.ts",
+      "terms": [
+        "search",
+        "data"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-detail/route.ts::movie",
+      "file": "app/api/movie-detail/route.ts",
+      "terms": [
+        "movie"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-detail/route.ts::tmdbId",
+      "file": "app/api/movie-detail/route.ts",
+      "terms": [
+        "tmdb",
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-detail/route.ts::detailRes",
+      "file": "app/api/movie-detail/route.ts",
+      "terms": [
+        "detail",
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-detail/route.ts::detailData",
+      "file": "app/api/movie-detail/route.ts",
+      "terms": [
+        "detail",
+        "data"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-detail/route.ts::imdbId",
+      "file": "app/api/movie-detail/route.ts",
+      "terms": [
+        "imdb",
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-detail/route.ts::error",
+      "file": "app/api/movie-detail/route.ts",
+      "terms": [
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-source/route.ts::GET",
+      "file": "app/api/movie-source/route.ts",
+      "terms": [
+        "get"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-source/route.ts::slug",
+      "file": "app/api/movie-source/route.ts",
+      "terms": [
+        "slug"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-source/route.ts::provider",
+      "file": "app/api/movie-source/route.ts",
+      "terms": [
+        "provider"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-source/route.ts::movie",
+      "file": "app/api/movie-source/route.ts",
+      "terms": [
+        "movie"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-source/route.ts::svidMatch",
+      "file": "app/api/movie-source/route.ts",
+      "terms": [
+        "svid",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-source/route.ts::svidToken",
+      "file": "app/api/movie-source/route.ts",
+      "terms": [
+        "svid",
+        "token"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-source/route.ts::sources",
+      "file": "app/api/movie-source/route.ts",
+      "terms": [
+        "sources"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-source/route.ts::providerUrl",
+      "file": "app/api/movie-source/route.ts",
+      "terms": [
+        "provider",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-source/route.ts::playerUrl",
+      "file": "app/api/movie-source/route.ts",
+      "terms": [
+        "player",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/movie-source/route.ts::err",
+      "file": "app/api/movie-source/route.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::rewriteCssUrls",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "rewrite",
+        "css",
+        "urls"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::proxyAsset",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "proxy",
+        "asset"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::cssBase",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "css",
+        "base"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::cssUri",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "css",
+        "uri"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::dir",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::resolved",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "resolved"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::UA",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "ua"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::stripDomain",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "strip",
+        "domain"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::buildResponseHeaders",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "build",
+        "response",
+        "headers"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::headers",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "headers"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::upstreamCookies",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "upstream",
+        "cookies"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::cookie",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "cookie"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::proxyRequest",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "proxy",
+        "request"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::url",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::decodedUrl",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "decoded",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::upstreamHeaders",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "upstream",
+        "headers"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::ct",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "ct"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::cookies",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "cookies"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::body",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "body"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::response",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::respHeaders",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "resp",
+        "headers"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::upstreamCookies",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "upstream",
+        "cookies"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::cookie",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "cookie"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::serverOrigin",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "server",
+        "origin"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::contentType",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "content",
+        "type"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::sourceOrigin",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "source",
+        "origin"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::text",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "text"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::rewritten",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "rewritten"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::buf",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "buf"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::error",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::GET",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "get"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::POST",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "post"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::PUT",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "put"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::PATCH",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "patch"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::DELETE",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "delete"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-asset/route.ts::OPTIONS",
+      "file": "app/api/proxy-asset/route.ts",
+      "terms": [
+        "options"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::rewriteAttributeUrls",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "rewrite",
+        "attribute",
+        "urls"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::proxyAsset",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "proxy",
+        "asset"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::stripAds",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "strip",
+        "ads"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::buildPatchScript",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "build",
+        "patch",
+        "script"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::GET",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "get"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::url",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::decodedUrl",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "decoded",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::vidlinkOrigin",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "vidlink",
+        "origin"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::serverOrigin",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "server",
+        "origin"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::upstreamHeaders",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "upstream",
+        "headers"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::browserCookies",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "browser",
+        "cookies"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::response",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::html",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "html"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::patchScript",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "patch",
+        "script"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::respHeaders",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "resp",
+        "headers"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::upstreamCookies",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "upstream",
+        "cookies"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::cookie",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "cookie"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/proxy-player/route.ts::error",
+      "file": "app/api/proxy-player/route.ts",
+      "terms": [
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/search/route.ts::provider",
+      "file": "app/api/search/route.ts",
+      "terms": [
+        "provider"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/search/route.ts::GET",
+      "file": "app/api/search/route.ts",
+      "terms": [
+        "get"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/search/route.ts::q",
+      "file": "app/api/search/route.ts",
+      "terms": [
+        "q"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/search/route.ts::movies",
+      "file": "app/api/search/route.ts",
+      "terms": [
+        "movies"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/search/route.ts::err",
+      "file": "app/api/search/route.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/tv-source/route.ts::GET",
+      "file": "app/api/tv-source/route.ts",
+      "terms": [
+        "get"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/tv-source/route.ts::slug",
+      "file": "app/api/tv-source/route.ts",
+      "terms": [
+        "slug"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/tv-source/route.ts::provider",
+      "file": "app/api/tv-source/route.ts",
+      "terms": [
+        "provider"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/tv-source/route.ts::show",
+      "file": "app/api/tv-source/route.ts",
+      "terms": [
+        "show"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/api/tv-source/route.ts::err",
+      "file": "app/api/tv-source/route.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/layout.tsx::inter",
+      "file": "app/layout.tsx",
+      "terms": [
+        "inter"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/layout.tsx::metadata",
+      "file": "app/layout.tsx",
+      "terms": [
+        "metadata"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/layout.tsx::RootLayout",
+      "file": "app/layout.tsx",
+      "terms": [
+        "root",
+        "layout"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/page.tsx::HomePage",
+      "file": "app/page.tsx",
+      "terms": [
+        "home",
+        "page"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/page.tsx::handleSearch",
+      "file": "app/page.tsx",
+      "terms": [
+        "handle",
+        "search"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/page.tsx::result",
+      "file": "app/page.tsx",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/page.tsx::err",
+      "file": "app/page.tsx",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/player/[slug]/page.tsx::MovieInfo",
+      "file": "app/player/[slug]/page.tsx",
+      "terms": [
+        "movie",
+        "info"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/player/[slug]/page.tsx::PlayerResponse",
+      "file": "app/player/[slug]/page.tsx",
+      "terms": [
+        "player",
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/player/[slug]/page.tsx::PlayerPage",
+      "file": "app/player/[slug]/page.tsx",
+      "terms": [
+        "player",
+        "page"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/player/[slug]/page.tsx::params",
+      "file": "app/player/[slug]/page.tsx",
+      "terms": [
+        "params"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/player/[slug]/page.tsx::slug",
+      "file": "app/player/[slug]/page.tsx",
+      "terms": [
+        "slug"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/player/[slug]/page.tsx::load",
+      "file": "app/player/[slug]/page.tsx",
+      "terms": [
+        "load"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/player/[slug]/page.tsx::res",
+      "file": "app/player/[slug]/page.tsx",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/player/[slug]/page.tsx::err",
+      "file": "app/player/[slug]/page.tsx",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/player/[slug]/page.tsx::result",
+      "file": "app/player/[slug]/page.tsx",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/player/[slug]/page.tsx::err",
+      "file": "app/player/[slug]/page.tsx",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/test/page.tsx::TestPage",
+      "file": "app/test/page.tsx",
+      "terms": [
+        "test",
+        "page"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx::Episode",
+      "file": "app/tv/[slug]/page.tsx",
+      "terms": [
+        "episode"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx::Season",
+      "file": "app/tv/[slug]/page.tsx",
+      "terms": [
+        "season"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx::ShowInfo",
+      "file": "app/tv/[slug]/page.tsx",
+      "terms": [
+        "show",
+        "info"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx::TvSourceResponse",
+      "file": "app/tv/[slug]/page.tsx",
+      "terms": [
+        "tv",
+        "source",
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx::TvShowPage",
+      "file": "app/tv/[slug]/page.tsx",
+      "terms": [
+        "tv",
+        "show",
+        "page"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx::params",
+      "file": "app/tv/[slug]/page.tsx",
+      "terms": [
+        "params"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx::router",
+      "file": "app/tv/[slug]/page.tsx",
+      "terms": [
+        "router"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx::slug",
+      "file": "app/tv/[slug]/page.tsx",
+      "terms": [
+        "slug"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx::load",
+      "file": "app/tv/[slug]/page.tsx",
+      "terms": [
+        "load"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx::res",
+      "file": "app/tv/[slug]/page.tsx",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx::err",
+      "file": "app/tv/[slug]/page.tsx",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx::result",
+      "file": "app/tv/[slug]/page.tsx",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx::err",
+      "file": "app/tv/[slug]/page.tsx",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/tv/[slug]/page.tsx::currentSeasonEpisodes",
+      "file": "app/tv/[slug]/page.tsx",
+      "terms": [
+        "current",
+        "season",
+        "episodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/page.tsx::generateMetadata",
+      "file": "app/watch/[slug]/[season]/[episode]/page.tsx",
+      "terms": [
+        "generate",
+        "metadata"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/page.tsx::season",
+      "file": "app/watch/[slug]/[season]/[episode]/page.tsx",
+      "terms": [
+        "season"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/page.tsx::episode",
+      "file": "app/watch/[slug]/[season]/[episode]/page.tsx",
+      "terms": [
+        "episode"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/page.tsx::title",
+      "file": "app/watch/[slug]/[season]/[episode]/page.tsx",
+      "terms": [
+        "title"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/page.tsx::description",
+      "file": "app/watch/[slug]/[season]/[episode]/page.tsx",
+      "terms": [
+        "description"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/page.tsx::provider",
+      "file": "app/watch/[slug]/[season]/[episode]/page.tsx",
+      "terms": [
+        "provider"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/page.tsx::show",
+      "file": "app/watch/[slug]/[season]/[episode]/page.tsx",
+      "terms": [
+        "show"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/page.tsx::Page",
+      "file": "app/watch/[slug]/[season]/[episode]/page.tsx",
+      "terms": [
+        "page"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::Episode",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "episode"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::Season",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "season"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::ShowInfo",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "show",
+        "info"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::TvSourceResponse",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "tv",
+        "source",
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::EpisodePlayer",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "episode",
+        "player"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::params",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "params"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::router",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "router"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::slug",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "slug"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::seasonRaw",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "season",
+        "raw"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::episodeRaw",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "episode",
+        "raw"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::currentSeason",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "current",
+        "season"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::currentEpisode",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "current",
+        "episode"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::load",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "load"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::res",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::data",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "data"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::s",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "s"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::ep",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "ep"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::flatEpisodes",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "flat",
+        "episodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::flat",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "flat"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::s",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "s"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::ep",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "ep"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::currentIdx",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "current",
+        "idx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::prev",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "prev"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::next",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "next"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::navigate",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "navigate"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::episodeTitle",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "episode",
+        "title"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "app/watch/[slug]/[season]/[episode]/player.tsx::s",
+      "file": "app/watch/[slug]/[season]/[episode]/player.tsx",
+      "terms": [
+        "s"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "components/MovieCard.tsx::Props",
+      "file": "components/MovieCard.tsx",
+      "terms": [
+        "props"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "components/MovieCard.tsx::MovieCard",
+      "file": "components/MovieCard.tsx",
+      "terms": [
+        "movie",
+        "card"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "components/MovieCard.tsx::href",
+      "file": "components/MovieCard.tsx",
+      "terms": [
+        "href"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "eslint.config.mjs::eslintConfig",
+      "file": "eslint.config.mjs",
+      "terms": [
+        "eslint",
+        "config"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::AES_KEY",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "aes",
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::AES_IVS",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "aes",
+        "ivs"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::decryptAES",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "decrypt",
+        "aes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::decipher",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "decipher"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::decrypted",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "decrypted"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::tryDecrypt",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "try",
+        "decrypt"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::iv",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "iv"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::getEmbedSources",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "get",
+        "embed",
+        "sources"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::host",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "host"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::sid",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "sid"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::formData",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "form",
+        "data"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::response",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::data",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "data"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::siteUrls",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "site",
+        "urls"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::mresult",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "mresult"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::decoded",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "decoded"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::siteFriendlyNames",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "site",
+        "friendly",
+        "names"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::sources",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "sources"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::key",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::baseUrl",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "base",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::hash",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "hash"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::getHlsUrl",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "get",
+        "hls",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::innerUrlMatch",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "inner",
+        "url",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::effectiveUrl",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "effective",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::hash",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "hash"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::baseUrl",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "base",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::response",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::hexCiphertext",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "hex",
+        "ciphertext"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::decryptedJson",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "decrypted",
+        "json"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::parsed",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "parsed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::m3u8Url",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "m3u8",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::BASE",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "base"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::resolvePostIdToPlayerUrl",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "resolve",
+        "post",
+        "id",
+        "to",
+        "player",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::embedForm",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "embed",
+        "form"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::epResp",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "ep",
+        "resp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::epData",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "ep",
+        "data"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::embedUrl",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "embed",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::fileId",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "file",
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::svidToken",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "svid",
+        "token"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::sources",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "sources"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::providerUrl",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "provider",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::playerUrl",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "player",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::resolveSvidToHls",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "resolve",
+        "svid",
+        "to",
+        "hls"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::sources",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "sources"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::source",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "source"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/embedHelper.ts::err",
+      "file": "lib/embedHelper.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::BASE",
+      "file": "lib/provider.ts",
+      "terms": [
+        "base"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::LiveProvider",
+      "file": "lib/provider.ts",
+      "terms": [
+        "live",
+        "provider"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::search",
+      "file": "lib/provider.ts",
+      "terms": [
+        "search"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::homeResp",
+      "file": "lib/provider.ts",
+      "terms": [
+        "home",
+        "resp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::homeHtml",
+      "file": "lib/provider.ts",
+      "terms": [
+        "home",
+        "html"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::nonceMatch",
+      "file": "lib/provider.ts",
+      "terms": [
+        "nonce",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::nonce",
+      "file": "lib/provider.ts",
+      "terms": [
+        "nonce"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::searchUrl",
+      "file": "lib/provider.ts",
+      "terms": [
+        "search",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::searchResp",
+      "file": "lib/provider.ts",
+      "terms": [
+        "search",
+        "resp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::raw",
+      "file": "lib/provider.ts",
+      "terms": [
+        "raw"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::err",
+      "file": "lib/provider.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::getMovie",
+      "file": "lib/provider.ts",
+      "terms": [
+        "get",
+        "movie"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::url",
+      "file": "lib/provider.ts",
+      "terms": [
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::response",
+      "file": "lib/provider.ts",
+      "terms": [
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::html",
+      "file": "lib/provider.ts",
+      "terms": [
+        "html"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::$",
+      "file": "lib/provider.ts",
+      "terms": [
+        "$"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::titleText",
+      "file": "lib/provider.ts",
+      "terms": [
+        "title",
+        "text"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::year",
+      "file": "lib/provider.ts",
+      "terms": [
+        "year"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::description",
+      "file": "lib/provider.ts",
+      "terms": [
+        "description"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::poster",
+      "file": "lib/provider.ts",
+      "terms": [
+        "poster"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::backdrop",
+      "file": "lib/provider.ts",
+      "terms": [
+        "backdrop"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::genres",
+      "file": "lib/provider.ts",
+      "terms": [
+        "genres"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::playerUrl",
+      "file": "lib/provider.ts",
+      "terms": [
+        "player",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::shortlinkMatch",
+      "file": "lib/provider.ts",
+      "terms": [
+        "shortlink",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::postId",
+      "file": "lib/provider.ts",
+      "terms": [
+        "post",
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::embedForm",
+      "file": "lib/provider.ts",
+      "terms": [
+        "embed",
+        "form"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::epResp",
+      "file": "lib/provider.ts",
+      "terms": [
+        "ep",
+        "resp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::epData",
+      "file": "lib/provider.ts",
+      "terms": [
+        "ep",
+        "data"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::embedUrl",
+      "file": "lib/provider.ts",
+      "terms": [
+        "embed",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::fileId",
+      "file": "lib/provider.ts",
+      "terms": [
+        "file",
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::src",
+      "file": "lib/provider.ts",
+      "terms": [
+        "src"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::text",
+      "file": "lib/provider.ts",
+      "terms": [
+        "text"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::m",
+      "file": "lib/provider.ts",
+      "terms": [
+        "m"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::htmlLower",
+      "file": "lib/provider.ts",
+      "terms": [
+        "html",
+        "lower"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::svidIndex",
+      "file": "lib/provider.ts",
+      "terms": [
+        "svid",
+        "index"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::start",
+      "file": "lib/provider.ts",
+      "terms": [
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::endQuote",
+      "file": "lib/provider.ts",
+      "terms": [
+        "end",
+        "quote"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::endDQuote",
+      "file": "lib/provider.ts",
+      "terms": [
+        "end",
+        "d",
+        "quote"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::end",
+      "file": "lib/provider.ts",
+      "terms": [
+        "end"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::err",
+      "file": "lib/provider.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::getTvShow",
+      "file": "lib/provider.ts",
+      "terms": [
+        "get",
+        "tv",
+        "show"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::url",
+      "file": "lib/provider.ts",
+      "terms": [
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::response",
+      "file": "lib/provider.ts",
+      "terms": [
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::html",
+      "file": "lib/provider.ts",
+      "terms": [
+        "html"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::$",
+      "file": "lib/provider.ts",
+      "terms": [
+        "$"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::titleText",
+      "file": "lib/provider.ts",
+      "terms": [
+        "title",
+        "text"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::year",
+      "file": "lib/provider.ts",
+      "terms": [
+        "year"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::description",
+      "file": "lib/provider.ts",
+      "terms": [
+        "description"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::poster",
+      "file": "lib/provider.ts",
+      "terms": [
+        "poster"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::backdrop",
+      "file": "lib/provider.ts",
+      "terms": [
+        "backdrop"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::genres",
+      "file": "lib/provider.ts",
+      "terms": [
+        "genres"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::seasons",
+      "file": "lib/provider.ts",
+      "terms": [
+        "seasons"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::seasonNum",
+      "file": "lib/provider.ts",
+      "terms": [
+        "season",
+        "num"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::episodes",
+      "file": "lib/provider.ts",
+      "terms": [
+        "episodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::numerando",
+      "file": "lib/provider.ts",
+      "terms": [
+        "numerando"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::parts",
+      "file": "lib/provider.ts",
+      "terms": [
+        "parts"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::epNum",
+      "file": "lib/provider.ts",
+      "terms": [
+        "ep",
+        "num"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::title",
+      "file": "lib/provider.ts",
+      "terms": [
+        "title"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::epHref",
+      "file": "lib/provider.ts",
+      "terms": [
+        "ep",
+        "href"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::epSlug",
+      "file": "lib/provider.ts",
+      "terms": [
+        "ep",
+        "slug"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::err",
+      "file": "lib/provider.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::getEpisodePostId",
+      "file": "lib/provider.ts",
+      "terms": [
+        "get",
+        "episode",
+        "post",
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::url",
+      "file": "lib/provider.ts",
+      "terms": [
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::response",
+      "file": "lib/provider.ts",
+      "terms": [
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::html",
+      "file": "lib/provider.ts",
+      "terms": [
+        "html"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::bodyMatch",
+      "file": "lib/provider.ts",
+      "terms": [
+        "body",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::dataPostMatch",
+      "file": "lib/provider.ts",
+      "terms": [
+        "data",
+        "post",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::shortlinkMatch",
+      "file": "lib/provider.ts",
+      "terms": [
+        "shortlink",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::slugFromUrl",
+      "file": "lib/provider.ts",
+      "terms": [
+        "slug",
+        "from",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "lib/provider.ts::parts",
+      "file": "lib/provider.ts",
+      "terms": [
+        "parts"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "next.config.ts::nextConfig",
+      "file": "next.config.ts",
+      "terms": [
+        "next",
+        "config"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "postcss.config.mjs::config",
+      "file": "postcss.config.mjs",
+      "terms": [
+        "config"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/content-provider.ts::ContentProvider",
+      "file": "providers/content-provider.ts",
+      "terms": [
+        "content",
+        "provider"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/live-provider.ts::LiveProvider",
+      "file": "providers/live-provider.ts",
+      "terms": [
+        "live",
+        "provider"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/live-provider.ts::search",
+      "file": "providers/live-provider.ts",
+      "terms": [
+        "search"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/live-provider.ts::getMovie",
+      "file": "providers/live-provider.ts",
+      "terms": [
+        "get",
+        "movie"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::BASE_URL",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "base",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::SEARCH_API",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "search",
+        "api"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::MovieSearchResult",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "movie",
+        "search",
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::searchMovies",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "search",
+        "movies"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::response",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::getSearchNonce",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "get",
+        "search",
+        "nonce"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::response",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::html",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "html"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::$",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "$"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::scriptContent",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "script",
+        "content"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::match",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::nonceInput",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "nonce",
+        "input"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::getSvidToken",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "get",
+        "svid",
+        "token"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::movieUrl",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "movie",
+        "url"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::response",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::html",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "html"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::$",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "$"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::iframeSrc",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "iframe",
+        "src"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::token",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "token"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::linkHref",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "link",
+        "href"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::token",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "token"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::scripts",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "scripts"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::script",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "script"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::text",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "text"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "providers/movieProvider.ts::match",
+      "file": "providers/movieProvider.ts",
+      "terms": [
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "services/search-service.ts::searchMovies",
+      "file": "services/search-service.ts",
+      "terms": [
+        "search",
+        "movies"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "services/search-service.ts::res",
+      "file": "services/search-service.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "tailwind.config.ts::config",
+      "file": "tailwind.config.ts",
+      "terms": [
+        "config"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types/movie.ts::Movie",
+      "file": "types/movie.ts",
+      "terms": [
+        "movie"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types/tv.ts::EpisodeInfo",
+      "file": "types/tv.ts",
+      "terms": [
+        "episode",
+        "info"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types/tv.ts::SeasonInfo",
+      "file": "types/tv.ts",
+      "terms": [
+        "season",
+        "info"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types/tv.ts::TvShow",
+      "file": "types/tv.ts",
+      "terms": [
+        "tv",
+        "show"
+      ],
+      "weight": 100
+    }
+  ]
+}
