@@ -1,6 +1,7 @@
 // lib/provider.ts
 import type { Movie } from '@/types/movie';
 import type { TvShow, SeasonInfo, EpisodeInfo } from '@/types/tv';
+import type { AjaxResponse } from '@/types/api';
 import * as cheerio from "cheerio";
 
 const BASE = 'https://multimovies.watch';
@@ -25,7 +26,16 @@ export class LiveProvider {
       if (!searchResp.ok) {
         throw new Error(`Search endpoint returned ${searchResp.status}`);
       }
-      const raw = (await searchResp.json()) as Record<string, any>;
+      interface SearchRecord {
+        title: string;
+        url: string;
+        img?: string;
+        extra?: {
+          date?: string;
+          imdb?: string;
+        };
+      }
+      const raw = (await searchResp.json()) as Record<string, SearchRecord>;
 
       /* 3. Convert to array of Movie --------------------------------- */
       return Object.entries(raw).map(([id, rec]) => ({
@@ -37,8 +47,9 @@ export class LiveProvider {
         rating: rec.extra?.imdb ? Number(rec.extra.imdb) : undefined,
         type: rec.url?.includes('/tvshows/') ? 'tv' as const : 'movie' as const,
       }));
-    } catch (err: any) {
-      console.error('[LiveProvider.search] error:', err.message);
+    } catch (err: unknown) {
+      const errMsg = err instanceof Error ? err.message : String(err);
+      console.error('[LiveProvider.search] error:', errMsg);
       throw err; // re‑throw so the route can format it
     }
   }
@@ -99,7 +110,7 @@ export class LiveProvider {
             });
 
             if (epResp.ok) {
-              const epData = await epResp.json() as Record<string, any>;
+              const epData = await epResp.json() as AjaxResponse;
               const embedUrl: string | undefined = epData.embed_url;
               if (embedUrl) {
                 const fileId = embedUrl.split('/').pop() || '';
@@ -148,11 +159,6 @@ export class LiveProvider {
         const htmlLower = html.toLowerCase();
         const svidIndex = htmlLower.indexOf('pro.iqsmartgames.com/svid/');
         if (svidIndex !== -1) {
-          const start = Math.max(0, html.lastIndexOf("'", svidIndex) !== -1
-            ? html.lastIndexOf("'", svidIndex) + 1
-            : html.lastIndexOf('"', svidIndex) !== -1
-            ? html.lastIndexOf('"', svidIndex) + 1
-            : svidIndex);
           const endQuote = html.indexOf("'", svidIndex);
           const endDQuote = html.indexOf('"', svidIndex);
           const end = endQuote !== -1 && (endDQuote === -1 || endQuote < endDQuote) ? endQuote : endDQuote;
@@ -176,8 +182,9 @@ export class LiveProvider {
         rating: undefined,
         playerUrl,
       };
-    } catch (err: any) {
-      console.error('[LiveProvider.getMovie] error:', err.message);
+    } catch (err: unknown) {
+      const errMsg = err instanceof Error ? err.message : String(err);
+      console.error('[LiveProvider.getMovie] error:', errMsg);
       return null;
     }
   }
@@ -267,8 +274,9 @@ export class LiveProvider {
         rating: undefined,
         seasons,
       };
-    } catch (err: any) {
-      console.error('[LiveProvider.getTvShow] error:', err.message);
+    } catch (err: unknown) {
+      const errMsg = err instanceof Error ? err.message : String(err);
+      console.error('[LiveProvider.getTvShow] error:', errMsg);
       return null;
     }
   }

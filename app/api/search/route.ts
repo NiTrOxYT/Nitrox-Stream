@@ -14,13 +14,14 @@ export async function GET(request: Request) {
   try {
     const movies = await provider.search(q);
     return NextResponse.json(movies);
-  } catch (err: any) {
+  } catch (err: unknown) {
     // 500 only if the provider throws – otherwise the client sees an empty array
-    console.error('[GET /api/search] failed:', err.message);
+    const errMsg = err instanceof Error ? err.message : String(err);
+    console.error('[GET /api/search] failed:', errMsg);
     return NextResponse.json(
       {
         error: 'Failed to fetch search results',
-        detail: err.message,
+        detail: errMsg,
       },
       { status: 500 }
     );

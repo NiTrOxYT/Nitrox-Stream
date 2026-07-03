@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import * as fs from 'fs';
 import * as path from 'path';
+import type { AjaxResponse } from '@/types/api';
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 const BASE = 'https://multimovies.watch';
@@ -46,7 +47,7 @@ export async function GET(request: NextRequest) {
         });
 
         if (epResp.ok) {
-          const epData = await epResp.json() as Record<string, any>;
+          const epData = await epResp.json() as AjaxResponse;
           const embedUrl: string | undefined = epData.embed_url;
           if (embedUrl) {
             const fileId = embedUrl.split('/').pop() || '';
@@ -54,8 +55,8 @@ export async function GET(request: NextRequest) {
             method = 'wp-post-id';
           }
         }
-      } catch (e: any) {
-        error = e.message;
+      } catch (e: unknown) {
+        error = e instanceof Error ? e.message : String(e);
       }
     }
 
@@ -81,7 +82,8 @@ export async function GET(request: NextRequest) {
       htmlPath,
       error,
     });
-  } catch (err: any) {
-    return NextResponse.json({ slug, success: false, error: err.message });
+  } catch (err: unknown) {
+    const errMsg = err instanceof Error ? err.message : 'Unknown error';
+    return NextResponse.json({ slug, success: false, error: errMsg });
   }
 }

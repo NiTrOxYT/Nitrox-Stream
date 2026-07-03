@@ -1,15 +1,15 @@
-export interface EpisodeInfo {
+export interface Episode {
   episode: number;
   title: string;
   slug: string;
 }
 
-export interface SeasonInfo {
+export interface Season {
   season: number;
-  episodes: EpisodeInfo[];
+  episodes: Episode[];
 }
 
-export interface TvShow {
+export interface TVShow {
   id: string;
   title: string;
   slug: string;
@@ -19,5 +19,9 @@ export interface TvShow {
   description?: string;
   genres?: string[];
   rating?: number;
-  seasons: SeasonInfo[];
+  seasons: Season[];
 }
+
+export type TvShow = TVShow;
+export type EpisodeInfo = Episode;
+export type SeasonInfo = Season;

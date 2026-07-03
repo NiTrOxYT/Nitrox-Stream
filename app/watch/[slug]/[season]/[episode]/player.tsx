@@ -65,29 +65,34 @@ export default function EpisodePlayer() {
 
     const s = show.seasons.find((se) => se.season === currentSeason);
     const ep = s?.episodes.find((e) => e.episode === currentEpisode);
-    if (!ep) {
-      setError(`Episode S${currentSeason} E${currentEpisode} not found`);
-      setResolving(false);
-      return;
-    }
 
-    setError(null);
-    setResolving(true);
-    setPlayerUrl(null);
+    const resolveEpisode = async () => {
+      await Promise.resolve(); // Defer to prevent calling setState synchronously during useEffect execution
 
-    fetch(`/api/episode-source?slug=${encodeURIComponent(ep.slug)}`)
-      .then((res) => {
+      if (!ep) {
+        setError(`Episode S${currentSeason} E${currentEpisode} not found`);
+        setResolving(false);
+        return;
+      }
+
+      setError(null);
+      setResolving(true);
+      setPlayerUrl(null);
+
+      try {
+        const res = await fetch(`/api/episode-source?slug=${encodeURIComponent(ep.slug)}`);
         if (!res.ok) throw new Error('Failed to resolve');
-        return res.json();
-      })
-      .then((data) => {
+        const data = (await res.json()) as { playerUrl: string };
         setPlayerUrl(data.playerUrl);
+      } catch (err: unknown) {
+        const errMsg = err instanceof Error ? err.message : 'Unknown error';
+        setError(errMsg);
+      } finally {
         setResolving(false);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setResolving(false);
-      });
+      }
+    };
+
+    resolveEpisode();
   }, [show, currentSeason, currentEpisode]);
 
   // Flat list of all episodes for prev/next across seasons

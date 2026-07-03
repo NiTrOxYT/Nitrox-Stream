@@ -178,10 +178,11 @@ export async function GET(request: NextRequest) {
     }
 
     return new NextResponse(html, { headers: respHeaders });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Proxy error:', error);
+    const message = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json(
-      { error: 'Failed to proxy player', details: error.message },
+      { error: 'Failed to proxy player', details: message },
       { status: 500 }
     );
   }

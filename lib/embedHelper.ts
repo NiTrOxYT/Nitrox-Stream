@@ -1,6 +1,7 @@
 // lib/embedHelper.ts
 import axios from 'axios';
-import { createCipheriv, createDecipheriv } from 'crypto';
+import { createDecipheriv } from 'crypto';
+import type { EmbedSource, AjaxResponse } from '@/types/api';
 
 const AES_KEY = 'kiemtienmua911ca';
 const AES_IVS = ['1234567890oiuytr', '0123456789abcdef'];
@@ -34,7 +35,13 @@ function tryDecrypt(hexCiphertext: string): string {
 /**
  * Step 1: POST to embedhelper.php to get sources + mresult
  */
-export async function getEmbedSources(svidToken: string) {
+interface EmbedHelperResponse {
+  siteUrls?: Record<string, string>;
+  mresult?: string | Record<string, string>;
+  siteFriendlyNames?: Record<string, string>;
+}
+
+export async function getEmbedSources(svidToken: string): Promise<EmbedSource[]> {
   const host = 'https://pro.iqsmartgames.com';
   const sid = svidToken; // The token after /svid/
 
@@ -43,7 +50,7 @@ export async function getEmbedSources(svidToken: string) {
   formData.append('UserFavSite', '');
   formData.append('currentDomain', 'https://multimovies.watch');
 
-  const response = await axios.post(`${host}/embedhelper.php`, formData, {
+  const response = await axios.post<EmbedHelperResponse>(`${host}/embedhelper.php`, formData, {
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
       'User-Agent':
@@ -105,7 +112,7 @@ export async function getHlsUrl(providerUrl: string): Promise<string> {
   const hash = effectiveUrl.split('#').pop()?.split('/').pop() || '';
   const baseUrl = new URL(effectiveUrl).origin;
 
-  const response = await axios.get(`${baseUrl}/api/v1/video?id=${hash}`, {
+  const response = await axios.get<string>(`${baseUrl}/api/v1/video?id=${hash}`, {
     headers: {
       'User-Agent':
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0',
@@ -116,7 +123,7 @@ export async function getHlsUrl(providerUrl: string): Promise<string> {
 
   const hexCiphertext = response.data.trim();
   const decryptedJson = tryDecrypt(hexCiphertext);
-  const parsed = JSON.parse(decryptedJson);
+  const parsed = JSON.parse(decryptedJson) as { source?: string };
 
   // The "source" field contains the HLS master playlist URL
   const m3u8Url = parsed.source?.replace(/\\\//g, '/');
@@ -157,7 +164,7 @@ export async function resolvePostIdToPlayerUrl(
     throw new Error(`admin-ajax returned ${epResp.status}`);
   }
 
-  const epData = (await epResp.json()) as Record<string, any>;
+  const epData = (await epResp.json()) as AjaxResponse;
   const embedUrl: string | undefined = epData.embed_url;
   if (!embedUrl) {
     throw new Error('No embed_url in admin-ajax response');
@@ -189,8 +196,9 @@ export async function resolveSvidToHls(svidToken: string): Promise<string> {
     try {
       console.log(`Trying source: ${source.name} (${source.key})`);
       return await getHlsUrl(source.url);
-    } catch (err: any) {
-      console.log(`Source ${source.name} failed: ${err.message}`);
+    } catch (err: unknown) {
+      const errMsg = err instanceof Error ? err.message : String(err);
+      console.log(`Source ${source.name} failed: ${errMsg}`);
       continue;
     }
   }

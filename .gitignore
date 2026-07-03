@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+#Brain-AI
+.brain/cache
+.brain/snapshots
+.brain/retrieval-cache
+.brain/provider-events.jsonl
+.brain/provider-verification.json
+.brain/providers.lock.json

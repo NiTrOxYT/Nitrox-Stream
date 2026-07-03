@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-// Suppress TS error when project lacks a declaration for CSS side-effect imports
-// @ts-ignore: CSS module declaration not found in this environment
 import "./globals.css";
 
 const inter = Inter({

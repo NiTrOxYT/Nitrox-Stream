@@ -42,8 +42,9 @@ export default function PlayerPage() {
 
         const result: PlayerResponse = await res.json();
         setData(result);
-      } catch (err: any) {
-        setError(err.message);
+      } catch (err: unknown) {
+        const errMsg = err instanceof Error ? err.message : 'Unknown error';
+        setError(errMsg);
       } finally {
         setLoading(false);
       }

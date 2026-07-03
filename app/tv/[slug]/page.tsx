@@ -55,8 +55,9 @@ export default function TvShowPage() {
         if (result.seasons.length > 0) {
           setSelectedSeason(result.seasons[0].season);
         }
-      } catch (err: any) {
-        setError(err.message);
+      } catch (err: unknown) {
+        const errMsg = err instanceof Error ? err.message : 'Unknown error';
+        setError(errMsg);
       } finally {
         setLoading(false);
       }

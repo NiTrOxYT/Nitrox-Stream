@@ -124,10 +124,11 @@ async function proxyRequest(request: NextRequest, method: string) {
       status: 200,
       headers: buildResponseHeaders(response, serverOrigin, contentType),
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Asset proxy error:', error);
+    const message = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json(
-      { error: 'Failed to proxy asset', details: error.message },
+      { error: 'Failed to proxy asset', details: message },
       { status: 500 }
     );
   }

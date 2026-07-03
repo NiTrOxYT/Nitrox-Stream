@@ -36,10 +36,11 @@ export async function GET(request: NextRequest) {
         })),
       })),
     });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error('[tv-source] error:', err);
+    const message = err instanceof Error ? err.message : 'Internal server error';
     return NextResponse.json(
-      { error: err.message || 'Internal server error' },
+      { error: message },
       { status: 500 }
     );
   }
