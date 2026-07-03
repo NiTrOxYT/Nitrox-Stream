@@ -16,19 +16,34 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nitrox-stream.vercel.app"),
   title: "NITROX CINEVERSE",
-  description: "Experience premium movie and TV streaming with an elegant cinematic interface. Discover thousands of movies, TV shows, anime, and episodes in one beautifully designed streaming platform.",
+  description: "Experience premium movie, TV show and anime streaming with NITROX CINEVERSE.",
   keywords: ["movies", "tv shows", "anime", "streaming", "cineverse", "nitrox", "cinema", "watch online"],
   openGraph: {
     title: "NITROX CINEVERSE",
-    description: "Experience premium movie and TV streaming with an elegant cinematic interface. Discover thousands of movies, TV shows, anime, and episodes in one beautifully designed streaming platform.",
+    description: "Experience premium movie, TV show and anime streaming with NITROX CINEVERSE.",
     type: "website",
     siteName: "NITROX CINEVERSE",
+    images: [
+      {
+        url: "/cover.png",
+        width: 1200,
+        height: 630,
+        alt: "NITROX CINEVERSE",
+      }
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "NITROX CINEVERSE",
-    description: "Experience premium movie and TV streaming with an elegant cinematic interface. Discover thousands of movies, TV shows, anime, and episodes in one beautifully designed streaming platform.",
+    description: "Experience premium movie, TV show and anime streaming with NITROX CINEVERSE.",
+    images: ["/cover.png"],
+  },
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png"
   }
 };
 
