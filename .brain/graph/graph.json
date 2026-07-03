@@ -1,0 +1,370 @@
+{
+  "generatedAt": "2026-07-03T05:23:41.936Z",
+  "nodes": [
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "type": "file"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "type": "file"
+    },
+    {
+      "id": "app\\api\\debug-page\\route.ts",
+      "type": "file"
+    },
+    {
+      "id": "app\\api\\embed-sources\\resolve\\route.ts",
+      "type": "file"
+    },
+    {
+      "id": "app\\api\\embed-sources\\route.ts",
+      "type": "file"
+    },
+    {
+      "id": "app\\api\\movie-detail\\route.ts",
+      "type": "file"
+    },
+    {
+      "id": "app\\api\\proxy-player\\route.ts",
+      "type": "file"
+    },
+    {
+      "id": "app\\api\\search\\route.ts",
+      "type": "file"
+    },
+    {
+      "id": "app\\layout.tsx",
+      "type": "file"
+    },
+    {
+      "id": "app\\page.tsx",
+      "type": "file"
+    },
+    {
+      "id": "app\\player\\[slug]\\page.tsx",
+      "type": "file"
+    },
+    {
+      "id": "components\\MovieCard.tsx",
+      "type": "file"
+    },
+    {
+      "id": "lib\\embedHelper.ts",
+      "type": "file"
+    },
+    {
+      "id": "lib\\provider.ts",
+      "type": "file"
+    },
+    {
+      "id": "next.config.ts",
+      "type": "file"
+    },
+    {
+      "id": "providers\\content-provider.ts",
+      "type": "file"
+    },
+    {
+      "id": "providers\\live-provider.ts",
+      "type": "file"
+    },
+    {
+      "id": "providers\\movieProvider.ts",
+      "type": "file"
+    },
+    {
+      "id": "services\\search-service.ts",
+      "type": "file"
+    },
+    {
+      "id": "tailwind.config.ts",
+      "type": "file"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "type": "file"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "type": "file"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts",
+      "type": "file"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts",
+      "type": "file"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts",
+      "type": "file"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "type": "file"
+    },
+    {
+      "id": ".next\\types\\cache-life.d.ts",
+      "type": "file"
+    }
+  ],
+  "edges": [
+    {
+      "from": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "to": "../../../../../app/api/debug-page/route.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "to": "next/server.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "to": "../../../../../app/api/embed-sources/route.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "to": "next/server.js",
+      "type": "imports"
+    },
+    {
+      "from": "app\\api\\debug-page\\route.ts",
+      "to": "next/server",
+      "type": "imports"
+    },
+    {
+      "from": "app\\api\\embed-sources\\resolve\\route.ts",
+      "to": "next/server",
+      "type": "imports"
+    },
+    {
+      "from": "app\\api\\embed-sources\\resolve\\route.ts",
+      "to": "@/lib/embedHelper",
+      "type": "imports"
+    },
+    {
+      "from": "app\\api\\embed-sources\\route.ts",
+      "to": "next/server",
+      "type": "imports"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts",
+      "to": "next/server",
+      "type": "imports"
+    },
+    {
+      "from": "app\\api\\proxy-player\\route.ts",
+      "to": "next/server",
+      "type": "imports"
+    },
+    {
+      "from": "app\\api\\search\\route.ts",
+      "to": "next/server",
+      "type": "imports"
+    },
+    {
+      "from": "app\\api\\search\\route.ts",
+      "to": "@/lib/provider",
+      "type": "imports"
+    },
+    {
+      "from": "app\\layout.tsx",
+      "to": "next",
+      "type": "imports"
+    },
+    {
+      "from": "app\\layout.tsx",
+      "to": "next/font/google",
+      "type": "imports"
+    },
+    {
+      "from": "app\\layout.tsx",
+      "to": "./globals.css",
+      "type": "imports"
+    },
+    {
+      "from": "app\\page.tsx",
+      "to": "react",
+      "type": "imports"
+    },
+    {
+      "from": "app\\page.tsx",
+      "to": "@/services/search-service",
+      "type": "imports"
+    },
+    {
+      "from": "app\\page.tsx",
+      "to": "@/components/MovieCard",
+      "type": "imports"
+    },
+    {
+      "from": "app\\page.tsx",
+      "to": "@/types/movie",
+      "type": "imports"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx",
+      "to": "react",
+      "type": "imports"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx",
+      "to": "next/navigation",
+      "type": "imports"
+    },
+    {
+      "from": "components\\MovieCard.tsx",
+      "to": "next/link",
+      "type": "imports"
+    },
+    {
+      "from": "components\\MovieCard.tsx",
+      "to": "@/types/movie",
+      "type": "imports"
+    },
+    {
+      "from": "lib\\embedHelper.ts",
+      "to": "axios",
+      "type": "imports"
+    },
+    {
+      "from": "lib\\embedHelper.ts",
+      "to": "crypto",
+      "type": "imports"
+    },
+    {
+      "from": "lib\\provider.ts",
+      "to": "@/types/movie",
+      "type": "imports"
+    },
+    {
+      "from": "lib\\provider.ts",
+      "to": "cheerio",
+      "type": "imports"
+    },
+    {
+      "from": "next.config.ts",
+      "to": "next",
+      "type": "imports"
+    },
+    {
+      "from": "providers\\content-provider.ts",
+      "to": "@/types/movie",
+      "type": "imports"
+    },
+    {
+      "from": "providers\\live-provider.ts",
+      "to": "providers\\content-provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "providers\\live-provider.ts",
+      "to": "@/types/movie",
+      "type": "imports"
+    },
+    {
+      "from": "providers\\movieProvider.ts",
+      "to": "axios",
+      "type": "imports"
+    },
+    {
+      "from": "providers\\movieProvider.ts",
+      "to": "cheerio",
+      "type": "imports"
+    },
+    {
+      "from": "services\\search-service.ts",
+      "to": "@/types/movie",
+      "type": "imports"
+    },
+    {
+      "from": "tailwind.config.ts",
+      "to": "tailwindcss",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "to": "../../../../../app/api/movie-detail/route.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "to": "next/server.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "to": "../../../../../app/api/proxy-player/route.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "to": "next/server.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\api\\search\\route.ts",
+      "to": "../../../../../app/api/search/route.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\api\\search\\route.ts",
+      "to": "next/server.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\layout.ts",
+      "to": "../../../app/layout.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\layout.ts",
+      "to": "next/dist/lib/metadata/types/metadata-interface.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\page.ts",
+      "to": "../../../app/page.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\page.ts",
+      "to": "next/dist/lib/metadata/types/metadata-interface.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "to": "../../../../../app/player/[slug]/page.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "to": "next/dist/lib/metadata/types/metadata-interface.js",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\cache-life.d.ts",
+      "to": "next/dist/server/web/spec-extension/unstable-cache",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\cache-life.d.ts",
+      "to": "next/dist/server/web/spec-extension/revalidate",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\cache-life.d.ts",
+      "to": "next/dist/server/web/spec-extension/unstable-no-store",
+      "type": "imports"
+    },
+    {
+      "from": ".next\\types\\cache-life.d.ts",
+      "to": "next/dist/server/use-cache/cache-tag",
+      "type": "imports"
+    }
+  ]
+}

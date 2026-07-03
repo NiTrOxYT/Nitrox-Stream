@@ -1,0 +1,3128 @@
+{
+  "generatedAt": "2026-07-03T05:23:41.927Z",
+  "nodes": [
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#TEntry",
+      "symbol": "TEntry",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#SegmentParams",
+      "symbol": "SegmentParams",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#RouteContext",
+      "symbol": "RouteContext",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#PageProps",
+      "symbol": "PageProps",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#LayoutProps",
+      "symbol": "LayoutProps",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#RevalidateRange",
+      "symbol": "RevalidateRange",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#OmitWithTag",
+      "symbol": "OmitWithTag",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#Diff",
+      "symbol": "Diff",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#FirstArg",
+      "symbol": "FirstArg",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#SecondArg",
+      "symbol": "SecondArg",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#MaybeField",
+      "symbol": "MaybeField",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#ParamCheck",
+      "symbol": "ParamCheck",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#checkFields",
+      "symbol": "checkFields",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "function"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#Numeric",
+      "symbol": "Numeric",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#Zero",
+      "symbol": "Zero",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#Negative",
+      "symbol": "Negative",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\debug-page\\route.ts#NonNegative",
+      "symbol": "NonNegative",
+      "file": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#TEntry",
+      "symbol": "TEntry",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#SegmentParams",
+      "symbol": "SegmentParams",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#RouteContext",
+      "symbol": "RouteContext",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#PageProps",
+      "symbol": "PageProps",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#LayoutProps",
+      "symbol": "LayoutProps",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#RevalidateRange",
+      "symbol": "RevalidateRange",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#OmitWithTag",
+      "symbol": "OmitWithTag",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#Diff",
+      "symbol": "Diff",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#FirstArg",
+      "symbol": "FirstArg",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#SecondArg",
+      "symbol": "SecondArg",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#MaybeField",
+      "symbol": "MaybeField",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#ParamCheck",
+      "symbol": "ParamCheck",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#checkFields",
+      "symbol": "checkFields",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "function"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#Numeric",
+      "symbol": "Numeric",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#Zero",
+      "symbol": "Zero",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#Negative",
+      "symbol": "Negative",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\embed-sources\\route.ts#NonNegative",
+      "symbol": "NonNegative",
+      "file": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": "app\\api\\debug-page\\route.ts#GET",
+      "symbol": "GET",
+      "file": "app\\api\\debug-page\\route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#get",
+      "symbol": "get",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#fetch",
+      "symbol": "fetch",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#text",
+      "symbol": "text",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#match",
+      "symbol": "match",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#push",
+      "symbol": "push",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#indexOf",
+      "symbol": "indexOf",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#substring",
+      "symbol": "substring",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#max",
+      "symbol": "max",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#min",
+      "symbol": "min",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#json",
+      "symbol": "json",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app\\api\\embed-sources\\resolve\\route.ts#POST",
+      "symbol": "POST",
+      "file": "app\\api\\embed-sources\\resolve\\route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "lib\\embedHelper.ts#getHlsUrl",
+      "symbol": "getHlsUrl",
+      "file": "lib\\embedHelper.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#error",
+      "symbol": "error",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app\\api\\embed-sources\\route.ts#POST",
+      "symbol": "POST",
+      "file": "app\\api\\embed-sources\\route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "app\\api\\movie-detail\\route.ts#TMDB_API_KEY",
+      "symbol": "TMDB_API_KEY",
+      "file": "app\\api\\movie-detail\\route.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "app\\api\\movie-detail\\route.ts#GET",
+      "symbol": "GET",
+      "file": "app\\api\\movie-detail\\route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#join",
+      "symbol": "join",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#map",
+      "symbol": "map",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#split",
+      "symbol": "split",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#toUpperCase",
+      "symbol": "toUpperCase",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#charAt",
+      "symbol": "charAt",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#slice",
+      "symbol": "slice",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#encodeURIComponent",
+      "symbol": "encodeURIComponent",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#Error",
+      "symbol": "Error",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app\\api\\proxy-player\\route.ts#GET",
+      "symbol": "GET",
+      "file": "app\\api\\proxy-player\\route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#decodeURIComponent",
+      "symbol": "decodeURIComponent",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#replace",
+      "symbol": "replace",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#URL",
+      "symbol": "URL",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#NextResponse",
+      "symbol": "NextResponse",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app\\api\\search\\route.ts#provider",
+      "symbol": "provider",
+      "file": "app\\api\\search\\route.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "external#LiveProvider",
+      "symbol": "LiveProvider",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app\\api\\search\\route.ts#GET",
+      "symbol": "GET",
+      "file": "app\\api\\search\\route.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#trim",
+      "symbol": "trim",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#search",
+      "symbol": "search",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app\\layout.tsx#inter",
+      "symbol": "inter",
+      "file": "app\\layout.tsx",
+      "kind": "variable"
+    },
+    {
+      "id": "external#Inter",
+      "symbol": "Inter",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app\\layout.tsx#metadata",
+      "symbol": "metadata",
+      "file": "app\\layout.tsx",
+      "kind": "variable"
+    },
+    {
+      "id": "app\\layout.tsx#RootLayout",
+      "symbol": "RootLayout",
+      "file": "app\\layout.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "app\\page.tsx#HomePage",
+      "symbol": "HomePage",
+      "file": "app\\page.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "external#useState",
+      "symbol": "useState",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app\\page.tsx#HomePage.handleSearch",
+      "symbol": "HomePage.handleSearch",
+      "file": "app\\page.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "external#setLoading",
+      "symbol": "setLoading",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#log",
+      "symbol": "log",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#searchMovies",
+      "symbol": "searchMovies",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#setMovies",
+      "symbol": "setMovies",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#setQuery",
+      "symbol": "setQuery",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app\\player\\[slug]\\page.tsx#PlayerPage",
+      "symbol": "PlayerPage",
+      "file": "app\\player\\[slug]\\page.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "external#useParams",
+      "symbol": "useParams",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#useEffect",
+      "symbol": "useEffect",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app\\player\\[slug]\\page.tsx#PlayerPage.loadMovie",
+      "symbol": "PlayerPage.loadMovie",
+      "file": "app\\player\\[slug]\\page.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "external#setError",
+      "symbol": "setError",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#setMovieInfo",
+      "symbol": "setMovieInfo",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#setEmbedUrl",
+      "symbol": "setEmbedUrl",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#reload",
+      "symbol": "reload",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#back",
+      "symbol": "back",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "app\\test\\page.tsx#TestPage",
+      "symbol": "TestPage",
+      "file": "app\\test\\page.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "components\\MovieCard.tsx#Props",
+      "symbol": "Props",
+      "file": "components\\MovieCard.tsx",
+      "kind": "interface"
+    },
+    {
+      "id": "components\\MovieCard.tsx#MovieCard",
+      "symbol": "MovieCard",
+      "file": "components\\MovieCard.tsx",
+      "kind": "function"
+    },
+    {
+      "id": "lib\\embedHelper.ts#AES_KEY",
+      "symbol": "AES_KEY",
+      "file": "lib\\embedHelper.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "lib\\embedHelper.ts#AES_IVS",
+      "symbol": "AES_IVS",
+      "file": "lib\\embedHelper.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "lib\\embedHelper.ts#decryptAES",
+      "symbol": "decryptAES",
+      "file": "lib\\embedHelper.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#createDecipheriv",
+      "symbol": "createDecipheriv",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#concat",
+      "symbol": "concat",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#update",
+      "symbol": "update",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#from",
+      "symbol": "from",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#final",
+      "symbol": "final",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#toString",
+      "symbol": "toString",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "lib\\embedHelper.ts#tryDecrypt",
+      "symbol": "tryDecrypt",
+      "file": "lib\\embedHelper.ts",
+      "kind": "function"
+    },
+    {
+      "id": "lib\\embedHelper.ts#getEmbedSources",
+      "symbol": "getEmbedSources",
+      "file": "lib\\embedHelper.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#URLSearchParams",
+      "symbol": "URLSearchParams",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#append",
+      "symbol": "append",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#post",
+      "symbol": "post",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#parse",
+      "symbol": "parse",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#keys",
+      "symbol": "keys",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#pop",
+      "symbol": "pop",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "lib\\embedHelper.ts#resolveSvidToHls",
+      "symbol": "resolveSvidToHls",
+      "file": "lib\\embedHelper.ts",
+      "kind": "function"
+    },
+    {
+      "id": "lib\\provider.ts#BASE",
+      "symbol": "BASE",
+      "file": "lib\\provider.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "lib\\provider.ts#LiveProvider",
+      "symbol": "LiveProvider",
+      "file": "lib\\provider.ts",
+      "kind": "class"
+    },
+    {
+      "id": "lib\\provider.ts#LiveProvider.search",
+      "symbol": "LiveProvider.search",
+      "file": "lib\\provider.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#exec",
+      "symbol": "exec",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#entries",
+      "symbol": "entries",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "lib\\provider.ts#LiveProvider.slugFromUrl",
+      "symbol": "LiveProvider.slugFromUrl",
+      "file": "lib\\provider.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#Number",
+      "symbol": "Number",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "lib\\provider.ts#LiveProvider.getMovie",
+      "symbol": "LiveProvider.getMovie",
+      "file": "lib\\provider.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#load",
+      "symbol": "load",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#first",
+      "symbol": "first",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#$",
+      "symbol": "$",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#attr",
+      "symbol": "attr",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#filter",
+      "symbol": "filter",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "next.config.ts#nextConfig",
+      "symbol": "nextConfig",
+      "file": "next.config.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "providers\\content-provider.ts#ContentProvider",
+      "symbol": "ContentProvider",
+      "file": "providers\\content-provider.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "providers\\live-provider.ts#LiveProvider",
+      "symbol": "LiveProvider",
+      "file": "providers\\live-provider.ts",
+      "kind": "class"
+    },
+    {
+      "id": "providers\\live-provider.ts#LiveProvider.search",
+      "symbol": "LiveProvider.search",
+      "file": "providers\\live-provider.ts",
+      "kind": "method"
+    },
+    {
+      "id": "providers\\live-provider.ts#LiveProvider.getMovie",
+      "symbol": "LiveProvider.getMovie",
+      "file": "providers\\live-provider.ts",
+      "kind": "method"
+    },
+    {
+      "id": "providers\\movieProvider.ts#BASE_URL",
+      "symbol": "BASE_URL",
+      "file": "providers\\movieProvider.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "providers\\movieProvider.ts#SEARCH_API",
+      "symbol": "SEARCH_API",
+      "file": "providers\\movieProvider.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "providers\\movieProvider.ts#MovieSearchResult",
+      "symbol": "MovieSearchResult",
+      "file": "providers\\movieProvider.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "providers\\movieProvider.ts#searchMovies",
+      "symbol": "searchMovies",
+      "file": "providers\\movieProvider.ts",
+      "kind": "function"
+    },
+    {
+      "id": "providers\\movieProvider.ts#getSearchNonce",
+      "symbol": "getSearchNonce",
+      "file": "providers\\movieProvider.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#val",
+      "symbol": "val",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "providers\\movieProvider.ts#getSvidToken",
+      "symbol": "getSvidToken",
+      "file": "providers\\movieProvider.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#toArray",
+      "symbol": "toArray",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#html",
+      "symbol": "html",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "services\\search-service.ts#searchMovies",
+      "symbol": "searchMovies",
+      "file": "services\\search-service.ts",
+      "kind": "function"
+    },
+    {
+      "id": "tailwind.config.ts#config",
+      "symbol": "config",
+      "file": "tailwind.config.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "types\\movie.ts#Movie",
+      "symbol": "Movie",
+      "file": "types\\movie.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\server\\webpack-runtime.js#__webpack_require__",
+      "symbol": "__webpack_require__",
+      "file": ".next\\server\\webpack-runtime.js",
+      "kind": "function"
+    },
+    {
+      "id": "external#__webpack_modules__[moduleId]",
+      "symbol": "__webpack_modules__[moduleId]",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#__webpack_require__",
+      "symbol": "__webpack_require__",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": "external#forEach",
+      "symbol": "forEach",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#handler",
+      "symbol": "handler",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#call",
+      "symbol": "call",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#createRequire",
+      "symbol": "createRequire",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": "external#warn",
+      "symbol": "warn",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#require",
+      "symbol": "require",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#defineProperty",
+      "symbol": "defineProperty",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#createPropertyDescriptor",
+      "symbol": "createPropertyDescriptor",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#trackBlockingPromise",
+      "symbol": "trackBlockingPromise",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#e",
+      "symbol": "e",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#createModuleHotObject",
+      "symbol": "createModuleHotObject",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": "external#__webpack_require__",
+      "symbol": "__webpack_require__",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#splice",
+      "symbol": "splice",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#__webpack_require__.hmrI[key]",
+      "symbol": "__webpack_require__.hmrI[key]",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#setStatus",
+      "symbol": "setStatus",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#setStatus",
+      "symbol": "setStatus",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": "external#all",
+      "symbol": "all",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#unblock",
+      "symbol": "unblock",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": "external#then",
+      "symbol": "then",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#list[i]",
+      "symbol": "list[i]",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#trackBlockingPromise",
+      "symbol": "trackBlockingPromise",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#waitForBlockingPromises",
+      "symbol": "waitForBlockingPromises",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": "external#fn",
+      "symbol": "fn",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#Promise",
+      "symbol": "Promise",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#resolve",
+      "symbol": "resolve",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#hotCheck",
+      "symbol": "hotCheck",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": "external#applyInvalidatedModules",
+      "symbol": "applyInvalidatedModules",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#reduce",
+      "symbol": "reduce",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#__webpack_require__.hmrC[key]",
+      "symbol": "__webpack_require__.hmrC[key]",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#waitForBlockingPromises",
+      "symbol": "waitForBlockingPromises",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#internalApply",
+      "symbol": "internalApply",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#hotApply",
+      "symbol": "hotApply",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#internalApply",
+      "symbol": "internalApply",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": "external#dispose",
+      "symbol": "dispose",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#apply",
+      "symbol": "apply",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#applyInvalidatedModules",
+      "symbol": "applyInvalidatedModules",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#loadUpdateChunk",
+      "symbol": "loadUpdateChunk",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": "external#hu",
+      "symbol": "hu",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#reject",
+      "symbol": "reject",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#l",
+      "symbol": "l",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "symbol": "applyHandler",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#applyHandler.getAffectedModuleEffects",
+      "symbol": "applyHandler.getAffectedModuleEffects",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": "external#addAllToSet",
+      "symbol": "addAllToSet",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": ".next\\static\\chunks\\webpack.js#applyHandler.addAllToSet",
+      "symbol": "applyHandler.addAllToSet",
+      "file": ".next\\static\\chunks\\webpack.js",
+      "kind": "function"
+    },
+    {
+      "id": "external#o",
+      "symbol": "o",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#getAffectedModuleEffects",
+      "symbol": "getAffectedModuleEffects",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#onDeclined",
+      "symbol": "onDeclined",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#onUnaccepted",
+      "symbol": "onUnaccepted",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#onAccepted",
+      "symbol": "onAccepted",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#onDisposed",
+      "symbol": "onDisposed",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#currentUpdateRuntime[i]",
+      "symbol": "currentUpdateRuntime[i]",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#errorHandlers[k]",
+      "symbol": "errorHandlers[k]",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#onErrored",
+      "symbol": "onErrored",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#reportError",
+      "symbol": "reportError",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#errorHandler",
+      "symbol": "errorHandler",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#TEntry",
+      "symbol": "TEntry",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#SegmentParams",
+      "symbol": "SegmentParams",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#RouteContext",
+      "symbol": "RouteContext",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#PageProps",
+      "symbol": "PageProps",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#LayoutProps",
+      "symbol": "LayoutProps",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#RevalidateRange",
+      "symbol": "RevalidateRange",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#OmitWithTag",
+      "symbol": "OmitWithTag",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#Diff",
+      "symbol": "Diff",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#FirstArg",
+      "symbol": "FirstArg",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#SecondArg",
+      "symbol": "SecondArg",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#MaybeField",
+      "symbol": "MaybeField",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#ParamCheck",
+      "symbol": "ParamCheck",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#checkFields",
+      "symbol": "checkFields",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "function"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#Numeric",
+      "symbol": "Numeric",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#Zero",
+      "symbol": "Zero",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#Negative",
+      "symbol": "Negative",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\movie-detail\\route.ts#NonNegative",
+      "symbol": "NonNegative",
+      "file": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#TEntry",
+      "symbol": "TEntry",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#SegmentParams",
+      "symbol": "SegmentParams",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#RouteContext",
+      "symbol": "RouteContext",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#PageProps",
+      "symbol": "PageProps",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#LayoutProps",
+      "symbol": "LayoutProps",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#RevalidateRange",
+      "symbol": "RevalidateRange",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#OmitWithTag",
+      "symbol": "OmitWithTag",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#Diff",
+      "symbol": "Diff",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#FirstArg",
+      "symbol": "FirstArg",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#SecondArg",
+      "symbol": "SecondArg",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#MaybeField",
+      "symbol": "MaybeField",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#ParamCheck",
+      "symbol": "ParamCheck",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#checkFields",
+      "symbol": "checkFields",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "function"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#Numeric",
+      "symbol": "Numeric",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#Zero",
+      "symbol": "Zero",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#Negative",
+      "symbol": "Negative",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\proxy-player\\route.ts#NonNegative",
+      "symbol": "NonNegative",
+      "file": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#TEntry",
+      "symbol": "TEntry",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#SegmentParams",
+      "symbol": "SegmentParams",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#RouteContext",
+      "symbol": "RouteContext",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#PageProps",
+      "symbol": "PageProps",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#LayoutProps",
+      "symbol": "LayoutProps",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#RevalidateRange",
+      "symbol": "RevalidateRange",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#OmitWithTag",
+      "symbol": "OmitWithTag",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#Diff",
+      "symbol": "Diff",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#FirstArg",
+      "symbol": "FirstArg",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#SecondArg",
+      "symbol": "SecondArg",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#MaybeField",
+      "symbol": "MaybeField",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#ParamCheck",
+      "symbol": "ParamCheck",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#checkFields",
+      "symbol": "checkFields",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "function"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#Numeric",
+      "symbol": "Numeric",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#Zero",
+      "symbol": "Zero",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#Negative",
+      "symbol": "Negative",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\api\\search\\route.ts#NonNegative",
+      "symbol": "NonNegative",
+      "file": ".next\\types\\app\\api\\search\\route.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#TEntry",
+      "symbol": "TEntry",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#SegmentParams",
+      "symbol": "SegmentParams",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#PageProps",
+      "symbol": "PageProps",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#LayoutProps",
+      "symbol": "LayoutProps",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#RevalidateRange",
+      "symbol": "RevalidateRange",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#OmitWithTag",
+      "symbol": "OmitWithTag",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#Diff",
+      "symbol": "Diff",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#FirstArg",
+      "symbol": "FirstArg",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#SecondArg",
+      "symbol": "SecondArg",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#MaybeField",
+      "symbol": "MaybeField",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#checkFields",
+      "symbol": "checkFields",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "function"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#Numeric",
+      "symbol": "Numeric",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#Zero",
+      "symbol": "Zero",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#Negative",
+      "symbol": "Negative",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\layout.ts#NonNegative",
+      "symbol": "NonNegative",
+      "file": ".next\\types\\app\\layout.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#TEntry",
+      "symbol": "TEntry",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#SegmentParams",
+      "symbol": "SegmentParams",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#PageProps",
+      "symbol": "PageProps",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#LayoutProps",
+      "symbol": "LayoutProps",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#RevalidateRange",
+      "symbol": "RevalidateRange",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#OmitWithTag",
+      "symbol": "OmitWithTag",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#Diff",
+      "symbol": "Diff",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#FirstArg",
+      "symbol": "FirstArg",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#SecondArg",
+      "symbol": "SecondArg",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#MaybeField",
+      "symbol": "MaybeField",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#checkFields",
+      "symbol": "checkFields",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "function"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#Numeric",
+      "symbol": "Numeric",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#Zero",
+      "symbol": "Zero",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#Negative",
+      "symbol": "Negative",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\page.ts#NonNegative",
+      "symbol": "NonNegative",
+      "file": ".next\\types\\app\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#TEntry",
+      "symbol": "TEntry",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#SegmentParams",
+      "symbol": "SegmentParams",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#PageProps",
+      "symbol": "PageProps",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#LayoutProps",
+      "symbol": "LayoutProps",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "interface"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#RevalidateRange",
+      "symbol": "RevalidateRange",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#OmitWithTag",
+      "symbol": "OmitWithTag",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#Diff",
+      "symbol": "Diff",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#FirstArg",
+      "symbol": "FirstArg",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#SecondArg",
+      "symbol": "SecondArg",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#MaybeField",
+      "symbol": "MaybeField",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#checkFields",
+      "symbol": "checkFields",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "function"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#Numeric",
+      "symbol": "Numeric",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#Zero",
+      "symbol": "Zero",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#Negative",
+      "symbol": "Negative",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\app\\player\\[slug]\\page.ts#NonNegative",
+      "symbol": "NonNegative",
+      "file": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "kind": "type"
+    },
+    {
+      "id": ".next\\types\\cache-life.d.ts#unstable_cacheLife",
+      "symbol": "unstable_cacheLife",
+      "file": ".next\\types\\cache-life.d.ts",
+      "kind": "function"
+    }
+  ],
+  "edges": [
+    {
+      "from": "app\\api\\debug-page\\route.ts#GET",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\debug-page\\route.ts#GET",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "app\\api\\debug-page\\route.ts#GET",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\debug-page\\route.ts#GET",
+      "to": "external#text",
+      "type": "awaits"
+    },
+    {
+      "from": "app\\api\\debug-page\\route.ts#GET",
+      "to": "external#text",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\debug-page\\route.ts#GET",
+      "to": "external#match",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\debug-page\\route.ts#GET",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\debug-page\\route.ts#GET",
+      "to": "external#indexOf",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\debug-page\\route.ts#GET",
+      "to": "external#substring",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\debug-page\\route.ts#GET",
+      "to": "external#max",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\debug-page\\route.ts#GET",
+      "to": "external#min",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\debug-page\\route.ts#GET",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\embed-sources\\resolve\\route.ts#POST",
+      "to": "external#json",
+      "type": "awaits"
+    },
+    {
+      "from": "app\\api\\embed-sources\\resolve\\route.ts#POST",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\embed-sources\\resolve\\route.ts#POST",
+      "to": "lib\\embedHelper.ts#getHlsUrl",
+      "type": "awaits"
+    },
+    {
+      "from": "app\\api\\embed-sources\\resolve\\route.ts#POST",
+      "to": "lib\\embedHelper.ts#getHlsUrl",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\embed-sources\\resolve\\route.ts#POST",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\embed-sources\\route.ts#POST",
+      "to": "external#json",
+      "type": "awaits"
+    },
+    {
+      "from": "app\\api\\embed-sources\\route.ts#POST",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\embed-sources\\route.ts#POST",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#toUpperCase",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#charAt",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#slice",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#json",
+      "type": "awaits"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#substring",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\movie-detail\\route.ts#GET",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\proxy-player\\route.ts#GET",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\proxy-player\\route.ts#GET",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\proxy-player\\route.ts#GET",
+      "to": "external#decodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\proxy-player\\route.ts#GET",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "app\\api\\proxy-player\\route.ts#GET",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\proxy-player\\route.ts#GET",
+      "to": "external#text",
+      "type": "awaits"
+    },
+    {
+      "from": "app\\api\\proxy-player\\route.ts#GET",
+      "to": "external#text",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\proxy-player\\route.ts#GET",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\proxy-player\\route.ts#GET",
+      "to": "external#URL",
+      "type": "constructs"
+    },
+    {
+      "from": "app\\api\\proxy-player\\route.ts#GET",
+      "to": "external#NextResponse",
+      "type": "constructs"
+    },
+    {
+      "from": "app\\api\\proxy-player\\route.ts#GET",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\search\\route.ts#provider",
+      "to": "external#LiveProvider",
+      "type": "constructs"
+    },
+    {
+      "from": "app\\api\\search\\route.ts#GET",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\search\\route.ts#GET",
+      "to": "external#URL",
+      "type": "constructs"
+    },
+    {
+      "from": "app\\api\\search\\route.ts#GET",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\search\\route.ts#GET",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\search\\route.ts#GET",
+      "to": "external#search",
+      "type": "awaits"
+    },
+    {
+      "from": "app\\api\\search\\route.ts#GET",
+      "to": "external#search",
+      "type": "calls"
+    },
+    {
+      "from": "app\\api\\search\\route.ts#GET",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app\\layout.tsx#inter",
+      "to": "external#Inter",
+      "type": "calls"
+    },
+    {
+      "from": "app\\page.tsx#HomePage",
+      "to": "external#useState",
+      "type": "calls"
+    },
+    {
+      "from": "app\\page.tsx#HomePage.handleSearch",
+      "to": "external#setLoading",
+      "type": "calls"
+    },
+    {
+      "from": "app\\page.tsx#HomePage.handleSearch",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "app\\page.tsx#HomePage.handleSearch",
+      "to": "external#searchMovies",
+      "type": "awaits"
+    },
+    {
+      "from": "app\\page.tsx#HomePage.handleSearch",
+      "to": "external#searchMovies",
+      "type": "calls"
+    },
+    {
+      "from": "app\\page.tsx#HomePage.handleSearch",
+      "to": "external#setMovies",
+      "type": "calls"
+    },
+    {
+      "from": "app\\page.tsx#HomePage.handleSearch",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app\\page.tsx#HomePage",
+      "to": "external#setQuery",
+      "type": "calls"
+    },
+    {
+      "from": "app\\page.tsx#HomePage",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage",
+      "to": "external#useParams",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage",
+      "to": "external#useState",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage",
+      "to": "external#useEffect",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage.loadMovie",
+      "to": "external#setLoading",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage.loadMovie",
+      "to": "external#setError",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage.loadMovie",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage.loadMovie",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage.loadMovie",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage.loadMovie",
+      "to": "external#json",
+      "type": "awaits"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage.loadMovie",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage.loadMovie",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage.loadMovie",
+      "to": "external#setMovieInfo",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage.loadMovie",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage.loadMovie",
+      "to": "external#setEmbedUrl",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage.loadMovie",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage",
+      "to": "app\\player\\[slug]\\page.tsx#PlayerPage.loadMovie",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage",
+      "to": "external#reload",
+      "type": "calls"
+    },
+    {
+      "from": "app\\player\\[slug]\\page.tsx#PlayerPage",
+      "to": "external#back",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#decryptAES",
+      "to": "external#createDecipheriv",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#decryptAES",
+      "to": "external#concat",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#decryptAES",
+      "to": "external#update",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#decryptAES",
+      "to": "external#from",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#decryptAES",
+      "to": "external#final",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#decryptAES",
+      "to": "external#toString",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#tryDecrypt",
+      "to": "lib\\embedHelper.ts#decryptAES",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#tryDecrypt",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getEmbedSources",
+      "to": "external#URLSearchParams",
+      "type": "constructs"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getEmbedSources",
+      "to": "external#append",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getEmbedSources",
+      "to": "external#post",
+      "type": "awaits"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getEmbedSources",
+      "to": "external#post",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getEmbedSources",
+      "to": "external#toString",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getEmbedSources",
+      "to": "external#from",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getEmbedSources",
+      "to": "external#parse",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getEmbedSources",
+      "to": "external#keys",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getEmbedSources",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getEmbedSources",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getHlsUrl",
+      "to": "external#pop",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getHlsUrl",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getHlsUrl",
+      "to": "external#URL",
+      "type": "constructs"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getHlsUrl",
+      "to": "external#get",
+      "type": "awaits"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getHlsUrl",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getHlsUrl",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getHlsUrl",
+      "to": "lib\\embedHelper.ts#tryDecrypt",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getHlsUrl",
+      "to": "external#parse",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getHlsUrl",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#getHlsUrl",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "lib\\embedHelper.ts#resolveSvidToHls",
+      "to": "lib\\embedHelper.ts#getEmbedSources",
+      "type": "awaits"
+    },
+    {
+      "from": "lib\\embedHelper.ts#resolveSvidToHls",
+      "to": "lib\\embedHelper.ts#getEmbedSources",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#resolveSvidToHls",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "lib\\embedHelper.ts#resolveSvidToHls",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\embedHelper.ts#resolveSvidToHls",
+      "to": "lib\\embedHelper.ts#getHlsUrl",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.search",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.search",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.search",
+      "to": "external#text",
+      "type": "awaits"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.search",
+      "to": "external#text",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.search",
+      "to": "external#exec",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.search",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.search",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.search",
+      "to": "external#json",
+      "type": "awaits"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.search",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.search",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.search",
+      "to": "external#entries",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.search",
+      "to": "lib\\provider.ts#LiveProvider.slugFromUrl",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.search",
+      "to": "external#Number",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.search",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.getMovie",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.getMovie",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.getMovie",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.getMovie",
+      "to": "external#text",
+      "type": "awaits"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.getMovie",
+      "to": "external#text",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.getMovie",
+      "to": "external#load",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.getMovie",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.getMovie",
+      "to": "external#first",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.getMovie",
+      "to": "external#$",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.getMovie",
+      "to": "external#Number",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.getMovie",
+      "to": "external#attr",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.getMovie",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.getMovie",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.getMovie",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.slugFromUrl",
+      "to": "external#filter",
+      "type": "calls"
+    },
+    {
+      "from": "lib\\provider.ts#LiveProvider.slugFromUrl",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#searchMovies",
+      "to": "external#get",
+      "type": "awaits"
+    },
+    {
+      "from": "providers\\movieProvider.ts#searchMovies",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSearchNonce",
+      "to": "external#get",
+      "type": "awaits"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSearchNonce",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSearchNonce",
+      "to": "external#load",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSearchNonce",
+      "to": "external#text",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSearchNonce",
+      "to": "external#$",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSearchNonce",
+      "to": "external#match",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSearchNonce",
+      "to": "external#val",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSearchNonce",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSvidToken",
+      "to": "external#get",
+      "type": "awaits"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSvidToken",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSvidToken",
+      "to": "external#load",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSvidToken",
+      "to": "external#attr",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSvidToken",
+      "to": "external#$",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSvidToken",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSvidToken",
+      "to": "external#toArray",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSvidToken",
+      "to": "external#html",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSvidToken",
+      "to": "external#match",
+      "type": "calls"
+    },
+    {
+      "from": "providers\\movieProvider.ts#getSvidToken",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "services\\search-service.ts#searchMovies",
+      "to": "external#fetch",
+      "type": "awaits"
+    },
+    {
+      "from": "services\\search-service.ts#searchMovies",
+      "to": "external#fetch",
+      "type": "calls"
+    },
+    {
+      "from": "services\\search-service.ts#searchMovies",
+      "to": "external#encodeURIComponent",
+      "type": "calls"
+    },
+    {
+      "from": "services\\search-service.ts#searchMovies",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "services\\search-service.ts#searchMovies",
+      "to": "external#json",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\server\\webpack-runtime.js#__webpack_require__",
+      "to": "external#__webpack_modules__[moduleId]",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#__webpack_require__",
+      "to": "external#forEach",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#__webpack_require__",
+      "to": "external#handler",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#__webpack_require__",
+      "to": "external#call",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createRequire",
+      "to": "external#indexOf",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createRequire",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createRequire",
+      "to": "external#warn",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createRequire",
+      "to": "external#require",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createRequire",
+      "to": "external#call",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createRequire",
+      "to": "external#defineProperty",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createRequire",
+      "to": "external#createPropertyDescriptor",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createRequire",
+      "to": "external#trackBlockingPromise",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createRequire",
+      "to": "external#e",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createModuleHotObject",
+      "to": "external#slice",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createModuleHotObject",
+      "to": "external#__webpack_require__",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createModuleHotObject",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createModuleHotObject",
+      "to": "external#indexOf",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createModuleHotObject",
+      "to": "external#splice",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createModuleHotObject",
+      "to": "external#forEach",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createModuleHotObject",
+      "to": "external#keys",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createModuleHotObject",
+      "to": "external#__webpack_require__.hmrI[key]",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#createModuleHotObject",
+      "to": "external#setStatus",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#setStatus",
+      "to": "external#call",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#setStatus",
+      "to": "external#all",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#unblock",
+      "to": "external#then",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#unblock",
+      "to": "external#setStatus",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#unblock",
+      "to": "external#list[i]",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#trackBlockingPromise",
+      "to": "external#setStatus",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#trackBlockingPromise",
+      "to": "external#then",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#waitForBlockingPromises",
+      "to": "external#fn",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#waitForBlockingPromises",
+      "to": "external#Promise",
+      "type": "constructs"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#waitForBlockingPromises",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#waitForBlockingPromises",
+      "to": "external#resolve",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#hotCheck",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#hotCheck",
+      "to": "external#then",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#hotCheck",
+      "to": "external#setStatus",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#hotCheck",
+      "to": "external#applyInvalidatedModules",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#hotCheck",
+      "to": "external#all",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#hotCheck",
+      "to": "external#reduce",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#hotCheck",
+      "to": "external#keys",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#hotCheck",
+      "to": "external#__webpack_require__.hmrC[key]",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#hotCheck",
+      "to": "external#waitForBlockingPromises",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#hotCheck",
+      "to": "external#internalApply",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#hotApply",
+      "to": "external#then",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#hotApply",
+      "to": "external#resolve",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#hotApply",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#hotApply",
+      "to": "external#internalApply",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#internalApply",
+      "to": "external#applyInvalidatedModules",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#internalApply",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#internalApply",
+      "to": "external#handler",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#internalApply",
+      "to": "external#filter",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#internalApply",
+      "to": "external#then",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#internalApply",
+      "to": "external#setStatus",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#internalApply",
+      "to": "external#forEach",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#internalApply",
+      "to": "external#dispose",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#internalApply",
+      "to": "external#apply",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#internalApply",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#internalApply",
+      "to": "external#all",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#internalApply",
+      "to": "external#internalApply",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#internalApply",
+      "to": "external#indexOf",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyInvalidatedModules",
+      "to": "external#forEach",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyInvalidatedModules",
+      "to": "external#keys",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyInvalidatedModules",
+      "to": "external#__webpack_require__.hmrI[key]",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#loadUpdateChunk",
+      "to": "external#Promise",
+      "type": "constructs"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#loadUpdateChunk",
+      "to": "external#hu",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#loadUpdateChunk",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#loadUpdateChunk",
+      "to": "external#reject",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#loadUpdateChunk",
+      "to": "external#l",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler.getAffectedModuleEffects",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler.getAffectedModuleEffects",
+      "to": "external#pop",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler.getAffectedModuleEffects",
+      "to": "external#concat",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler.getAffectedModuleEffects",
+      "to": "external#indexOf",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler.getAffectedModuleEffects",
+      "to": "external#addAllToSet",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler.getAffectedModuleEffects",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler.addAllToSet",
+      "to": "external#indexOf",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler.addAllToSet",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#warn",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#o",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#getAffectedModuleEffects",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#onDeclined",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#onUnaccepted",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#onAccepted",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#onDisposed",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#addAllToSet",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#forEach",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#slice",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#pop",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#call",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#indexOf",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#splice",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#currentUpdateRuntime[i]",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#errorHandlers[k]",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#onErrored",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#reportError",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#require",
+      "type": "calls"
+    },
+    {
+      "from": ".next\\static\\chunks\\webpack.js#applyHandler",
+      "to": "external#errorHandler",
+      "type": "calls"
+    }
+  ]
+}

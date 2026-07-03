@@ -1,0 +1,209 @@
+{
+  "generatedAt": "2026-07-03T05:23:40.318Z",
+  "imports": [
+    {
+      "source": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "target": "../../../../../app/api/debug-page/route.js"
+    },
+    {
+      "source": ".next\\types\\app\\api\\debug-page\\route.ts",
+      "target": "next/server.js"
+    },
+    {
+      "source": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "target": "../../../../../app/api/embed-sources/route.js"
+    },
+    {
+      "source": ".next\\types\\app\\api\\embed-sources\\route.ts",
+      "target": "next/server.js"
+    },
+    {
+      "source": "app\\api\\debug-page\\route.ts",
+      "target": "next/server"
+    },
+    {
+      "source": "app\\api\\embed-sources\\resolve\\route.ts",
+      "target": "next/server"
+    },
+    {
+      "source": "app\\api\\embed-sources\\resolve\\route.ts",
+      "target": "@/lib/embedHelper"
+    },
+    {
+      "source": "app\\api\\embed-sources\\route.ts",
+      "target": "next/server"
+    },
+    {
+      "source": "app\\api\\movie-detail\\route.ts",
+      "target": "next/server"
+    },
+    {
+      "source": "app\\api\\proxy-player\\route.ts",
+      "target": "next/server"
+    },
+    {
+      "source": "app\\api\\search\\route.ts",
+      "target": "next/server"
+    },
+    {
+      "source": "app\\api\\search\\route.ts",
+      "target": "@/lib/provider"
+    },
+    {
+      "source": "app\\layout.tsx",
+      "target": "next"
+    },
+    {
+      "source": "app\\layout.tsx",
+      "target": "next/font/google"
+    },
+    {
+      "source": "app\\layout.tsx",
+      "target": "./globals.css"
+    },
+    {
+      "source": "app\\page.tsx",
+      "target": "react"
+    },
+    {
+      "source": "app\\page.tsx",
+      "target": "@/services/search-service"
+    },
+    {
+      "source": "app\\page.tsx",
+      "target": "@/components/MovieCard"
+    },
+    {
+      "source": "app\\page.tsx",
+      "target": "@/types/movie"
+    },
+    {
+      "source": "app\\player\\[slug]\\page.tsx",
+      "target": "react"
+    },
+    {
+      "source": "app\\player\\[slug]\\page.tsx",
+      "target": "next/navigation"
+    },
+    {
+      "source": "components\\MovieCard.tsx",
+      "target": "next/link"
+    },
+    {
+      "source": "components\\MovieCard.tsx",
+      "target": "@/types/movie"
+    },
+    {
+      "source": "lib\\embedHelper.ts",
+      "target": "axios"
+    },
+    {
+      "source": "lib\\embedHelper.ts",
+      "target": "crypto"
+    },
+    {
+      "source": "lib\\provider.ts",
+      "target": "@/types/movie"
+    },
+    {
+      "source": "lib\\provider.ts",
+      "target": "cheerio"
+    },
+    {
+      "source": "next.config.ts",
+      "target": "next"
+    },
+    {
+      "source": "providers\\content-provider.ts",
+      "target": "@/types/movie"
+    },
+    {
+      "source": "providers\\live-provider.ts",
+      "target": "./content-provider"
+    },
+    {
+      "source": "providers\\live-provider.ts",
+      "target": "@/types/movie"
+    },
+    {
+      "source": "providers\\movieProvider.ts",
+      "target": "axios"
+    },
+    {
+      "source": "providers\\movieProvider.ts",
+      "target": "cheerio"
+    },
+    {
+      "source": "services\\search-service.ts",
+      "target": "@/types/movie"
+    },
+    {
+      "source": "tailwind.config.ts",
+      "target": "tailwindcss"
+    },
+    {
+      "source": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "target": "../../../../../app/api/movie-detail/route.js"
+    },
+    {
+      "source": ".next\\types\\app\\api\\movie-detail\\route.ts",
+      "target": "next/server.js"
+    },
+    {
+      "source": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "target": "../../../../../app/api/proxy-player/route.js"
+    },
+    {
+      "source": ".next\\types\\app\\api\\proxy-player\\route.ts",
+      "target": "next/server.js"
+    },
+    {
+      "source": ".next\\types\\app\\api\\search\\route.ts",
+      "target": "../../../../../app/api/search/route.js"
+    },
+    {
+      "source": ".next\\types\\app\\api\\search\\route.ts",
+      "target": "next/server.js"
+    },
+    {
+      "source": ".next\\types\\app\\layout.ts",
+      "target": "../../../app/layout.js"
+    },
+    {
+      "source": ".next\\types\\app\\layout.ts",
+      "target": "next/dist/lib/metadata/types/metadata-interface.js"
+    },
+    {
+      "source": ".next\\types\\app\\page.ts",
+      "target": "../../../app/page.js"
+    },
+    {
+      "source": ".next\\types\\app\\page.ts",
+      "target": "next/dist/lib/metadata/types/metadata-interface.js"
+    },
+    {
+      "source": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "target": "../../../../../app/player/[slug]/page.js"
+    },
+    {
+      "source": ".next\\types\\app\\player\\[slug]\\page.ts",
+      "target": "next/dist/lib/metadata/types/metadata-interface.js"
+    },
+    {
+      "source": ".next\\types\\cache-life.d.ts",
+      "target": "next/dist/server/web/spec-extension/unstable-cache"
+    },
+    {
+      "source": ".next\\types\\cache-life.d.ts",
+      "target": "next/dist/server/web/spec-extension/revalidate"
+    },
+    {
+      "source": ".next\\types\\cache-life.d.ts",
+      "target": "next/dist/server/web/spec-extension/unstable-no-store"
+    },
+    {
+      "source": ".next\\types\\cache-life.d.ts",
+      "target": "next/dist/server/use-cache/cache-tag"
+    }
+  ]
+}

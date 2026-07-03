@@ -1,0 +1,29 @@
+{
+  "claude": {
+    "providerId": "claude",
+    "installationVerified": true,
+    "configurationVerified": true,
+    "connectivityVerified": false,
+    "toolVerificationPassed": false,
+    "behaviorVerificationPassed": false,
+    "verificationTimestamp": "2026-07-03T05:26:20.073Z"
+  },
+  "antigravity": {
+    "providerId": "antigravity",
+    "installationVerified": true,
+    "configurationVerified": true,
+    "connectivityVerified": false,
+    "toolVerificationPassed": false,
+    "behaviorVerificationPassed": false,
+    "verificationTimestamp": "2026-07-03T05:26:20.112Z"
+  },
+  "opencode": {
+    "providerId": "opencode",
+    "installationVerified": true,
+    "configurationVerified": true,
+    "connectivityVerified": false,
+    "toolVerificationPassed": false,
+    "behaviorVerificationPassed": false,
+    "verificationTimestamp": "2026-07-03T05:28:01.287Z"
+  }
+}

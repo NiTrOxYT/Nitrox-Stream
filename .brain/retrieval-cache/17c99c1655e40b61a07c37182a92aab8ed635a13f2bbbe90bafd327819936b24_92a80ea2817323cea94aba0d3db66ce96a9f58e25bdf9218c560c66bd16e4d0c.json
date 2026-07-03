@@ -1,0 +1,937 @@
+{
+  "queryFingerprint": "17c99c1655e40b61a07c37182a92aab8ed635a13f2bbbe90bafd327819936b24_92a80ea2817323cea94aba0d3db66ce96a9f58e25bdf9218c560c66bd16e4d0c",
+  "snapshotId": "17c99c1655e40b61a07c37182a92aab8ed635a13f2bbbe90bafd327819936b24",
+  "retrievalPackage": {
+    "retrievalId": "retrieval-c157e08d8ffb",
+    "snapshotId": "17c99c1655e40b61a07c37182a92aab8ed635a13f2bbbe90bafd327819936b24",
+    "sections": [
+      {
+        "id": "architecture-memory",
+        "name": "Architecture Memory",
+        "kind": "architecture-memory",
+        "content": "[{\"category\":\"Language\",\"title\":\"Primary Languages\",\"description\":\"JavaScript (200 files), JSON (79 files), TypeScript (30 files), Markdown (3 files)\",\"tags\":[\"JSON\",\"JavaScript\",\"TypeScript\",\"Markdown\"]},{\"category\":\"Overview\",\"title\":\"Workspace Size\",\"description\":\"376 tracked files across the workspace\",\"tags\":[\"overview\",\"size\"]},{\"category\":\"Symbols\",\"title\":\"Exported Symbol Types\",\"description\":\"2650 variables, 106 types, 72 functions, 20 interfaces, 5 methods, 2 classs\",\"tags\":[\"variable\",\"function\",\"type\",\"interface\",\"class\",\"method\"]}]",
+        "priority": 30,
+        "estimatedTokens": 138,
+        "reason": "system-config"
+      },
+      {
+        "id": "dependency-graph",
+        "name": "Dependency Graph",
+        "kind": "dependency-graph",
+        "content": "[{\"fromPath\":\".next/types/app/api/debug-page/route.ts\",\"toPath\":\"../../../../../app/api/debug-page/route.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/api/debug-page/route.ts\",\"toPath\":\"next/server.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/api/embed-sources/route.ts\",\"toPath\":\"../../../../../app/api/embed-sources/route.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/api/embed-sources/route.ts\",\"toPath\":\"next/server.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/api/movie-detail/route.ts\",\"toPath\":\"../../../../../app/api/movie-detail/route.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/api/movie-detail/route.ts\",\"toPath\":\"next/server.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/api/proxy-player/route.ts\",\"toPath\":\"../../../../../app/api/proxy-player/route.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/api/proxy-player/route.ts\",\"toPath\":\"next/server.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/api/search/route.ts\",\"toPath\":\"../../../../../app/api/search/route.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/api/search/route.ts\",\"toPath\":\"next/server.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/layout.ts\",\"toPath\":\"../../../app/layout.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/layout.ts\",\"toPath\":\"next/dist/lib/metadata/types/metadata-interface.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/page.ts\",\"toPath\":\"../../../app/page.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/page.ts\",\"toPath\":\"next/dist/lib/metadata/types/metadata-interface.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/player/[slug]/page.ts\",\"toPath\":\"../../../../../app/player/[slug]/page.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/app/player/[slug]/page.ts\",\"toPath\":\"next/dist/lib/metadata/types/metadata-interface.js\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/cache-life.d.ts\",\"toPath\":\"next/dist/server/use-cache/cache-tag\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/cache-life.d.ts\",\"toPath\":\"next/dist/server/web/spec-extension/revalidate\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/cache-life.d.ts\",\"toPath\":\"next/dist/server/web/spec-extension/unstable-cache\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\".next/types/cache-life.d.ts\",\"toPath\":\"next/dist/server/web/spec-extension/unstable-no-store\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/api/debug-page/route.ts\",\"toPath\":\"next/server\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/api/embed-sources/resolve/route.ts\",\"toPath\":\"@/lib/embedHelper\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/api/embed-sources/resolve/route.ts\",\"toPath\":\"next/server\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/api/embed-sources/route.ts\",\"toPath\":\"next/server\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/api/movie-detail/route.ts\",\"toPath\":\"next/server\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/api/proxy-player/route.ts\",\"toPath\":\"next/server\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/api/search/route.ts\",\"toPath\":\"@/lib/provider\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/api/search/route.ts\",\"toPath\":\"next/server\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/layout.tsx\",\"toPath\":\"./globals.css\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/layout.tsx\",\"toPath\":\"next\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/layout.tsx\",\"toPath\":\"next/font/google\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/page.tsx\",\"toPath\":\"@/components/MovieCard\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/page.tsx\",\"toPath\":\"@/services/search-service\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/page.tsx\",\"toPath\":\"@/types/movie\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/page.tsx\",\"toPath\":\"react\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/player/[slug]/page.tsx\",\"toPath\":\"next/navigation\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"app/player/[slug]/page.tsx\",\"toPath\":\"react\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"components/MovieCard.tsx\",\"toPath\":\"@/types/movie\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"components/MovieCard.tsx\",\"toPath\":\"next/link\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"lib/embedHelper.ts\",\"toPath\":\"axios\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"lib/embedHelper.ts\",\"toPath\":\"crypto\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"lib/provider.ts\",\"toPath\":\"@/types/movie\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"lib/provider.ts\",\"toPath\":\"cheerio\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"next.config.ts\",\"toPath\":\"next\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"providers/content-provider.ts\",\"toPath\":\"@/types/movie\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"providers/live-provider.ts\",\"toPath\":\"./content-provider\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"providers/live-provider.ts\",\"toPath\":\"@/types/movie\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"providers/movieProvider.ts\",\"toPath\":\"axios\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"providers/movieProvider.ts\",\"toPath\":\"cheerio\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"services/search-service.ts\",\"toPath\":\"@/types/movie\",\"kind\":\"import\",\"importNames\":[]},{\"fromPath\":\"tailwind.config.ts\",\"toPath\":\"tailwindcss\",\"kind\":\"import\",\"importNames\":[]}]",
+        "priority": 50,
+        "estimatedTokens": 1381,
+        "reason": "relationship-link"
+      },
+      {
+        "id": "repository-evolution",
+        "name": "Repository Evolution",
+        "kind": "repository-evolution",
+        "content": "[]",
+        "priority": 70,
+        "estimatedTokens": 1,
+        "reason": "evolution-history"
+      }
+    ],
+    "candidates": [
+      {
+        "path": ".next/types/app/api/embed-sources/route.ts",
+        "score": 140,
+        "reasons": [
+          "primary-target",
+          "symbol-relevance"
+        ]
+      },
+      {
+        "path": "app/api/embed-sources/resolve/route.ts",
+        "score": 140,
+        "reasons": [
+          "primary-target",
+          "symbol-relevance"
+        ]
+      },
+      {
+        "path": ".next/types/app/api/debug-page/route.ts",
+        "score": 100,
+        "reasons": [
+          "primary-target"
+        ]
+      },
+      {
+        "path": ".next/types/app/api/movie-detail/route.ts",
+        "score": 100,
+        "reasons": [
+          "primary-target"
+        ]
+      },
+      {
+        "path": ".next/types/app/api/proxy-player/route.ts",
+        "score": 100,
+        "reasons": [
+          "primary-target"
+        ]
+      },
+      {
+        "path": ".next/types/app/api/search/route.ts",
+        "score": 100,
+        "reasons": [
+          "primary-target"
+        ]
+      },
+      {
+        "path": "../../../../../app/api/debug-page/route.js",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ]
+      },
+      {
+        "path": "next/server",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ]
+      },
+      {
+        "path": "next/server.js",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ]
+      }
+    ],
+    "graph": {
+      "nodes": [],
+      "edges": [],
+      "topologicalOrder": []
+    },
+    "symbols": [
+      {
+        "name": "checkFields",
+        "kind": "function",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 341,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Diff",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 329,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "FirstArg",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 331,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "LayoutProps",
+        "kind": "interface",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 317,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "MaybeField",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 333,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Negative",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 346,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "NonNegative",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 347,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Numeric",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 344,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "OmitWithTag",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 328,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "PageProps",
+        "kind": "interface",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 313,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "ParamCheck",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 335,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "RevalidateRange",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 325,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "RouteContext",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 32,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "SecondArg",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 332,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "SegmentParams",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 7,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "TEntry",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 5,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Zero",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\debug-page\\route.ts",
+        "line": 345,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "checkFields",
+        "kind": "function",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 341,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Diff",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 329,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "FirstArg",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 331,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "LayoutProps",
+        "kind": "interface",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 317,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "MaybeField",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 333,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Negative",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 346,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "NonNegative",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 347,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Numeric",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 344,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "OmitWithTag",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 328,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "PageProps",
+        "kind": "interface",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 313,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "ParamCheck",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 335,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "RevalidateRange",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 325,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "RouteContext",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 32,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "SecondArg",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 332,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "SegmentParams",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 7,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "TEntry",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 5,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Zero",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\embed-sources\\route.ts",
+        "line": 345,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "checkFields",
+        "kind": "function",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 341,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Diff",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 329,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "FirstArg",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 331,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "LayoutProps",
+        "kind": "interface",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 317,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "MaybeField",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 333,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Negative",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 346,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "NonNegative",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 347,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Numeric",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 344,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "OmitWithTag",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 328,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "PageProps",
+        "kind": "interface",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 313,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "ParamCheck",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 335,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "RevalidateRange",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 325,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "RouteContext",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 32,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "SecondArg",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 332,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "SegmentParams",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 7,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "TEntry",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 5,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Zero",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\movie-detail\\route.ts",
+        "line": 345,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "checkFields",
+        "kind": "function",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 341,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Diff",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 329,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "FirstArg",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 331,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "LayoutProps",
+        "kind": "interface",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 317,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "MaybeField",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 333,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Negative",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 346,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "NonNegative",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 347,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Numeric",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 344,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "OmitWithTag",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 328,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "PageProps",
+        "kind": "interface",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 313,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "ParamCheck",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 335,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "RevalidateRange",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 325,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "RouteContext",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 32,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "SecondArg",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 332,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "SegmentParams",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 7,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "TEntry",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 5,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Zero",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\proxy-player\\route.ts",
+        "line": 345,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "checkFields",
+        "kind": "function",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 341,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Diff",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 329,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "FirstArg",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 331,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "LayoutProps",
+        "kind": "interface",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 317,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "MaybeField",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 333,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Negative",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 346,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "NonNegative",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 347,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Numeric",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 344,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "OmitWithTag",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 328,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "PageProps",
+        "kind": "interface",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 313,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "ParamCheck",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 335,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "RevalidateRange",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 325,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "RouteContext",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 32,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "SecondArg",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 332,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "SegmentParams",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 7,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "TEntry",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 5,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "Zero",
+        "kind": "type",
+        "filePath": ".next\\types\\app\\api\\search\\route.ts",
+        "line": 345,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "body",
+        "kind": "variable",
+        "filePath": "app\\api\\embed-sources\\resolve\\route.ts",
+        "line": 7,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "error",
+        "kind": "variable",
+        "filePath": "app\\api\\embed-sources\\resolve\\route.ts",
+        "line": 20,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "hlsUrl",
+        "kind": "variable",
+        "filePath": "app\\api\\embed-sources\\resolve\\route.ts",
+        "line": 17,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "POST",
+        "kind": "function",
+        "filePath": "app\\api\\embed-sources\\resolve\\route.ts",
+        "line": 5,
+        "exported": false,
+        "contentHash": ""
+      },
+      {
+        "name": "POST",
+        "kind": "function",
+        "filePath": "app\\api\\embed-sources\\route.ts",
+        "line": 3,
+        "exported": false,
+        "contentHash": ""
+      }
+    ],
+    "dependencies": [
+      {
+        "fromPath": ".next/types/app/api/debug-page/route.ts",
+        "toPath": "../../../../../app/api/debug-page/route.js",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": ".next/types/app/api/debug-page/route.ts",
+        "toPath": "next/server.js",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": ".next/types/app/api/embed-sources/route.ts",
+        "toPath": "../../../../../app/api/embed-sources/route.js",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": ".next/types/app/api/embed-sources/route.ts",
+        "toPath": "next/server.js",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": ".next/types/app/api/movie-detail/route.ts",
+        "toPath": "../../../../../app/api/movie-detail/route.js",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": ".next/types/app/api/movie-detail/route.ts",
+        "toPath": "next/server.js",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": ".next/types/app/api/proxy-player/route.ts",
+        "toPath": "../../../../../app/api/proxy-player/route.js",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": ".next/types/app/api/proxy-player/route.ts",
+        "toPath": "next/server.js",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": ".next/types/app/api/search/route.ts",
+        "toPath": "../../../../../app/api/search/route.js",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": ".next/types/app/api/search/route.ts",
+        "toPath": "next/server.js",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": "app/api/debug-page/route.ts",
+        "toPath": "next/server",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": "app/api/embed-sources/resolve/route.ts",
+        "toPath": "@/lib/embedHelper",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": "app/api/embed-sources/resolve/route.ts",
+        "toPath": "next/server",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": "app/api/embed-sources/route.ts",
+        "toPath": "next/server",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": "app/api/movie-detail/route.ts",
+        "toPath": "next/server",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": "app/api/proxy-player/route.ts",
+        "toPath": "next/server",
+        "kind": "import",
+        "importNames": []
+      },
+      {
+        "fromPath": "app/api/search/route.ts",
+        "toPath": "next/server",
+        "kind": "import",
+        "importNames": []
+      }
+    ],
+    "relationships": []
+  },
+  "storedAt": "2026-07-03T05:29:42.330Z"
+}

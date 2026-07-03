@@ -1,0 +1,4 @@
+{"timestamp":"2026-07-03T05:26:20.072Z","providerId":"claude","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-07-03T05:26:20.111Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-07-03T05:28:01.268Z","providerId":"opencode","event":"migrated","details":{"from":"1.0.0"}}
+{"timestamp":"2026-07-03T05:28:01.286Z","providerId":"opencode","event":"configured","details":{"transport":"stdio","mode":"mcp"}}

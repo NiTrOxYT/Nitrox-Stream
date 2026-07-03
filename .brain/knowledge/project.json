@@ -1,0 +1,7 @@
+{
+  "name": "nitrox-stream",
+  "root": "C:\\Users\\souri\\project",
+  "framework": "nextjs",
+  "language": "typescript",
+  "packageManager": "npm"
+}
