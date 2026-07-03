@@ -249,6 +249,7 @@ export default function EpisodePlayer() {
                 className="w-full h-full absolute inset-0"
                 allowFullScreen
                 allow="autoplay; encrypted-media"
+                sandbox="allow-scripts allow-same-origin allow-forms allow-presentation"
                 onLoad={() => setIframeLoading(false)}
                 style={{ border: 'none' }}
               />
