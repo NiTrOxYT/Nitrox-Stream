@@ -26,14 +26,18 @@ interface TvSourceResponse {
 export default function EpisodePlayer() {
   const params = useParams();
   const router = useRouter();
+
+  console.log({ params });
+
   const slug = params.slug as string;
   const seasonRaw = params.season as string;
   const episodeRaw = params.episode as string;
 
-  const currentSeason = parseInt(seasonRaw.replace(/^s/i, ''), 10);
-  const currentEpisode = parseInt(episodeRaw.replace(/^e/i, ''), 10);
+  // Segment values include the prefix: season = "s1", episode = "e3"
+  const currentSeason = parseInt((seasonRaw || '').replace(/^s/i, ''), 10);
+  const currentEpisode = parseInt((episodeRaw || '').replace(/^e/i, ''), 10);
 
-  console.log({ params, seasonRaw, episodeRaw, currentSeason, currentEpisode });
+  console.log({ slug, seasonRaw, episodeRaw, currentSeason, currentEpisode });
 
   const [show, setShow] = useState<TvSourceResponse | null>(null);
   const [playerUrl, setPlayerUrl] = useState<string | null>(null);

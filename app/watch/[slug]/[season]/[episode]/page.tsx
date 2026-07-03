@@ -7,7 +7,10 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string; season: string; episode: string }>;
 }): Promise<Metadata> {
-  const { slug, season, episode } = await params;
+  const { slug, season: seasonRaw, episode: episodeRaw } = await params;
+
+  const season = seasonRaw.replace(/^s/i, '');
+  const episode = episodeRaw.replace(/^e/i, '');
 
   let title = slug.replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase());
   let description = '';
