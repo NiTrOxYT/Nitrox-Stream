@@ -1,13 +1,13 @@
 {
-  "totalSnapshots": 2,
-  "totalCompilations": 2,
+  "totalSnapshots": 1,
+  "totalCompilations": 1,
   "cacheHits": 0,
-  "cacheMisses": 2,
+  "cacheMisses": 1,
   "incrementalCompiles": 0,
-  "fullCompiles": 2,
-  "averageCompilationMs": 3956,
-  "averageTokens": 79156,
+  "fullCompiles": 1,
+  "averageCompilationMs": 282,
+  "averageTokens": 26769,
   "tokenSavings": 0,
-  "lastCompilationAt": "2026-07-03T05:23:42.163Z",
-  "lastSnapshotId": "17c99c1655e40b61a07c37182a92aab8ed635a13f2bbbe90bafd327819936b24"
+  "lastCompilationAt": "2026-07-03T14:09:22.423Z",
+  "lastSnapshotId": "06fb3de2961ccfc17a027288b4b46f33dded65c3dd55176e12b7c70291df35aa"
 }
