@@ -3,6 +3,7 @@ import type { Movie } from '@/types/movie';
 import type { TvShow, SeasonInfo, EpisodeInfo } from '@/types/tv';
 import type { AjaxResponse } from '@/types/api';
 import * as cheerio from "cheerio";
+import { extractResilientPostId } from './embedHelper';
 
 const BASE = 'https://multimovies.watch';
 
@@ -90,13 +91,12 @@ export class LiveProvider {
 
       // 0. WordPress post ID → admin-ajax → embed URL → file ID → SVID
       {
-        const shortlinkMatch = html.match(/<link\s+rel=['"]shortlink['"]\s+href=['"][^'"]*\?p=(\d+)/i);
-        const postId = shortlinkMatch ? shortlinkMatch[1] : null;
+        const postId = await extractResilientPostId(html);
         if (postId) {
           try {
             const embedForm = new URLSearchParams();
             embedForm.append('action', 'doo_player_ajax');
-            embedForm.append('post', postId);
+            embedForm.append('post', String(postId));
             embedForm.append('nume', '1');
             embedForm.append('type', 'movie');
 
@@ -113,11 +113,7 @@ export class LiveProvider {
               const epData = await epResp.json() as AjaxResponse;
               const embedUrl: string | undefined = epData.embed_url;
               if (embedUrl) {
-                const fileId = embedUrl.split('/').pop() || '';
-                if (fileId) {
-                  // Use file ID directly as SVID (embedhelper.php accepts it)
-                  playerUrl = `https://pro.iqsmartgames.com/svid/${fileId}`;
-                }
+                playerUrl = embedUrl;
               }
             }
           } catch {
@@ -295,19 +291,8 @@ export class LiveProvider {
 
       const html = await response.text();
 
-      // Body class: postid-2666
-      const bodyMatch = html.match(/postid[-\s](\d+)/i);
-      if (bodyMatch) return parseInt(bodyMatch[1], 10);
-
-      // Player option: data-post='2666'
-      const dataPostMatch = html.match(/data-post=['"](\d+)['"]/);
-      if (dataPostMatch) return parseInt(dataPostMatch[1], 10);
-
-      // Shortlink: ?p=2666
-      const shortlinkMatch = html.match(/<link\s+rel=['"]shortlink['"]\s+href=['"][^'"]*\?p=(\d+)/i);
-      if (shortlinkMatch) return parseInt(shortlinkMatch[1], 10);
-
-      return null;
+      const postId = await extractResilientPostId(html);
+      return postId;
     } catch {
       return null;
     }

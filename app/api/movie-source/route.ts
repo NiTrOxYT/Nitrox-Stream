@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { LiveProvider } from '@/lib/provider';
-import { getEmbedSources } from '@/lib/embedHelper';
+import { resolveEmbedUrl, ResolutionError, ResolverContext } from '@/lib/embedHelper';
 
 export async function GET(request: NextRequest) {
   const slug = request.nextUrl.searchParams.get('slug');
@@ -11,7 +11,13 @@ export async function GET(request: NextRequest) {
 
   try {
     const provider = new LiveProvider();
+    const requestId = Math.random().toString(16).substring(2, 6);
+    const context = new ResolverContext(slug, 'movie', requestId);
+
+    context.logStage('Incoming request', 'success', 0);
+    context.startTiming('Movie Page Fetch');
     const movie = await provider.getMovie(slug);
+    context.endTiming('Movie Page Fetch');
 
     if (!movie) {
       return NextResponse.json({ error: 'Movie not found' }, { status: 404 });
@@ -24,30 +30,19 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const svidMatch = movie.playerUrl.match(/\/svid\/([a-zA-Z0-9_-]+)/);
-    const svidToken = svidMatch ? svidMatch[1] : null;
+    // Resolve embed URL using the unified strategy and health loop
+    const result = await resolveEmbedUrl(movie.playerUrl, slug, 'movie', context);
+    const playerUrl = result.playerUrl;
 
-    if (!svidToken) {
-      return NextResponse.json({ error: 'Invalid player URL format' }, { status: 500 });
+    // Extract the raw provider URL from the player wrapper if needed
+    let providerUrl = playerUrl;
+    if (playerUrl.includes('hlsplayer?url=')) {
+      const match = playerUrl.match(/hlsplayer\?url=([^&#]+)/);
+      if (match) providerUrl = decodeURIComponent(match[1]);
     }
 
-    // Step 1: Get provider sources from embedhelper.php
-    const sources = await getEmbedSources(svidToken);
-    if (sources.length === 0) {
-      return NextResponse.json({ error: 'No video sources found' }, { status: 500 });
-    }
-
-    // Step 2: Pass the raw provider URL to hlsplayer — do NOT decrypt.
-    // hlsplayer internally resolves the provider URL to the final HLS stream,
-    // using the same RPM API + AES decryption, but from its own IP range
-    // which has access to the hotlink-protected HLS servers.
-    const providerUrl = sources[0].url;
-    const playerUrl = `https://plyr.technocosmos.surf/hlsplayer?url=${encodeURIComponent(providerUrl)}`;
-
-    console.log({
-      providerUrl,
-      playerUrl,
-    });
+    context.logStage('Final player', 'success', Date.now() - context.startTime);
+    context.debug(`Resolved movie ${slug} in ${Date.now() - context.startTime}ms`);
 
     return NextResponse.json({
       movie: {
@@ -61,9 +56,20 @@ export async function GET(request: NextRequest) {
       },
       providerUrl,
       playerUrl,
+      meta: result.meta,
     });
   } catch (err: unknown) {
     console.error('[movie-source] error:', err);
+    if (err instanceof ResolutionError) {
+      return NextResponse.json(
+        {
+          step: err.step,
+          episode: slug,
+          providers: err.providers,
+        },
+        { status: 502 }
+      );
+    }
     const message = err instanceof Error ? err.message : 'Internal server error';
     return NextResponse.json(
       { error: message },
