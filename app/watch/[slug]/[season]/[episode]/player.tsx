@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useMemo } from 'react';
 import { useParams, useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 interface Episode {
   episode: number;
@@ -16,6 +17,7 @@ interface Season {
 
 interface ShowInfo {
   title: string;
+  backdrop?: string;
 }
 
 interface TvSourceResponse {
@@ -27,22 +29,18 @@ export default function EpisodePlayer() {
   const params = useParams();
   const router = useRouter();
 
-  console.log({ params });
-
   const slug = params.slug as string;
   const seasonRaw = params.season as string;
   const episodeRaw = params.episode as string;
 
-  // Segment values include the prefix: season = "s1", episode = "e3"
   const currentSeason = parseInt((seasonRaw || '').replace(/^s/i, ''), 10);
   const currentEpisode = parseInt((episodeRaw || '').replace(/^e/i, ''), 10);
-
-  console.log({ slug, seasonRaw, episodeRaw, currentSeason, currentEpisode });
 
   const [show, setShow] = useState<TvSourceResponse | null>(null);
   const [playerUrl, setPlayerUrl] = useState<string | null>(null);
   const [resolving, setResolving] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [iframeLoading, setIframeLoading] = useState(true);
 
   // Fetch show data once (for episode slug lookup + navigation)
   useEffect(() => {
@@ -78,6 +76,7 @@ export default function EpisodePlayer() {
       setError(null);
       setResolving(true);
       setPlayerUrl(null);
+      setIframeLoading(true);
 
       try {
         const res = await fetch(`/api/episode-source?slug=${encodeURIComponent(ep.slug)}`);
@@ -127,92 +126,172 @@ export default function EpisodePlayer() {
     return s?.episodes.find((e) => e.episode === currentEpisode)?.title || null;
   }, [show, currentSeason, currentEpisode]);
 
+  // Current season list of episodes
+  const seasonEpisodes = useMemo(() => {
+    if (!show) return [];
+    return show.seasons.find((se) => se.season === currentSeason)?.episodes || [];
+  }, [show, currentSeason]);
+
   return (
-    <div className="min-h-screen bg-black flex flex-col">
-      {/* Top bar */}
-      <div className="bg-gray-900 px-4 py-3 flex items-center gap-3 shrink-0">
-        <button
-          onClick={() => router.back()}
-          className="text-gray-400 hover:text-white transition shrink-0"
-        >
-          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-        <div className="flex-1 min-w-0">
-          <h1 className="text-white font-medium truncate">
-            {show?.show.title || slug.replace(/-/g, ' ')}
-          </h1>
-          {episodeTitle && (
-            <p className="text-gray-400 text-xs truncate">
-              S{currentSeason} E{currentEpisode} — {episodeTitle}
-            </p>
+    <main className="min-h-screen bg-[#080808] text-white pb-24 relative overflow-hidden">
+      
+      {/* Ambient Backdrop Blur Layer */}
+      {show?.show.backdrop && (
+        <div className="absolute top-0 left-0 right-0 h-[60vh] z-0 pointer-events-none opacity-20 filter blur-[100px] transform-gpu">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={show.show.backdrop}
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[#080808]/80" />
+        </div>
+      )}
+
+      <div className="max-w-6xl mx-auto px-6 pt-8 relative z-10 space-y-8">
+        
+        {/* Header / Nav Back Bar */}
+        <div className="flex items-center gap-4 border-b border-neutral-900 pb-4">
+          <button
+            onClick={() => router.back()}
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-900/80 hover:bg-neutral-800 border border-neutral-800/40 text-neutral-400 hover:text-white transition-all duration-200 outline-none"
+          >
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          
+          <div className="min-w-0">
+            <span className="text-[10px] font-bold tracking-[0.2em] text-accent uppercase block mb-0.5">
+              Playing Episode
+            </span>
+            <h1 className="text-xl md:text-2xl font-bold tracking-tight text-white truncate leading-none">
+              {show?.show.title || slug.replace(/-/g, ' ')}
+            </h1>
+          </div>
+
+          <div className="ml-auto flex items-center gap-3">
+            <span className="px-2.5 py-1 text-xs font-semibold text-neutral-400 bg-neutral-900 rounded border border-neutral-800/50">
+              Season {currentSeason} &middot; Episode {currentEpisode}
+            </span>
+          </div>
+        </div>
+
+        {/* Video Player Frame */}
+        <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden bg-black shadow-[0_24px_50px_rgba(0,0,0,0.8)] border border-neutral-900 z-10 transform-gpu transition-all">
+          {resolving && (
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/90 z-10">
+              <div className="w-10 h-10 rounded-full border-2 border-accent border-t-transparent animate-spin mb-3" />
+              <p className="text-[10px] font-bold tracking-widest text-neutral-500 uppercase animate-pulse">Resolving Video Source...</p>
+            </div>
+          )}
+
+          {error && !resolving && (
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#080808] z-10 text-center px-4">
+              <div className="w-12 h-12 rounded-full bg-accent/15 text-accent flex items-center justify-center mx-auto mb-4 font-bold text-xl">!</div>
+              <h2 className="text-white font-display text-lg font-bold mb-2">Playback Error</h2>
+              <p className="text-neutral-400 text-sm mb-6 leading-relaxed">{error}</p>
+              <button
+                onClick={() => window.location.reload()}
+                className="px-6 py-2 bg-white text-black font-semibold rounded text-sm hover:bg-neutral-200 transition"
+              >
+                Retry
+              </button>
+            </div>
+          )}
+
+          {playerUrl && (
+            <>
+              {iframeLoading && (
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/90 z-10">
+                  <div className="w-10 h-10 rounded-full border-2 border-accent border-t-transparent animate-spin mb-3" />
+                  <p className="text-[10px] font-bold tracking-widest text-neutral-500 uppercase animate-pulse">Loading Stream Player...</p>
+                </div>
+              )}
+              <iframe
+                src={playerUrl}
+                className="w-full h-full absolute inset-0"
+                allowFullScreen
+                allow="autoplay; encrypted-media"
+                onLoad={() => setIframeLoading(false)}
+                style={{ border: 'none' }}
+              />
+            </>
           )}
         </div>
-      </div>
 
-      {/* Player area */}
-      <div className="relative w-full bg-black flex-1 flex items-center justify-center">
-        {resolving && (
-          <div className="flex flex-col items-center gap-4">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500" />
-            <p className="text-gray-400 text-sm">Resolving video source...</p>
+        {/* Dynamic Prev / Next bar */}
+        <div className="flex items-center justify-between gap-4 border-t border-b border-neutral-900 py-4">
+          <button
+            onClick={() => prev && navigate(prev.season, prev.episode)}
+            disabled={!prev}
+            className="flex items-center gap-2 px-4 py-2 rounded bg-neutral-900 border border-neutral-800 text-white text-xs font-bold uppercase tracking-wider hover:bg-neutral-800 hover:border-neutral-700 transition disabled:opacity-30 disabled:cursor-not-allowed outline-none"
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Previous
+          </button>
+
+          <span className="font-display font-medium text-sm sm:text-base text-white truncate text-center">
+            S{currentSeason}:E{currentEpisode} {episodeTitle && `\u2014 ${episodeTitle}`}
+          </span>
+
+          <button
+            onClick={() => next && navigate(next.season, next.episode)}
+            disabled={!next}
+            className="flex items-center gap-2 px-4 py-2 rounded bg-neutral-900 border border-neutral-800 text-white text-xs font-bold uppercase tracking-wider hover:bg-neutral-800 hover:border-neutral-700 transition disabled:opacity-30 disabled:cursor-not-allowed outline-none"
+          >
+            Next
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Quick Episode Selection Strip */}
+        {seasonEpisodes.length > 1 && (
+          <div className="space-y-4 pt-4">
+            <h3 className="text-xs font-bold tracking-[0.2em] uppercase text-neutral-400">
+              Episodes In This Season
+            </h3>
+            
+            <div className="flex gap-3 overflow-x-auto premium-scrollbar pb-4 snap-x snap-mandatory">
+              {seasonEpisodes.map((ep) => {
+                const isActive = ep.episode === currentEpisode;
+                return (
+                  <button
+                    key={ep.slug}
+                    onClick={() => navigate(currentSeason, ep.episode)}
+                    className={`flex items-center justify-between gap-4 p-3 rounded text-left shrink-0 w-64 border transition-all duration-200 outline-none snap-start ${
+                      isActive
+                        ? "bg-accent/10 border-accent/30 text-white"
+                        : "bg-[#101010]/60 border-neutral-900 text-neutral-400 hover:border-neutral-800 hover:bg-[#161616]"
+                    }`}
+                  >
+                    <div className="min-w-0">
+                      <span className={`text-[10px] font-bold block mb-0.5 ${isActive ? "text-accent" : "text-neutral-500"}`}>
+                        EPISODE {ep.episode}
+                      </span>
+                      <span className={`text-xs font-semibold block truncate ${isActive ? "text-white" : "text-neutral-300"}`}>
+                        {ep.title}
+                      </span>
+                    </div>
+                    {isActive ? (
+                      <span className="w-2 h-2 rounded-full bg-accent animate-ping" />
+                    ) : (
+                      <svg className="w-4 h-4 text-neutral-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                      </svg>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         )}
 
-        {error && !resolving && (
-          <div className="text-center px-4">
-            <p className="text-red-400 text-lg mb-2">Playback Error</p>
-            <p className="text-gray-400 text-sm mb-6">{error}</p>
-            <button
-              onClick={() => window.location.reload()}
-              className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-            >
-              Retry
-            </button>
-          </div>
-        )}
-
-        {playerUrl && (
-          <iframe
-            src={playerUrl}
-            className="absolute inset-0 w-full h-full"
-            allowFullScreen
-            allow="autoplay; encrypted-media"
-            style={{ border: 'none' }}
-          />
-        )}
       </div>
-
-      {/* Prev / Next bar */}
-      <div className="bg-gray-900 px-4 py-3 flex items-center justify-between gap-4 shrink-0">
-        <button
-          onClick={() => prev && navigate(prev.season, prev.episode)}
-          disabled={!prev}
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-800 text-white text-sm hover:bg-gray-700 transition disabled:opacity-30 disabled:cursor-not-allowed"
-        >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-          Previous
-        </button>
-
-        <span className="text-gray-300 text-sm truncate px-2">
-          S{currentSeason} E{currentEpisode}
-          {episodeTitle && ` — ${episodeTitle}`}
-        </span>
-
-        <button
-          onClick={() => next && navigate(next.season, next.episode)}
-          disabled={!next}
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-800 text-white text-sm hover:bg-gray-700 transition disabled:opacity-30 disabled:cursor-not-allowed"
-        >
-          Next
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
-    </div>
+    </main>
   );
 }

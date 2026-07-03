@@ -47,3 +47,7 @@ next-env.d.ts
 .brain/provider-events.jsonl
 .brain/provider-verification.json
 .brain/providers.lock.json
+
+
+#SKILLS
+.agents/skills 

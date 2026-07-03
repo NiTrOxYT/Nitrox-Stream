@@ -1,3 +1,45 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-background: #080808;
+  --color-surface-base: #101010;
+  --color-surface-hover: #161616;
+  --color-accent: #E50914; /* Nitrox Red / Netflix Red */
+  
+  --font-display: var(--font-outfit), sans-serif;
+  --font-sans: var(--font-geist-sans), sans-serif;
+  
+  --transition-bezier: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+  background-color: #080808;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Hide standard scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom premium thin scrollbar for horizontal tracks */
+.premium-scrollbar::-webkit-scrollbar {
+  height: 4px;
+}
+.premium-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.premium-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+.premium-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+}
